@@ -2,6 +2,11 @@
 
 작고 조용한 SFF 서버 제작
 
+## 구성
+
+- UiBox: 서버
+- [UiRouter]: 라우터
+
 ## 목적
 
 - 비밀번호 관리 : vaultwarden

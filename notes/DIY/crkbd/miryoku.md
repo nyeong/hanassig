@@ -50,6 +50,8 @@ home-row mods와 마찬가지로, 아래의 키는 짧게 누르면 원래의 �
 
 ### 일반 레이아웃
 
+home row mods가 적용되어 있어서 A, S, D, F, J, K, L, ;은 위에 기술된 대로 MODS키로 동작한다.
+
 ```
 |  _  |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  _  | 
 |  _  |  A  |  S  |  D  |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  _  | 
