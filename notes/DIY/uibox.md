@@ -5,7 +5,7 @@
 ## 구성
 
 - UiBox: 서버
-- [UiRouter]: 라우터
+- [UiRouter](./notes/DIY/uirouter.md): 라우터
 
 ## 목적
 
