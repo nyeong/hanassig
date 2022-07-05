@@ -11,7 +11,7 @@ OpenWrt를 활용하여 집 공유기를 보다 다목적으로 사용해보자.
 
 ## 활용
 
-1. VPN 서버 - [WireGuard 설치하기](notes/DIY/uirouter/install-wireguard.md)
+1. VPN 서버 - [[install-wireguard]]
 2. 웹 프록시 서버
 3. 홈 네트워크용 DNS 서버
 

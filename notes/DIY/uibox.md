@@ -5,14 +5,14 @@
 ## 구성
 
 - UiBox: 서버
-- [UiRouter](./notes/DIY/uirouter.md): 라우터
+- [[UiRouter]]: 라우터
 
 ## 목적
 
 - 비밀번호 관리 : vaultwarden
 - NAS : samba, Nextcloud
 - IoT 관리 : HomeAssistant
-- 개발 서버 
+- 개발 서버
 - 웹 서버
 - 윈도우 : 게임 및 금융용
 
@@ -47,7 +47,7 @@ git, CI를 물려두고 푸쉬 훅을 돌리거나, x86 리눅스가 필요할 �
 ### 웹 서버, 메일 서버
 
 할 필요는 없지만 할 수 있는데 안 할 이유도 없다!
- 
+
 ### 윈도우
 
 가끔 금융 등 환경에서 필요한 경우가 있는데, VM으로 해결 가능한지 도전
@@ -62,7 +62,7 @@ GPU passthrough하여 간단한 스팀 게임 집에서 돌리기.
 - GPU: Intel GeminiLake [UHD Graphics 600]
 - RAM: 8GB
 - MBD: ODROID-H2
-- Storage: 
+- Storage:
 	- OS Storage:  SAMSUNG PM981 M.2 NVMe SSD 256GB
 	- Data Storage: HDD
 
