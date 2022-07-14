@@ -1,5 +1,7 @@
 # UiBox
 
+![UiBox 사진](uibox.jpeg)
+
 작고 조용한 SFF 서버 제작
 
 ## 구성
