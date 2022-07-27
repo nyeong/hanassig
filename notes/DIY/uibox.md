@@ -17,7 +17,7 @@
   - [ ] Nextcloud
 - [ ] HomeAssistant
 - [ ] 개발 서버
-  - [ ] CI 서버
+  - [ ] CI 서버 (Jenkins? GitHub Actions?)
   - [ ] 원격으로 접속하여 쓸 수 있는 개발환경
 - [ ] 웹 서버
 - [ ] 윈도우 (게임 및 금융용)
