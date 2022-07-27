@@ -9,14 +9,18 @@
 - UiBox: 서버
 - [[UiRouter]]: 라우터
 
-## 목적
+## 목표
 
-- 비밀번호 관리 : vaultwarden
-- NAS : samba, Nextcloud
-- IoT 관리 : HomeAssistant
-- 개발 서버
-- 웹 서버
-- 윈도우 : 게임 및 금융용
+- [ ] 비밀번호 관리 (vaultwarden)
+- [ ] NAS
+  - [x] samba
+  - [ ] Nextcloud
+- [ ] HomeAssistant
+- [ ] 개발 서버
+  - [ ] CI 서버
+  - [ ] 원격으로 접속하여 쓸 수 있는 개발환경
+- [ ] 웹 서버
+- [ ] 윈도우 (게임 및 금융용)
 
 ### 비밀번호 관리
 
