@@ -9,7 +9,7 @@
 
 ## 운영체제
 
-- [[macOS 추천 앱]]
+- [[macos-recommended-apps]]
 - [[use-vim-arrow-in-macos]]
 
 ## 참고
