@@ -1,7 +1,7 @@
 # Elixir
 
-- [[모듈-지시자]]
-- [[프로세스]]
+- [[module-directives]]
+- [[process]]
 - [[OTP]]
 - [[dialyxir]]
 - [[bitstrings]]
