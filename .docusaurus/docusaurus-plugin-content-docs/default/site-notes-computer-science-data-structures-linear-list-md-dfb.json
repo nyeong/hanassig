@@ -1,0 +1,24 @@
+{
+  "unversionedId": "computer-science/data-structures/linear-list",
+  "id": "computer-science/data-structures/linear-list",
+  "title": "선형 리스트",
+  "description": "선형 리스트(linear list)는 자료가 순서 있게 나열된 추상적 자료형(ADT)입니다.",
+  "source": "@site/notes/computer-science/data-structures/linear-list.md",
+  "sourceDirName": "computer-science/data-structures",
+  "slug": "/computer-science/data-structures/linear-list",
+  "permalink": "/notes/computer-science/data-structures/linear-list",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/computer-science/data-structures/linear-list.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "자료구조",
+    "permalink": "/notes/computer-science/data-structures/"
+  },
+  "next": {
+    "title": "프로그래밍 언어론",
+    "permalink": "/notes/computer-science/programming-language"
+  }
+}

@@ -3,3 +3,6 @@
 
 # editors
 .obsidian
+
+# node
+node_modules/

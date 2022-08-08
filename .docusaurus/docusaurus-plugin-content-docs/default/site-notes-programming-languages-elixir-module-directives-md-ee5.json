@@ -1,0 +1,24 @@
+{
+  "unversionedId": "programming-languages/elixir/module-directives",
+  "id": "programming-languages/elixir/module-directives",
+  "title": "모듈 지시자",
+  "description": "Module Directives. 모듈을 합성하기 때문에 composition이라고 부르기도 하는 듯.",
+  "source": "@site/notes/programming-languages/elixir/module-directives.md",
+  "sourceDirName": "programming-languages/elixir",
+  "slug": "/programming-languages/elixir/module-directives",
+  "permalink": "/notes/programming-languages/elixir/module-directives",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/programming-languages/elixir/module-directives.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dialyxir 적용하기",
+    "permalink": "/notes/programming-languages/elixir/dialyxir"
+  },
+  "next": {
+    "title": "프로세스",
+    "permalink": "/notes/programming-languages/elixir/process"
+  }
+}

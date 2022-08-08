@@ -1,0 +1,24 @@
+{
+  "unversionedId": "diy/crkbd/README",
+  "id": "diy/crkbd/README",
+  "title": "Corne Keyboard",
+  "description": "corne keyboard 사진",
+  "source": "@site/notes/diy/crkbd/README.md",
+  "sourceDirName": "diy/crkbd",
+  "slug": "/diy/crkbd/",
+  "permalink": "/notes/diy/crkbd/",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/diy/crkbd/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "DIY",
+    "permalink": "/notes/diy/"
+  },
+  "next": {
+    "title": "miryoku",
+    "permalink": "/notes/diy/crkbd/miryoku"
+  }
+}

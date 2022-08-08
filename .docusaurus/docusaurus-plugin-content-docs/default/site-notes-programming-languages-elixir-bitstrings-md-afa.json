@@ -1,0 +1,24 @@
+{
+  "unversionedId": "programming-languages/elixir/bitstrings",
+  "id": "programming-languages/elixir/bitstrings",
+  "title": "Bitstrings",
+  "description": "[[elixir]]는 메모리의 비트열을 [bitstring]이라는 단위로 다룬다.",
+  "source": "@site/notes/programming-languages/elixir/bitstrings.md",
+  "sourceDirName": "programming-languages/elixir",
+  "slug": "/programming-languages/elixir/bitstrings",
+  "permalink": "/notes/programming-languages/elixir/bitstrings",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/programming-languages/elixir/bitstrings.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "OTP",
+    "permalink": "/notes/programming-languages/elixir/OTP"
+  },
+  "next": {
+    "title": "dialyxir 적용하기",
+    "permalink": "/notes/programming-languages/elixir/dialyxir"
+  }
+}

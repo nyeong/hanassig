@@ -1,0 +1,24 @@
+{
+  "unversionedId": "hanassig/README",
+  "id": "hanassig/README",
+  "title": "하나씩",
+  "description": "- 저장소: nyeong/hanassig",
+  "source": "@site/notes/hanassig/README.md",
+  "sourceDirName": "hanassig",
+  "slug": "/hanassig/",
+  "permalink": "/notes/hanassig/",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/hanassig/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UiRouter",
+    "permalink": "/notes/diy/uirouter"
+  },
+  "next": {
+    "title": "프로그래밍 언어",
+    "permalink": "/notes/programming-languages/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "dev-env/tmux",
+  "id": "dev-env/tmux",
+  "title": "tmux",
+  "description": "tmux/tmux",
+  "source": "@site/notes/dev-env/tmux.md",
+  "sourceDirName": "dev-env",
+  "slug": "/dev-env/tmux",
+  "permalink": "/notes/dev-env/tmux",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/dev-env/tmux.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "macOS 추천 앱",
+    "permalink": "/notes/dev-env/macos-recommended-apps"
+  },
+  "next": {
+    "title": "macOS에서 Vim 방향키 사용하기",
+    "permalink": "/notes/dev-env/use-vim-arrow-in-macos"
+  }
+}

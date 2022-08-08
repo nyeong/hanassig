@@ -1,0 +1,183 @@
+{
+  "/__docusaurus/debug-f0f": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/__docusaurus/debug/config-51a": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/__docusaurus/debug/content-97e": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-1c7": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/__docusaurus/debug/metadata-a39": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/__docusaurus/debug/registry-60d": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/__docusaurus/debug/routes-0d4": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugfae-b15"
+    }
+  },
+  "/notes-abd": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---notesadf-429"
+    },
+    "versionMetadata": "versionMetadata---notes-935-164"
+  },
+  "/notes/-4cb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-ed-2-353"
+  },
+  "/notes/computer-science/-f90": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-computer-science-041-556"
+  },
+  "/notes/computer-science/category-theory/-7e9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-computer-science-category-theory-577-a39"
+  },
+  "/notes/computer-science/data-structures/-a44": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-computer-science-data-structures-3-c-0-d29"
+  },
+  "/notes/computer-science/data-structures/linear-list-0dc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-computer-science-data-structures-linear-listdfb-79e"
+  },
+  "/notes/computer-science/programming-language-4c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-computer-science-programming-language-1-e-1-37a"
+  },
+  "/notes/dev-env/-8e1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-ce-7-397"
+  },
+  "/notes/dev-env/git-fe6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-gitb-7-b-a24"
+  },
+  "/notes/dev-env/helix-aea": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-helix-596-f23"
+  },
+  "/notes/dev-env/macos-recommended-apps-e14": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-macos-recommended-appse-62-820"
+  },
+  "/notes/dev-env/tmux-e8a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-tmux-6-e-5-5a2"
+  },
+  "/notes/dev-env/use-vim-arrow-in-macos-b4e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-dev-env-use-vim-arrow-in-macos-488-66f"
+  },
+  "/notes/diy/-16e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-diy-7-b-1-024"
+  },
+  "/notes/diy/crkbd/-746": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-diy-crkbd-24-d-cb7"
+  },
+  "/notes/diy/crkbd/miryoku-230": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-diy-crkbd-miryoku-73-e-372"
+  },
+  "/notes/diy/uibox/-12b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-diy-uibox-047-68f"
+  },
+  "/notes/diy/uirouter-9ef": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-diy-uirouter-9-ed-9b1"
+  },
+  "/notes/hanassig/-f2e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-hanassig-f-1-a-bdd"
+  },
+  "/notes/programming-languages/-379": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-318-a0a"
+  },
+  "/notes/programming-languages/elixir/-49f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-edb-f4c"
+  },
+  "/notes/programming-languages/elixir/bitstrings-f41": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-bitstringsafa-1c1"
+  },
+  "/notes/programming-languages/elixir/dialyxir-a41": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-dialyxir-3-cc-1f3"
+  },
+  "/notes/programming-languages/elixir/module-directives-61a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-module-directivesee-5-993"
+  },
+  "/notes/programming-languages/elixir/OTP-6c0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-otp-253-b6f"
+  },
+  "/notes/programming-languages/elixir/process-a02": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-elixir-process-050-e4a"
+  },
+  "/notes/programming-languages/rust/-882": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-programming-languages-rust-0-bd-d28"
+  },
+  "/notes/side-projects/-9ab": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-side-projects-eb-0-81f"
+  },
+  "/notes/side-projects/nth-weekday-721": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-side-projects-nth-weekdayfb-8-50f"
+  },
+  "/notes/side-projects/sangatsu-9b5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-side-projects-sangatsu-098-9b6"
+  },
+  "/notes/web-backend/-a5f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-web-backend-b-2-e-20a"
+  },
+  "/notes/web-backend/phoenix-framework-0f2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---notes-web-backend-phoenix-frameworkb-1-f-8f3"
+  },
+  "/-bae": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---6-a-0-7a5"
+    },
+    "content": "content---f-39-267"
+  }
+}

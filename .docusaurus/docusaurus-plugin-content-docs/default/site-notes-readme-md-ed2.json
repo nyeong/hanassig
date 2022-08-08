@@ -1,0 +1,20 @@
+{
+  "unversionedId": "README",
+  "id": "README",
+  "title": "하나씩",
+  "description": "배운 것들을 하나씩 정리합니다.",
+  "source": "@site/notes/README.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/notes/",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "컴퓨터 과학",
+    "permalink": "/notes/computer-science/"
+  }
+}

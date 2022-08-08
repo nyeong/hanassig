@@ -1,0 +1,24 @@
+{
+  "unversionedId": "dev-env/git",
+  "id": "dev-env/git",
+  "title": "git",
+  "description": "flow of git",
+  "source": "@site/notes/dev-env/git.md",
+  "sourceDirName": "dev-env",
+  "slug": "/dev-env/git",
+  "permalink": "/notes/dev-env/git",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/dev-env/git.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "개발환경",
+    "permalink": "/notes/dev-env/"
+  },
+  "next": {
+    "title": "helix",
+    "permalink": "/notes/dev-env/helix"
+  }
+}

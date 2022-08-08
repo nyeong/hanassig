@@ -1,0 +1,183 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/notes",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/notes",
+          "mainDocId": "README",
+          "docs": [
+            {
+              "id": "computer-science/category-theory/README",
+              "path": "/notes/computer-science/category-theory/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "computer-science/data-structures/linear-list",
+              "path": "/notes/computer-science/data-structures/linear-list",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "computer-science/data-structures/README",
+              "path": "/notes/computer-science/data-structures/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "computer-science/programming-language",
+              "path": "/notes/computer-science/programming-language",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "computer-science/README",
+              "path": "/notes/computer-science/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/git",
+              "path": "/notes/dev-env/git",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/helix",
+              "path": "/notes/dev-env/helix",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/macos-recommended-apps",
+              "path": "/notes/dev-env/macos-recommended-apps",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/README",
+              "path": "/notes/dev-env/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/tmux",
+              "path": "/notes/dev-env/tmux",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "dev-env/use-vim-arrow-in-macos",
+              "path": "/notes/dev-env/use-vim-arrow-in-macos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diy/crkbd/miryoku",
+              "path": "/notes/diy/crkbd/miryoku",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diy/crkbd/README",
+              "path": "/notes/diy/crkbd/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diy/README",
+              "path": "/notes/diy/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diy/uibox/README",
+              "path": "/notes/diy/uibox/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "diy/uirouter",
+              "path": "/notes/diy/uirouter",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "hanassig/README",
+              "path": "/notes/hanassig/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/bitstrings",
+              "path": "/notes/programming-languages/elixir/bitstrings",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/dialyxir",
+              "path": "/notes/programming-languages/elixir/dialyxir",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/module-directives",
+              "path": "/notes/programming-languages/elixir/module-directives",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/OTP",
+              "path": "/notes/programming-languages/elixir/OTP",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/process",
+              "path": "/notes/programming-languages/elixir/process",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/elixir/README",
+              "path": "/notes/programming-languages/elixir/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/README",
+              "path": "/notes/programming-languages/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "programming-languages/rust/README",
+              "path": "/notes/programming-languages/rust/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "README",
+              "path": "/notes/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "side-projects/nth-weekday",
+              "path": "/notes/side-projects/nth-weekday",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "side-projects/README",
+              "path": "/notes/side-projects/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "side-projects/sangatsu",
+              "path": "/notes/side-projects/sangatsu",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "web-backend/phoenix-framework",
+              "path": "/notes/web-backend/phoenix-framework",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "web-backend/README",
+              "path": "/notes/web-backend/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/notes/",
+                "label": "README"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

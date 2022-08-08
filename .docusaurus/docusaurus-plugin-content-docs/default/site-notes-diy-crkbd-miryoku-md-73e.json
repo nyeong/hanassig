@@ -1,0 +1,24 @@
+{
+  "unversionedId": "diy/crkbd/miryoku",
+  "id": "diy/crkbd/miryoku",
+  "title": "miryoku",
+  "description": "manna-harbour/miryoku",
+  "source": "@site/notes/diy/crkbd/miryoku.md",
+  "sourceDirName": "diy/crkbd",
+  "slug": "/diy/crkbd/miryoku",
+  "permalink": "/notes/diy/crkbd/miryoku",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/diy/crkbd/miryoku.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Corne Keyboard",
+    "permalink": "/notes/diy/crkbd/"
+  },
+  "next": {
+    "title": "UiBox",
+    "permalink": "/notes/diy/uibox/"
+  }
+}

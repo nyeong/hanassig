@@ -1,0 +1,24 @@
+{
+  "unversionedId": "diy/uibox/README",
+  "id": "diy/uibox/README",
+  "title": "UiBox",
+  "description": "UiBox 사진",
+  "source": "@site/notes/diy/uibox/README.md",
+  "sourceDirName": "diy/uibox",
+  "slug": "/diy/uibox/",
+  "permalink": "/notes/diy/uibox/",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/diy/uibox/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "miryoku",
+    "permalink": "/notes/diy/crkbd/miryoku"
+  },
+  "next": {
+    "title": "UiRouter",
+    "permalink": "/notes/diy/uirouter"
+  }
+}
