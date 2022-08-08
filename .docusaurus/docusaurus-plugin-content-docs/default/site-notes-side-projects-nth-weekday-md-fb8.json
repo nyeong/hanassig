@@ -1,0 +1,24 @@
+{
+  "unversionedId": "side-projects/nth-weekday",
+  "id": "side-projects/nth-weekday",
+  "title": "오늘은 몇 주차",
+  "description": "오늘은 몇 주차",
+  "source": "@site/notes/side-projects/nth-weekday.md",
+  "sourceDirName": "side-projects",
+  "slug": "/side-projects/nth-weekday",
+  "permalink": "/notes/side-projects/nth-weekday",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/side-projects/nth-weekday.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "사이드 프로젝트",
+    "permalink": "/notes/side-projects/"
+  },
+  "next": {
+    "title": "sangatsu",
+    "permalink": "/notes/side-projects/sangatsu"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "programming-languages/elixir/OTP",
+  "id": "programming-languages/elixir/OTP",
+  "title": "OTP",
+  "description": "OTP; Open Telecom Platform. 옛날에는 전화 교환기, 스위치를 만드는 데에 쓰여서 이름이 저렇다.",
+  "source": "@site/notes/programming-languages/elixir/OTP.md",
+  "sourceDirName": "programming-languages/elixir",
+  "slug": "/programming-languages/elixir/OTP",
+  "permalink": "/notes/programming-languages/elixir/OTP",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/programming-languages/elixir/OTP.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Elixir",
+    "permalink": "/notes/programming-languages/elixir/"
+  },
+  "next": {
+    "title": "Bitstrings",
+    "permalink": "/notes/programming-languages/elixir/bitstrings"
+  }
+}

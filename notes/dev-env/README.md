@@ -1,6 +1,6 @@
 # 개발환경
 
-- 🐚 셸: [[zsh]]
+- 🐚 셸: zsh
 - 📝 텍스트 편집기: [[helix]], VS Code with Dance
 - 🖥터미널 레이아웃: [[tmux]]
 - 📂 파일 탐색기: [[lf]]
@@ -9,9 +9,5 @@
 
 ## 운영체제
 
-- [[macos-recommended-apps]]
-- [[use-vim-arrow-in-macos]]
-
-## 참고
-
-- [[the-missing-semester]]
+- [macOS 추천 앱](macos-recommended-apps.md)
+- [macOS에서 Vim 방향키 사용하기](use-vim-arrow-in-macos.md)

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "programming-languages/elixir/dialyxir",
+  "id": "programming-languages/elixir/dialyxir",
+  "title": "dialyxir 적용하기",
+  "description": "mix 프로젝트에서 mix.exs를 열고 deps/0에 다음을 추가한다.",
+  "source": "@site/notes/programming-languages/elixir/dialyxir.md",
+  "sourceDirName": "programming-languages/elixir",
+  "slug": "/programming-languages/elixir/dialyxir",
+  "permalink": "/notes/programming-languages/elixir/dialyxir",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/programming-languages/elixir/dialyxir.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bitstrings",
+    "permalink": "/notes/programming-languages/elixir/bitstrings"
+  },
+  "next": {
+    "title": "모듈 지시자",
+    "permalink": "/notes/programming-languages/elixir/module-directives"
+  }
+}

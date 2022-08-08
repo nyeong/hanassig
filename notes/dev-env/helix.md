@@ -1,4 +1,4 @@
-# Helix
+# helix
 
 [helix-editor/helix](https://github.com/helix-editor/helix)
 
@@ -6,31 +6,33 @@ Rust로 쓴 모달 에디터.
 
 ## 특징
 
-- selection-first 모달 에디터
-  - kakoune의 영향을 받음
-- tree-sitter 기반 하이라이팅
+- 터미널에서 돌아가는 편집기
+  - SSH로 서버에 접속했을 때에도 쓸 수 있다.
+  - tmux와 같은 터미널 멀티플렉서와 쓸 수 있다.
+  - 메모리를 적게 먹는다.
+  - `|`, `!` 같이 쉘 명령어에 넘길 수 있는 파이프라인이 있다.
+- 모드가 있는 편집기 (modal editor)
+  - [vim]처럼 일반모드, 입력모드 등등 모드가 있다.
+- 선택 기반 모달 에디터
+  - [kakoune]처럼 선택 → 명령 순서로 명령어를 입력한다.
+  - 명령어가 영향을 미칠 대상이 직관적으로 보여서 좋다.
+  - vim은 명령 → 선택 순으로 명령어를 입력하는데, 복잡한 선택을 할 때에는 많이 헷갈린다.
+- 다중 선택 지원
+  - 다중 선택을 기본으로 지원하여 편리하다.
 - LSP 내장
+  - LSP를 지원하는 언어는 IDE와 비슷하게 사용할 수 있다.
+  - 별도로 설정할 필요가 없어서 편하다.
 
-### kakoune과 다른점
+[vim]: https://www.vim.org/
+[kakoune]: https://kakoune.org/
 
-내장 도구가 많다.
+## 다른 모달 에디터와 다른점
 
-kakoune은 다른 도구와 함께 쓰는 것을 권장한다.
-vim과 같은 윈도우 기능도 기본적으로 없고, `i3`나 `tmux` 등의 프로그램과 함께 쓰기를 권한다.
+### 모드
 
-helix는 기본 설정만으로 충분히 쓸만할 것을 목표한다.[^1] 다른 에디터에서는 굳이 구현하지
-않는 퍼지 파일 탐색기 등도 내장되어있다.
+### 윈도우
 
-[^1]: https://github.com/helix-editor/helix/blob/master/docs/vision.md
-
-## 설정
-
-`~/.config/helix/config.toml` 파일로 설정한다.
-
-아직 별로 할 수 있는 설정이 없긴 한데... `[editor]` 섹션에서 `line-number`는 `relative`로 설정하는 것이 편하다.
-위 아래로 몇 줄 떨어져있는지 바로 보여 숫자와 명령어를 바로 조합할 수 있다.
-
-![[helix-relative-line-number.png]]
+### 플러그인
 
 ## 자주 쓰는 키
 
@@ -43,3 +45,7 @@ vim과 다르게 kakoune처럼 모드 -> 조합
   kakoune에서 `e`로 선택하고, 더 늘리려면 `<s-e>`를 누르면 되는데, helix에서는 `ve`를 누르면 된다.
 - `g`: goto 모드
 - `m`: match 모드
+
+## 참고
+
+- [Vim 도대체 왜 쓰는가 - Bengi의 잉여로그](https://bengi.kr/1349)

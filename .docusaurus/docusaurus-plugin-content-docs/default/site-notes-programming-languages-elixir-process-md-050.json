@@ -1,0 +1,24 @@
+{
+  "unversionedId": "programming-languages/elixir/process",
+  "id": "programming-languages/elixir/process",
+  "title": "프로세스",
+  "description": "생성",
+  "source": "@site/notes/programming-languages/elixir/process.md",
+  "sourceDirName": "programming-languages/elixir",
+  "slug": "/programming-languages/elixir/process",
+  "permalink": "/notes/programming-languages/elixir/process",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/programming-languages/elixir/process.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "모듈 지시자",
+    "permalink": "/notes/programming-languages/elixir/module-directives"
+  },
+  "next": {
+    "title": "Rust",
+    "permalink": "/notes/programming-languages/rust/"
+  }
+}

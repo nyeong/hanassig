@@ -1,0 +1,24 @@
+{
+  "unversionedId": "diy/uirouter",
+  "id": "diy/uirouter",
+  "title": "UiRouter",
+  "description": "ipTIME AX2004M + OpenWrt",
+  "source": "@site/notes/diy/uirouter.md",
+  "sourceDirName": "diy",
+  "slug": "/diy/uirouter",
+  "permalink": "/notes/diy/uirouter",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/diy/uirouter.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UiBox",
+    "permalink": "/notes/diy/uibox/"
+  },
+  "next": {
+    "title": "하나씩",
+    "permalink": "/notes/hanassig/"
+  }
+}

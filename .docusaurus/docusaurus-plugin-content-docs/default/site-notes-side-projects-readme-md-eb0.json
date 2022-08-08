@@ -1,0 +1,24 @@
+{
+  "unversionedId": "side-projects/README",
+  "id": "side-projects/README",
+  "title": "사이드 프로젝트",
+  "description": "- [[nth-weekday]]",
+  "source": "@site/notes/side-projects/README.md",
+  "sourceDirName": "side-projects",
+  "slug": "/side-projects/",
+  "permalink": "/notes/side-projects/",
+  "draft": false,
+  "editUrl": "https://github.com/nyeong/hanassig/edit/main/notes/side-projects/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Rust",
+    "permalink": "/notes/programming-languages/rust/"
+  },
+  "next": {
+    "title": "오늘은 몇 주차",
+    "permalink": "/notes/side-projects/nth-weekday"
+  }
+}
