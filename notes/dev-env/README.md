@@ -1,7 +1,9 @@
 # 개발환경
 
+> 나쁜 목수는 언제나 연장 탓을 한다
+
 - 🐚 셸: zsh
-- 📝 텍스트 편집기: helix, VS Code with Dance
+- 📝 텍스트 편집기: helix
 - 🖥터미널 레이아웃: tmux
 - 📂 파일 탐색기: lf
 - 📈 시스템 모니터링: `bottom`, `htop`
