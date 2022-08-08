@@ -7,7 +7,7 @@
 ## 구성
 
 - UiBox: 서버
-- [[UiRouter]]: 라우터
+- UiRouter: 라우터
 
 ## 목표
 
