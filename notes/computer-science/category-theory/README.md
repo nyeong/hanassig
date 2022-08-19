@@ -3,6 +3,7 @@
 **Category Theory for Programmers**를 읽고 정리합니다.
 
 - [합성과 프로그래밍](composition-and-programming)
+- [타입은 집합이다](types-are-sets)
 
 ## 참고자료
 
