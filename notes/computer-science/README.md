@@ -6,7 +6,7 @@
 
 - [카테고리 이론](category-theory/README.md)
 - [자료구조](data-structures/README.md)
-- 알고리즘
+- [알고리즘](algorithms)
 - 운영체제
 - 데이터베이스
 - 머신러닝
