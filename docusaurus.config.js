@@ -88,7 +88,7 @@ async function createConfig() {
         prism: {
           theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
-          additionalLanguages: ['elixir', 'ruby', 'haskell', 'rust']
+          additionalLanguages: ['elixir', 'ruby', 'haskell', 'rust', 'java']
         },
       }),
   };
