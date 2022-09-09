@@ -8,6 +8,7 @@
 
 - 키캡: 까먹었다
 - 스위치: 게이트론 저소음 갈축
+  - 나중에 그냥 갈축으로 바꿔야지
 - MCU: ELITE-C, nice!nano
 - 케이스: 3D printed
 - 펌웨어: QMK, ZMK
