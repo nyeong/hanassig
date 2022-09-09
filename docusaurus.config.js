@@ -5,6 +5,14 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const now = (function() {
+  const now = new Date(Date.now());
+  const year = now.getFullYear().toString().slice(2);
+  const month = now.getMonth() + 1;
+  const date = now.getDate();
+  
+  return `${year}년 ${month}월 ${date}일`
+})();
 
 async function createConfig() {
   const smartypants = (await import('remark-smartypants')).default;
@@ -83,7 +91,7 @@ async function createConfig() {
           ],
         },
         footer: {
-          copyright: `Copyright © ${new Date().getFullYear()} An Nyeong, Inc. Built with Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} An Nyeong. ${now}에 업데이트됨.`,
         },
         prism: {
           theme: lightCodeTheme,
