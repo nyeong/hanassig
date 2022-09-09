@@ -9,6 +9,10 @@
 - 📈 시스템 모니터링: `bottom`, `htop`
 - 버전 관리자: git
 
+## 시스템
+
+- [UiBook](UiBook) - 리눅스 랩탑
+
 ## 운영체제
 
 - [macOS 추천 앱](macos-recommended-apps.md)
