@@ -12,6 +12,8 @@
 ## 시스템
 
 - [UiBook](UiBook) - 리눅스 랩탑
+- MacBook Air (M1, 2020)
+- ODROID H2
 
 ## 운영체제
 

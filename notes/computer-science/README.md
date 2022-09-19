@@ -10,3 +10,9 @@
 - 운영체제
 - 데이터베이스
 - 머신러닝
+
+## 참고
+
+- [GitHub: EbookFoundation/free-programming-books]
+
+[GitHub: EbookFoundation/free-programming-books]: https://github.com/EbookFoundation/free-programming-books
