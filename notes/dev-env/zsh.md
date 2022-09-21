@@ -137,7 +137,7 @@ $ echo $((i += 10))
 
 아래와 같이 쓸 수 있다.
 
-```zsh
+```bash
 export EDITOR=vi
 
 if (( $+commands[vim] )); then
