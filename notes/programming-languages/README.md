@@ -1,8 +1,8 @@
 # 프로그래밍 언어
 
-- [[elixir]]
-- [[rust]]
-- [[ruby]]
+- [elixir](elixir)
+- [rust](rust)
+- [ruby](ruby)
 
 ## 참고
 
