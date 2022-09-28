@@ -1,7 +1,7 @@
 # Elixir
 
-- [[module-directives]]
-- [[process]]
-- [[OTP]]
-- [[dialyxir]]
-- [[bitstrings]]
+- [module-directives](module-directives)
+- [process](process)
+- [OTP](OTP)
+- [dialyxir](dialyxir)
+- [bitstrings](bitstrings)
