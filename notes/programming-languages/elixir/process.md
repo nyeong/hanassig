@@ -61,8 +61,30 @@ def loop do
     {:ok, message} ->
       IO.puts "do something with #{message}"
   end
-  loop # 꼬리재귀 최적화된다
+  loop
 end
+```
+
+### 상태 유지
+
+프로세스는 엘릭서에서 상태를 다루는 방법 중 하나이다. 프로세스가 루프의 인자로
+상태를 들고 있으면, 다른 프로세스에서 활용할 수 있다.
+
+```elixir
+# a loop for stack process
+def loop([h | l] = state) do
+  receive do
+    {:push, elem} ->
+      loop([elem | state])
+
+    {:pop, caller} ->
+      send caller, h
+      loop(l)
+  end
+end
+
+iex> send stack, {:push, 1}
+iex> send stack, {:pop, self()}
 ```
 
 ### 상태 전파

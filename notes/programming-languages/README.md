@@ -2,7 +2,7 @@
 
 - [elixir](elixir)
 - [rust](rust)
-- [ruby](ruby)
+- ruby
 
 ## 참고
 
