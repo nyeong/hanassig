@@ -20,6 +20,7 @@ async function createConfig() {
   return {
     title: '하나씩',
     tagline: '배운 것들을 하나씩 정리합니다',
+    staticDirectories: ['public', 'static'],
     url: 'https://annyeong.me',
     baseUrl: '/',
     onBrokenLinks: 'throw',
