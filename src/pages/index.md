@@ -8,7 +8,7 @@
 고쳐야 할 점이 있다면 [저장소 이슈]나 [트위터]를 통해 연락주시면 반영하겠습니다.
 
 [저장소 이슈]: https://github.com/nyeong/hanassig/issues "nyeong/hanassig"
-[트위터]: https://twitter.com/@compiztab "@compiztab"
+[트위터]: https://planet.moe/@annyeong "@annyeong"
 
 [노트]에는 제가 배운 내용을 계층 형식으로 정리하여 올리고 있습니다.
 [블로그]에는 제가 보고 느낀 것을 줄글로 올리고 있습니다.
