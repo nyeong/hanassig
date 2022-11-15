@@ -1,12 +1,2 @@
 # macOS
 .DS_Store
-
-# editors
-.obsidian
-
-# node
-node_modules/
-
-# docusaurus
-build
-.docusaurus

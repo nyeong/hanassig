@@ -1,0 +1,142 @@
+{
+  "main": {
+    "id": "b85dd30f32fb1aa6",
+    "type": "split",
+    "children": [
+      {
+        "id": "427b23697297f117",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e71df5a142e2ba2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e88b5e06d9f8cc5",
+    "type": "split",
+    "children": [
+      {
+        "id": "0e7e902964d8f581",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f35309c7c67187ed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "146c967e2567575c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "46657d9383b290fa",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 209.5
+  },
+  "right": {
+    "id": "2e3b80f1ded68c1a",
+    "type": "split",
+    "children": [
+      {
+        "id": "2703f1dc15e82e66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5749988f75143b0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4d51400d9039ef7e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "066d4b2f580aaeec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4ee3c8630c858e71",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3e71df5a142e2ba2",
+  "lastOpenFiles": [
+    "유명한-코드진행.md",
+    "기타.md",
+    "개발환경.md",
+    "타입은-집합이다.md",
+    "macOS-추천-앱.md",
+    "miryoku.md",
+    "UiBox.md",
+    "index.md"
+  ]
+}
