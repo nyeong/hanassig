@@ -1,5 +1,3 @@
-# Corne Keyboard
-
 3x6 사이즈 + 3 엄지 세로 스테거 스플릿 키보드
 
 ![corne keyboard 사진](crkbd.jpeg)
