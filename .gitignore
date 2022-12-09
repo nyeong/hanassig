@@ -1,12 +1,6 @@
 # macOS
 .DS_Store
 
-# editors
-.obsidian
+.obsidian/
 
-# node
-node_modules/
-
-# docusaurus
-build
-.docusaurus
+.markaron.toml
