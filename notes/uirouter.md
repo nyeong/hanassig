@@ -1,13 +1,18 @@
+---
+title: "uirouter"
+---
+# uirouter
+
 ipTIME AX2004M + OpenWrt
 
 OpenWrt를 활용하여 집 공유기를 보다 다목적으로 사용해보자.
 
-# OpenWrt
+##### OpenWrt
 
 [OpenWrt](https://openwrt.org/)는 임베디드 기기를 위한 리눅스이다. 주로 라우터에 사용된다.
 온전한 리눅스 배포판이므로 일반 공유기에 OpenWrt를 설치하여 라즈베리 파이처럼 임베디드 컴퓨터로서 다룰 수 있다.
 
-# 활용
+##### 활용
 
 1. VPN 서버 - [[install-wireguard]]
 2. 웹 프록시 서버
@@ -20,7 +25,7 @@ OpenWrt를 활용하여 집 공유기를 보다 다목적으로 사용해보자.
 3. 네트워크 프린터 만들기
 4. QoS
 
-# 참고
+##### 참고
 
 - [OpenWrt](https://openwrt.org/)
 - [ipTIME AX2004M용 OpenWrt](https://kasugano.tistory.com/m/157)

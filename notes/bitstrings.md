@@ -1,8 +1,13 @@
+---
+title: "bitstrings"
+---
+# bitstrings
+
 [[elixir]]는 메모리의 비트열을 [bitstring]이라는 단위로 다룬다.
 
 [bitstring]: https://elixir-lang.org/getting-started/binaries-strings-and-char-lists.html#bitstrings
 
-# 기본 표기
+## 기본 표기
 
 `bitstring` 리터럴은 기본적으로 8비트, 즉 1바이트 단위로 값을 표기한다.
 
@@ -49,7 +54,7 @@ iex> Base.encode16(<<255, 255, 255>>)
 "FFFFFF"
 ```
 
-# 타입
+## 타입
 
 - `<<>>`
 - `binary()` = `<<_::_*8>>`

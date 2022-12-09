@@ -1,5 +1,10 @@
+---
+title: "zsh"
+---
+# zsh
 
-# 이상한 괄호쌍
+
+## 이상한 괄호쌍
 
 쉘을 쓰다 보면 너무나도 다양한 괄호쌍이 나온다... 헷갈려서 정리했다.
 
@@ -20,7 +25,7 @@
 [^2]: https://www.gnu.org/software/bash/manual/html_node/Shell-Arithmetic.html
 [^3]: https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html
 
-## 대괄호
+### 대괄호
 
 `[ ]`(단일 대괄호, *single bracket*), `[[ ]]`(이중 대괄호, *double bracket*)
 모두 조건 검사에 쓴다.
@@ -42,7 +47,7 @@ POSIX 호환 문법이다.[^4]
 
 [^5]:https://wiki.bash-hackers.org/scripting/obsolete
 
-## 중괄호
+### 중괄호
 
 `{ }`(중괄호, *braces, curly braces*)는 문자열의 리스트를 만들 때 쓴다.
 
@@ -68,9 +73,9 @@ $ touch {가..힣} # 왜 이런 짓을...?
 ```bash
 $ DIR_PREFIX=hello
 $ echo $DIR_PREFIX_world
-# 
+## 
 $ echo ${DIR_PREFIX}_world
-# hello_world
+## hello_world
 ```
 
 옵션으로 확장하면 다양한 기능을 함께 쓸 수 있다. `${var=str}` 문법은 `var`
@@ -86,14 +91,14 @@ $ ${EDITOR=vim} config
 
 [Shell parameter Expansion]: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 
-## 소괄호
+### 소괄호
 
 `( )`(단일 소괄호, *single parentheses*)는 배열을 만들 때 쓴다.
 
 ```bash
 $ array=(1 2 3)
 $ $array
-# 1 2 3
+## 1 2 3
 ```
 
 `(( ))`(이중 소괄호, *double parentheses*)는 산술 연산에 쓴다.
@@ -101,11 +106,11 @@ $ $array
 ```bash
 $ i=10
 $ i+=10
-# i = 1010
+## i = 1010
 
 $ i=10
 $ ((i += 10))
-# i = 20
+## i = 20
 ```
 
 `$(( ))`(산술 확장문, *arithmetic expansion*)은 산술 계산 후 결과값으로
@@ -113,14 +118,14 @@ $ ((i += 10))
 
 ```bash
 $ echo ((i += 10))
-# zsh: no maches found: ((i += 10))
+## zsh: no maches found: ((i += 10))
 $ echo $((i += 10))
-# 30
+## 30
 ```
 
-# 팁
+## 팁
 
-## 특정 명령어가 있는지 확인하기
+### 특정 명령어가 있는지 확인하기
 
 `(( $+commands[foobar] ))` 쓰면 된다.
 
