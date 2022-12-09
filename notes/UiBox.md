@@ -1,13 +1,18 @@
-![UiBox 사진](uibox.jpeg)
+---
+title: "uibox"
+---
+# uibox
+
+![UiBox 사진](assets/uibox.jpeg)
 
 작고 조용한 SFF 서버 제작
 
-# 구성
+## 구성
 
 - UiBox: 서버
 - UiRouter: 라우터
 
-# 목표
+## 목표
 
 - [ ] 비밀번호 관리 (vaultwarden)
 - [ ] NAS
@@ -20,7 +25,7 @@
 - [ ] 웹 서버
 - [ ] 윈도우 (게임 및 금융용)
 
-## 비밀번호 관리
+### 비밀번호 관리
 
 [bitwarden](https://bitwarden.com/)
 
@@ -28,7 +33,7 @@
 
 - [danci-garcia/vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
-## NAS 서버
+### NAS 서버
 
 대학 공부 자료, PDF, 전자책 뿐 아니라 친구, 가족과 찍은 사진도 저장한다.
 
@@ -36,31 +41,31 @@ TrueNAS나 OMV 같은 나스용 OS가 필요한지는... 고민해보자.
 
 - nextcloud
 
-## IoT 관리
+### IoT 관리
 
 [Home Assistant](https://www.home-assistant.io/installation/)
 
 IoT 관리를 위한 경량 서버를 설치하여 집의 스마트 전구를 관리하자.
 
-## 개발 서버
+### 개발 서버
 
 git, CI를 물려두고 푸쉬 훅을 돌리거나, x86 리눅스가 필요할 때 요긴하게 사용하자.
 
 예로, 키보드를 만들때 QMK 개발환경을 M1 macOS에 구축하는게 번거로운데, 서버에서 작업하고 펌웨어를 내려받으면 된다.
 
-## 웹 서버, 메일 서버
+### 웹 서버, 메일 서버
 
 할 필요는 없지만 할 수 있는데 안 할 이유도 없다!
 
-## 윈도우
+### 윈도우
 
 가끔 금융 등 환경에서 필요한 경우가 있는데, VM으로 해결 가능한지 도전
 
 GPU passthrough하여 간단한 스팀 게임 집에서 돌리기.
 
-# 구성
+## 구성
 
-## 하드웨어
+### 하드웨어
 
 - CPU: Intel Celeron J4105 (4) @ 2.5GHz
 - GPU: Intel GeminiLake [UHD Graphics 600]
@@ -70,7 +75,7 @@ GPU passthrough하여 간단한 스팀 게임 집에서 돌리기.
 	- OS Storage:  SAMSUNG PM981 M.2 NVMe SSD 256GB
 	- Data Storage: HDD
 
-## 소프트웨어 레이어
+### 소프트웨어 레이어
 
 - Proxmox VE
   - Windoes VM
@@ -79,7 +84,7 @@ GPU passthrough하여 간단한 스팀 게임 집에서 돌리기.
   - DevServer CT
   - WebServer CT
 
-# 참고
+## 참고
 
 - [Proxmox VE Wiki](https://pve.proxmox.com/wiki/Main_Page)
 - [The Perfect Home Server Build! 18TB, 10Gbit LAN, Quiet & Compact](https://www.youtube.com/watch?v=qACTvCW_yDc)
