@@ -18,5 +18,5 @@ jobs:
             -XPOST \
             -u "${{ secrets.WORKFLOW_AUTH }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/repos/nyeong/hanassig-pub/actions/workflows/build.yml/dispatches" \
+            "https://api.github.com/repos/nyeong/hanassig-pub/actions/workflows/deploy.yaml/dispatches" \
             -d '{"ref": "hugo", "inputs": {"job": "build"}}'
