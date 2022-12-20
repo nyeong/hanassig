@@ -1,7 +1,7 @@
 ---
 title: "miryoku"
 ---
-# miryoku
+
 
 36개의 키만으로 구현 가능한 키배열. home-row mod와 엄지키를 이용한 레이아웃
 활용이 특징이다.

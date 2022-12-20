@@ -1,7 +1,7 @@
 ---
 title: "uibox"
 ---
-# uibox
+
 
 ![UiBox 사진](assets/uibox.jpeg)
 

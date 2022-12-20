@@ -1,7 +1,7 @@
 ---
 title: "bitstrings"
 ---
-# bitstrings
+
 
 [[elixir]]는 메모리의 비트열을 [bitstring]이라는 단위로 다룬다.
 

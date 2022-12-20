@@ -1,7 +1,6 @@
 ---
 title: "sed"
 ---
-# sed
 
 CLI에서 파일을 편집하는 도구.
 
@@ -51,5 +50,6 @@ fd -e 'md' --exec zsh -c 'sed -i "" "1s/^/---\ntitle: \"{/.}\"\n---\n/" "{}" | h
 
 ## 참고
 
+- [Introduction | Introduction](https://mug896.github.io/sed-stream-editor/)
 - 이종립, [새로 입사한 개발자가 프로젝트에 기여하는 방법 한 가지](https://helloworld.kurly.com/blog/fix-style-with-command/), 2020
 - [Fetching Title#uf3k](https://catonmat.net/proof-that-sed-is-turing-complete)

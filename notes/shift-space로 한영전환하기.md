@@ -1,7 +1,7 @@
 ---
 title: "shift-space로 한영전환하기"
 ---
-# shift-space로 한영전환하기
+
 
 언제부턴가 한/영 전환에 shift-space가 설정 안 되게 바뀌었다. 아래의 방법으로 강제로 가능하다.
 

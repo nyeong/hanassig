@@ -1,7 +1,7 @@
 ---
 title: "METT-TC"
 ---
-# METT-TC
+
 
 - **M**: mission
 - **E**: enemy
