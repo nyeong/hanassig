@@ -1,7 +1,6 @@
 ---
 title: "helix"
 ---
-# helix
 
 A post-modern text editor.
 
@@ -28,4 +27,5 @@ finder를 포함해서 별도로 이들을 설치할 필요가 없다.
 
 ## 관련
 
+- [[helix에서 하이라이팅 안 될 때]]
 - [[helix에서 마크다운 편집하기]]

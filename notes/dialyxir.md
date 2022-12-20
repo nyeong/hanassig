@@ -1,7 +1,7 @@
 ---
 title: "dialyxir"
 ---
-# dialyxir
+
 
 mix 프로젝트에서 `mix.exs`를 열고 `deps/0`에 다음을 추가한다.
 
