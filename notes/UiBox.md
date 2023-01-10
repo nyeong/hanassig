@@ -1,5 +1,6 @@
 ---
-title: "uibox"
+title: "UiBox"
+tags: [DIY]
 ---
 
 
