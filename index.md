@@ -11,7 +11,7 @@ tags: []
 고쳐야 할 점이 있다면 [저장소 이슈](https://github.com/nyeong/hanassig/issues/new)
 혹은 연합우주를 통해 연락주시면 반영하겠습니다.
 
-- [연합우주 (@annyeong@misskey.dev)](https://misskey.dev/@annyeong)
+- [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)
 - [전체 글 목록](https://annyeong.me/notes/)
 - [전체 태그 목록](https://annyeong.me/tags/)
 
