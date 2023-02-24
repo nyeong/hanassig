@@ -1,19 +1,18 @@
 ---
-title: "zsh"
+title: zsh
+slug: zsh
 ---
-
-
 
 ## 이상한 괄호쌍
 
-쉘을 쓰다 보면 너무나도 다양한 괄호쌍이 나온다... 헷갈려서 정리했다.
+쉘을 쓰다 보면 너무나도 다양한 괄호쌍이 나온다. 헷갈려서 정리했다.
 
 대괄호, 중괄호, 소괄호를 영어로는 각각 brackets, curly braces, parenthese라고
 한다.
 
 - 단일 대괄호(`[ ]`): 조건 표현문. POSIX 표준[^1]
 - 이중 대괄호(`[[ ]]`): `[`의 개선판.
-- 중괄호(`{ }`): 중괄호 확장문(*brace expansion*)[^3]
+- 중괄호(`{ }`): 중괄호 확장문(_brace expansion_)[^3]
 - 단일 소괄호(`( )`): 배열 표현.
 - 이중 소괄호(`(( ))`): 산술 표현문.[^2]
 - 산술 확장문(`$[ ]`): 더 이상 쓰지 않는다.
@@ -27,7 +26,7 @@ title: "zsh"
 
 ### 대괄호
 
-`[ ]`(단일 대괄호, *single bracket*), `[[ ]]`(이중 대괄호, *double bracket*)
+`[ ]`(단일 대괄호, _single bracket_), `[[ ]]`(이중 대괄호, _double bracket_)
 모두 조건 검사에 쓴다.
 
 `[ ]`는 조건 검사 명령어이다. 보통 `/bin/[`에 위치하며 `/bin/test`와 동치이다.
@@ -40,16 +39,16 @@ POSIX 호환 문법이다.[^4]
 
 자세한 사용법은 [Bash Conditional Expressions] 참고.
 
-[Bash Conditional Expressions]: https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
+[bash conditional expressions]: https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
 
-`$[ ]`(산술 대치문, *arithmetic expansion*)은 `$(( ))`로 대치되어 현재는 쓰지
+`$[ ]`(산술 대치문, _arithmetic expansion_)은 `$(( ))`로 대치되어 현재는 쓰지
 않는다.[^5]
 
-[^5]:https://wiki.bash-hackers.org/scripting/obsolete
+[^5]: https://wiki.bash-hackers.org/scripting/obsolete
 
 ### 중괄호
 
-`{ }`(중괄호, *braces, curly braces*)는 문자열의 리스트를 만들 때 쓴다.
+`{ }`(중괄호, _braces, curly braces_)는 문자열의 리스트를 만들 때 쓴다.
 
 아래의 두 명령어는 똑같다. `{ }`를 이용하여 간편하게 줄여 쓸 수 있다.
 
@@ -65,15 +64,15 @@ $ mkdir test_dir_{00..99..2}
 $ touch {가..힣} # 왜 이런 짓을...?
 ```
 
-`${ }`(변수 확장문, *parameter expansion*)을 쓰면 변수를 결과값으로
-대치(*substitute*)할 뿐 아니라, 여러가지 옵션으로 확장할 수 있다.
+`${ }`(변수 확장문, _parameter expansion_)을 쓰면 변수를 결과값으로
+대치(_substitute_)할 뿐 아니라, 여러가지 옵션으로 확장할 수 있다.
 
 변수와 뒤에 오는 문자열을 구분해야 할 경우 `$var` 대신 쓸 수 있다.
 
 ```bash
 $ DIR_PREFIX=hello
 $ echo $DIR_PREFIX_world
-## 
+##
 $ echo ${DIR_PREFIX}_world
 ## hello_world
 ```
@@ -89,11 +88,11 @@ $ ${EDITOR=vim} config
 
 그 외의 옵션은 [Shell parameter Expansion] 참고.
 
-[Shell parameter Expansion]: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
+[shell parameter expansion]: https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 
 ### 소괄호
 
-`( )`(단일 소괄호, *single parentheses*)는 배열을 만들 때 쓴다.
+`( )`(단일 소괄호, _single parentheses_)는 배열을 만들 때 쓴다.
 
 ```bash
 $ array=(1 2 3)
@@ -101,7 +100,7 @@ $ $array
 ## 1 2 3
 ```
 
-`(( ))`(이중 소괄호, *double parentheses*)는 산술 연산에 쓴다.
+`(( ))`(이중 소괄호, _double parentheses_)는 산술 연산에 쓴다.
 
 ```bash
 $ i=10
@@ -113,7 +112,7 @@ $ ((i += 10))
 ## i = 20
 ```
 
-`$(( ))`(산술 확장문, *arithmetic expansion*)은 산술 계산 후 결과값으로
+`$(( ))`(산술 확장문, _arithmetic expansion_)은 산술 계산 후 결과값으로
 대치된다.
 
 ```bash

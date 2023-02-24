@@ -1,20 +1,20 @@
 ---
-title: "miryoku"
+title: miryoku
+slug: miryoku
+description: 
+date: 2023-02-24
+tags:
 ---
-
 
 36개의 키만으로 구현 가능한 키배열. home-row mod와 엄지키를 이용한 레이아웃
 활용이 특징이다.
 
 [manna-harbour/miryoku](https://github.com/manna-harbour/miryoku)
 
-[[Corne Keyboard]]에 miryoku flip inverted T 배열을 변형하여 쿼티 기반으로
+[[my-new-gears#Corne Keyboard]]에 miryoku flip inverted T 배열을 변형하여 쿼티 기반으로
 [사용중](https://github.com/nyeong/zmk-config/commit/50526193a33168c58b006f9b6b8ef15e95ee08b3) (2022-03-31)
 
-
-## 레이아웃
-
-### home-row mods
+## home-row mods
 
 컨트롤, 알트, GUI 등 모드 키를 손이 기본 위치하는 2열(A, S, D, F, J, K, L, ;)에 두자는 생각이다.
 
@@ -123,7 +123,7 @@ ZMK 펌웨어에서는 아직 마우스 키를 지원하지 않기 때문에 이
 ## 개선 여지
 
 - home row mod로 할당된 키들은 꾹 눌러서 입력이 불가능하다
-  - 양손 검지로 누르는 안쪽열 키(`g`, `k`)를 누르고 있으면 home row mod가 풀리도록?
+  - [x] 양손 검지로 누르는 안쪽열 키(`g`, `k`)를 누르고 있으면 home row mod가 풀리도록?
 - 한 손으로 할 수 있는 것들이 적다.
 - 매크로 등 편의기능
   - 여는 괄호(`(`, `{`, `[`) 입력시 닫는 괄호와 왼쪽 방향키를 입력하여 바로 괄호 속에서 입력 가능하도록
