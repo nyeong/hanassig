@@ -101,7 +101,7 @@ Finder 설정 고급에서
     1.  드래그에 트랙패드 사용 켜기
     1.  드래그 스타일에 세 손가락으로 드래그하기
 
-![](../assets/세-손가락으로-드래그.png)
+![](/assets/세-손가락으로-드래그.png)
 
 ### shift - space로 한영 전환하기
 
@@ -112,13 +112,13 @@ Finder 설정 고급에서
 3.  파인더에서 사용자 폴더 아래의 라이브러리 폴더를 연다. 라이브러리 폴더는 숨김 처리되어 있다. 파인더 메뉴바의 ‘이동 메뉴’를 Option 키를 누른 상태에서 클릭하면 ‘라이브러리’ 폴더가 표시된다.
 4.  라이브러리 풀더 아래 Preferences 안에서 다음 plist 파일을 PlistEdit Pro 로 연다./Users/사용자/Library/Preferences/com.apple.symbolichotkeys.plist
 5.  Property List 에서 60을 찾는다. 맨 아래에 있을 것이다.
-6.  `60/value/parameters/2`를 `131072`로 바꿔준다. ![](../assets/com.apple.symbolichotkeys.plist.png)
+6.  `60/value/parameters/2`를 `131072`로 바꿔준다. ![](/assets/com.apple.symbolichotkeys.plist.png)
 7.  이후 재부팅하면 적용된다.
 
 ### 파인더 타이틀바 아이콘 딜레이 조절
 
 <video controls>
-  <source src="../assets/title-view-rollover.webm" type="video/webm" />
+  <source src="/assets/title-view-rollover.webm" type="video/webm" />
 </video>
 
 macOS Big Sur부터 타이틀바의 아이콘은 기본적으로 숨겨져 있고, 마우스를 올려야 나온다.

@@ -86,7 +86,7 @@ $ systemctl start nginx
 nginx 가동 후 `ip addr`로 내부 주소를 확인하고 접속하면 환영 페이지를 볼 수
 있다.
 
-![](../assets/fedora-nginx-start-page.png)
+![](/assets/fedora-nginx-start-page.png)
 
 ## OpenWRT에서 포트포워딩 하기
 
@@ -103,7 +103,7 @@ OpenWrt를 쓰는 경우, 온전한 리눅스이므로 nginx를 라우터에 직
 라우터로 OpenWrt를 쓰고 있는데 OpenWrt는 Network → Port Fowarding에서
 포트 포워딩 설정을 할 수 있다.
 
-![](../assets/openwrt-port-forwarding.png)
+![](/assets/openwrt-port-forwarding.png)
 
 - 이름: 편한 대로 설정
 - 프로토콜: TCP. HTTP3를 고려한다면 UDP도 해야한다.
@@ -130,7 +130,7 @@ DNS 등록은 DNS 제공 서비스를 통해 해야하는데, 본래 쓰던 [clo
 - proxy: DNS only
 - TTL: auto
 
-![](../assets/cloudflare-dns-config.png)
+![](/assets/cloudflare-dns-config.png)
 
 www와 루트(@), 와일드카드(*) 세 개를 등록하자. 완료하면 이제 [nyeong.me](http://nyeong.me)로
 접속하면 IP주소로 접속했을 때와 동일한 화면을 볼 수 있다.

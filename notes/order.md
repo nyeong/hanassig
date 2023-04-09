@@ -59,7 +59,7 @@ $$
 
 아래 그림은 위의 예에 대한 하세 다이어그램이다.
 
-![](../assets/hasse_diagram_of_powerset.png)
+![](/assets/hasse_diagram_of_powerset.png)
 
 ## 관계의 성질
 

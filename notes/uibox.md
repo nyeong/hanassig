@@ -5,7 +5,7 @@ date: 2023-02-24
 tags:
 ---
 
-![](../assets/uibox.jpeg)
+![](/assets/uibox.jpeg)
 
 ## 용도
 
