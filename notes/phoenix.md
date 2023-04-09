@@ -1,6 +1,5 @@
 ---
 title: Phoenix
-slug: phoenix
 description: phoenix 웹 프레임워크
 date: 2023-02-23
 tags:

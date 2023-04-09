@@ -1,35 +1,38 @@
 ---
 title: UiBox
-slug: uibox
 description: 개인용 서버
 date: 2023-02-24
 tags:
 ---
 
-![[uibox.jpeg]]
-
-## 대체 왜
-
-### 대체 왜 서버가 필요한가요
-
-1. 필요 없습니다.
-
-### 대체 왜 직접 하나요
-
-1. 재밌습니다.
+![](../assets/uibox.jpeg)
 
 ## 용도
 
 - [x] NAS 서버
 - [ ] bitwarden 서버
 
-## 목표 구성
+## 하드웨어
 
-| 구분   | 이름      | 비용       |
-| ------ | --------- | ---------- |
-| 케이스 | Jonsbo N2 | 154,627 원 |
-| OS     |           |            |
-| 
+| 구분    | 이름             | 비용       |
+| ------- | ---------------- | ---------- |
+| 케이스  | Jonsbo N2        | 154,627 원 |
+| CPU     | i5-12400         |            |
+| 메인보드| B660I snow dream |            |
+| RAM     | DDR4 16GB        |            |
+| PSU     | Supernova 650 SFX|            |
+| HDD1    | WD 14TB          |            |
+| HHD2    | ? 2TB            |            |
+
+## 운영체제
+
+Proxmox VE를 호스트로 사용 중.
+
+[Proxmox VE Admin Guide](https://pve.proxmox.com/pve-docs/pve-admin-guide.html)
+
+- [proxmox 기초설정](/notes/proxmox-setup.md)
+- [nginx로 리버스 프록시](/notes/nginx-reverse-proxy.md)
+- [proxmox 저장장치](/notes/proxmox-storage.md)
 
 ## 참고
 

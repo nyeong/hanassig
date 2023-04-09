@@ -1,6 +1,8 @@
 ---
 title: OpenWrt
-slug: openwrt
+description: OpenWrt로 라우터 써먹기
+date: 2023-03-02
+tags:
 ---
 
 ## Wireguard를 이용한 VPN 설정
@@ -96,6 +98,9 @@ PublicKey = 서버의 공개키
 AllowedIPs = 0.0.0.0/0
 Endpoint = 서버주소:포트
 ```
+
+여기서 `AllowedIPs`는 VPN을 거칠 IP를 의미한다. `0.0.0.0/0`으로 되어있다면
+모든 접속을 VPN을 거쳐서 하게 된다.
 
 ### 방화벽 설정
 
