@@ -1,6 +1,5 @@
 ---
 title: zsh
-slug: zsh
 ---
 
 ## 이상한 괄호쌍

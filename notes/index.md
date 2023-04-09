@@ -1,6 +1,5 @@
 ---
 title: index
-slug: index
 date: 2023-01-10
 tags: []
 ---
@@ -16,20 +15,24 @@ tags: []
 ## 주제별
 
 - 프로그래밍
-  - [[웹-백엔드]]
-  - [[개발환경]]
-  - [[디자인-패턴]]
-  - [[한글-인코딩]]
-- 생활
-  - [[my-new-gears]]
+  - [웹 백엔드](/notes/web-backend.md)
+  - [개발환경](/notes/devenv.md)
+  - [디자인 패턴](/notes/design-pattern.md)
+  - [한글 인코딩](/notes/korean-encoding.md)
+- 생활, 도구 등
+  - [My New Gears](/notes/my-new-gears.md)
+  - [최적화](/notes/life-optimization.md)
 - 취미
-  - [[음악]]
-  - [[하나씩]]
+  - [🎼 음악](/notes/music.md)
+  - [하나씩](/notes/hanassig.md)
+  - [uibox](/notes/uibox.md) — 홈 서버 구성하기
 - 기초 CS
-  - [[프로그래밍-언어]]
-  - [[자료구조]]
-  - [[데이터베이스]]
-  - [[운영체제]]
-  - [[기계학습]]
+  - [프로그래밍 언어](/notes/programming-languages.md)
+  - [자료구조](/notes/data-structures.md)
+  - [데이터베이스](/notes/database.md)
+  - [운영체제](/notes/os.md)
+  - [🤖 기계학습](/notes/machine-learning.md)
+  - [네트워크](/notes/network.md)
 - 수학
-  - [[카테고리-이론]]
+  - [카테고리 이론](/notes/category-theory.md)
+  - [수학적 귀납법](/notes/mathematical-induction.md)

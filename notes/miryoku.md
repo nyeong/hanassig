@@ -1,6 +1,5 @@
 ---
 title: miryoku
-slug: miryoku
 description: 
 date: 2023-02-24
 tags:
@@ -15,7 +14,7 @@ tags:
 home-row mod와 엄지키를 이용한 레이아웃을 적극 활용하여 움직임을 최소로 하였다.
 
 
-[[my-new-gears#Corne Keyboard]]에 miryoku flip inverted T 배열을 변형하여 쿼티 기반으로
+[My New Gears](notes/my-new-gears.md#Corne-Keyboard)에 miryoku flip inverted T 배열을 변형하여 쿼티 기반으로
 [사용중](https://github.com/nyeong/zmk-config/blob/main/config/corne.keymap) (2022-09-13)
 
 ## home-row mods
