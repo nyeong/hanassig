@@ -57,7 +57,7 @@ datacenter -> permissions -> user로 이동하여 유저를
 추가한다. `Realm`은 `Linux PAM`으로, 유저이름은 방금 추가한 리눅스 유저이름으로
 한다.
 
-![](../assets/proxmox-adduser.png)
+![](/assets/proxmox-adduser.png)
 
 ## 패키지 저장소 관리
 

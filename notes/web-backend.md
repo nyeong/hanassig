@@ -70,7 +70,7 @@ Cross Site Request Forgery attack. 크로스-사이트 요청 변조는 인증�
 대부분의 웹 프레임워크는 아래와 같이 `form`을 생성할 때 CSRF 토큰 필드를 함께 생성한다:
 
 <figure>
-  <img src="../assets/phoenix-csrf-token-example.png" />
+  <img src="/assets/phoenix-csrf-token-example.png" />
   <figcaption>Phoenix 프레임워크가 생성한 csrf_token</figcaption>
 </figure>
 

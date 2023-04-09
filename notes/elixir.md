@@ -93,7 +93,7 @@ def negate(x) when is_boolean(x), do: not x
 경우도 (타입만 본다면) 있을 수 있다.
 
 <figure>
-	<img src="../assets/elixir-negate-function.png">
+	<img src="/assets/elixir-negate-function.png">
 	<figcapution>ElixirLS가 분석한 negate 함수의 타입</figcaption>
 </figure>
 

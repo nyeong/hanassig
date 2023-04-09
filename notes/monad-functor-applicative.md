@@ -21,7 +21,7 @@ class (Functor f) => Applicative f where
     (<*>) :: f (a -> b) -> f a -> f b
 ```
 
-![](../assets/완전이해.jpg)
+![](/assets/완전이해.jpg)
 
 ## 모나드
 

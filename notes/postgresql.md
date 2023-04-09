@@ -34,7 +34,7 @@ PostgreSQL은 클라이언트/서버 모델 데이터베이스이다. 클라이�
 PostgreSQL 서버 프로세스는 새 클라이언트가 접속할 때마다 프로세스를 포크한다.
 
 <figure>
-  <video src="../assets/postgresql-forks.webm" />
+  <video src="/assets/postgresql-forks.webm" />
   <figcaption>클라이언트가 열고 닫힘에 따라 켜지고 꺼지는 fork 프로세스</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ SQL이 아닌 명령어는 `\`으로 시작한다.
 ## SQL
 
 <figure>
-  <img src="../assets/table-row-column.png" />
+  <img src="/assets/table-row-column.png" />
   <figcaption>table, column, row</figcaption>
 </figure>
 
