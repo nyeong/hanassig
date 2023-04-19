@@ -194,5 +194,5 @@ let m = Mutex::new(5);
 - [동시성 프로그래밍 하기 좋은 Clojure](https://www.slideshare.net/eunminn/clojure-68804824)
 - [[Track 1-2] 유인동 - ES6+ 비동기 프로그래밍과 실전 에러 핸들링](https://www.youtube.com/watch?v=o9JnT4sneAQ)
 - [[Track 2-2] 나석주 - 비동기를 우아하게 처리하기 위한 Observable](https://www.youtube.com/watch?v=oHF8PEkteq0)
-- [Why Async? - Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/02_why_asy[<43;66;8Mnc.html)
+- [Why Async? - Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/01_getting_started/02_why_async.html)
 - [데브시스터즈 서버 직군은 왜 코딩 면접을 볼까?](https://tech.devsisters.com/posts/server-position-coding-test/)

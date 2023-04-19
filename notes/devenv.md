@@ -4,15 +4,16 @@ description: 내 개발환경 정리
 ---
 
 - 셸: [zsh](zsh)
-- 편집기: [helix](#helix), vs code
-- 터미널 레이아웃: tmux
+- 편집기: [helix](#helix), [vs-code]
+- 터미널 파인더: nnn
+- 터미널 레이아웃: tmux, [zellij](https://zellij.dev/) 써보는 중
 - dotfile 관리: [nyeong/.dotfiles](https://github.com/nyeong/.dotfiles)
 - 생각 정리: obsidian, helix
 - 언어 버전 관리: asdf-vm
 
 ## 시스템
 
-- MacBook Air (M1, 2020) -- [macOS](/notes/macos.md) 참고
+- MacBook Air (M1, 2020) -- [[macos]] 참고
 
 ## helix
 
@@ -99,3 +100,7 @@ if [[ -d ~/.local/share/asdf ]]; then
   . $ASDF_DIR/asdf.sh
 fi
 ```
+
+## zellij
+
+zellij 써보는 중.

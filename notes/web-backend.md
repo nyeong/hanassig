@@ -10,12 +10,12 @@ tags:
 	- HTTP
 	- DNS, 도메인
 - 프로그래밍 언어와 웹 프레임워크
-	- Elixir with [phoenix](/notes/phoenix.md)
+	- Elixir with [[phoenix]]
 	- JavaScript with NextJS
 - 버전 컨트롤과 협업
 	- Git
 	- GitHub
-- [데이터베이스](/notes/database.md)
+- [[database]]
 	- RDBMS (PostgreSQL)
 	- NoSQL 데이터베이스
 	- N+1 문제, 트랜잭션, 정규화, ACID, ORM, 인덱싱, ...

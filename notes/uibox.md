@@ -30,9 +30,9 @@ Proxmox VE를 호스트로 사용 중.
 
 [Proxmox VE Admin Guide](https://pve.proxmox.com/pve-docs/pve-admin-guide.html)
 
-- [proxmox 기초설정](/notes/proxmox-setup.md)
-- [nginx로 리버스 프록시](/notes/nginx-reverse-proxy.md)
-- [proxmox 저장장치](/notes/proxmox-storage.md)
+- [[proxmox-setup]]
+- [[nginx-reverse-proxy]]
+- [[proxmox-storage]]
 
 ## 참고
 

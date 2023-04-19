@@ -11,14 +11,15 @@ tags:
 
 ## ADTs
 
-- [선형 리스트](/notes/linear-list.md)
-- [딕셔너리](/notes/dictionary.md)
-- [서로소 집합](/notes/disjoint-set.md)
-- [최소 신장 트리](/notes/minimum-spanning-tree.md)
+- [[linear-list]]
+- [[dictionary]]
+- [[disjoint-set]]
+- [[minimum-spanning-tree]]
 - 스택
 - 큐
 - 우선 순위 큐
 - 이진 검색 트리
+- [[heap]]
 
 ## 알고리즘을 개발하기 위한 단계
 

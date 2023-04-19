@@ -12,27 +12,58 @@ tags: []
 고쳐야 할 점이 있다면 [저장소 이슈](https://github.com/nyeong/hanassig/issues/new)
 혹은 [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)를 통해 연락주시면 반영하겠습니다.
 
-## 주제별
+## 글 목록
 
-- 프로그래밍
-  - [웹 백엔드](/notes/web-backend.md)
-  - [개발환경](/notes/devenv.md)
-  - [디자인 패턴](/notes/design-pattern.md)
-  - [한글 인코딩](/notes/korean-encoding.md)
-- 생활, 도구 등
-  - [My New Gears](/notes/my-new-gears.md)
-  - [최적화](/notes/life-optimization.md)
-- 취미
-  - [🎼 음악](/notes/music.md)
-  - [하나씩](/notes/hanassig.md)
-  - [uibox](/notes/uibox.md) — 홈 서버 구성하기
-- 기초 CS
-  - [프로그래밍 언어](/notes/programming-languages.md)
-  - [자료구조](/notes/data-structures.md)
-  - [데이터베이스](/notes/database.md)
-  - [운영체제](/notes/os.md)
-  - [🤖 기계학습](/notes/machine-learning.md)
-  - [네트워크](/notes/network.md)
-- 수학
-  - [카테고리 이론](/notes/category-theory.md)
-  - [수학적 귀납법](/notes/mathematical-induction.md)
+- [[index]]
+- [[hanassig]]
+- [[machine-learning]]
+- [[music]]
+- [[mathematical-induction]]
+- [[life-optimization]]
+  - [[GTD]]
+  - [[my-new-gears]]
+    - [[miryoku]]
+    - [[uibox]]
+    - [[macos]]
+- computer science
+  - [[network]]
+  - [[cs-terms]]
+  - [[database]]
+  - [[algorithm]]
+    - [[time-complexity]]
+  - [[os]]
+    - [[unix-signal]]
+    - [[dining-philosophers]]
+  - [[data-structures]]
+    - [[minimum-spanning-tree]]
+    - [[disjoint-set]]
+    - [[dictionary]]
+    - [[linear-list]]
+  - [[category-theory]]
+    - [[order]]
+    - [[types-are-sets]]
+    - [[composition-and-programming]]
+    - [[monad-functor-applicative]]
+- programming
+  - [[devenv]]
+    - [[zsh]]
+  - [[design-pattern]]
+  - [[exceptions]]
+  - [[concurrency]]
+  - [[programming-languages]]
+    - [[idris]]
+    - [[scala]]
+    - [[elixir]]
+    - [[python]]
+    - [[sql]]
+  - [[postgresql]]
+  - [[korean-encoding]]
+  - [[web-backend]]
+- home-lab
+  - [[openwrt]]
+  - [[nginx-reverse-proxy]]
+  - proxmox
+    - [[proxmox-setup]]
+    - [[proxmox-storage]]
+- diy
+  - [[nth-week-today]]

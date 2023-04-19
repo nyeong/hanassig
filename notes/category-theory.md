@@ -2,10 +2,10 @@
 title: 카테고리 이론
 ---
 
-- [합성과 프로그래밍](/notes/composition-and-programming)
-- [타입은 집합이다](/notes/types-are-sets)
-- [모나드와 펑터와 어플리케이티브](/notes/monad-functor-applicative)
-- [순서](/notes/order)
+- [[composition-and-programming]]
+- [[types-are-sets]]
+- [[monad-functor-applicative]]
+- [[order]]
 
 ## 참고
 
