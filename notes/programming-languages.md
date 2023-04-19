@@ -2,9 +2,10 @@
 title: 프로그래밍 언어
 ---
 
-- [엘릭서](/notes/elixir.md)
-- [idris](/notes/idris.md)
-- [스칼라](/notes/scala.md)
+- [[elixir]]
+- [[idris]]
+- [[scala]]
+- [[python]]
 
 ## 알아야 하는 것들
 
@@ -32,13 +33,13 @@ title: 프로그래밍 언어
   - 익명함수, 클로저
 - 모듈과 파일 관리
 - 문서화
-- [예외를 처리하는 방법](/notes/exceptions.md)
+- [[exceptions]]
 - 다형성을 달성하는 방법
 	- [The Four Polymorphisms in C++](https://github.com/utilForever/modern-cpp-tutorial/blob/master/Articles/The%20Four%20Polymorphisms%20in%20C%2B%2B.md)
 	- [다형성이란 무엇인가](https://velog.io/@humonnom/%EB%8B%A4%ED%98%95%EC%84%B1%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
 	- 파라메트릭 다형성, ad hoc 다형성
 	- 트레잇, 제네릭
-- [동시성을 달성하는 방법](/notes/concurrency.md)
+- [[concurrency]]
 - 런타임에서 제공하는 기능들
 - 커뮤니티에서 권장하는 것들
   - 스타일 가이드

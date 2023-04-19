@@ -61,7 +61,7 @@ tags:
 		- GitHub Issues, 칸반보드
 - 여러가지 모델
 	- 시간/할 일 관리
-		- [GTD](/notes/GTD.md)
+		- [[GTD]]
 		- 작명5개항
 		- METT-TC
 	- 지식관리
