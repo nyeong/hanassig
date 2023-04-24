@@ -3,8 +3,8 @@ title: 💻 개발환경
 description: 내 개발환경 정리
 ---
 
-- 셸: [zsh](zsh)
-- 편집기: [helix](#helix), [vs-code]
+- 셸: [[zsh]]. fish를 써볼까?
+- 편집기: [helix](#helix), [[vs-code]]
 - 터미널 파인더: nnn
 - 터미널 레이아웃: tmux, [zellij](https://zellij.dev/) 써보는 중
 - dotfile 관리: [nyeong/.dotfiles](https://github.com/nyeong/.dotfiles)
@@ -91,12 +91,12 @@ homebrew나 pacman 등 패키지 매니저에서 지원하긴 하는데, 환경�
 
 나는 설정을 별도로 분리하고 싶어서 `.dotfiles/zsh/init.zsh`에 아래처럼 추가하고 이 파일을 `~/.zshrc`에서 부르고 있다.
 
-```zsh
+```bash
 # asdf-vm
 if [[ -d ~/.local/share/asdf ]]; then
   export ASDF_DIR=$HOME/.local/share/asdf
   export ASDF_DATA_DIR=$HOME/.local/share/asdf
-  
+
   . $ASDF_DIR/asdf.sh
 fi
 ```
