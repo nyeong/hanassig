@@ -8,6 +8,7 @@ tags:
 [asdf](https://asdf-vm.com/)
 
 다양한 언어를 하나의 명령어로 버전관리 할 수 있어서 편하다.
+심지어 [자바 런타임](https://github.com/halcyon/asdf-java)도 관리할 수 있다.
 왠만한 언어들은 OS의 패키지 매니저가 아니라 asdf-vm으로 관리하는 중.
 
 ## 장점
