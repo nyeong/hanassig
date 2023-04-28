@@ -46,6 +46,7 @@ tags: []
 - programming
   - [[devenv]]
     - [[zsh]]
+    - [[asdf]]
   - [[design-pattern]]
   - [[exceptions]]
   - [[concurrency]]
