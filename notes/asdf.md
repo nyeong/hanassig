@@ -37,22 +37,22 @@ ruby
 
 ```bash
 # gleam 플러그인 설치
-asdf plugin-add gleam https://github.com/asdf-community/asdf-gleam.git
+$ asdf plugin-add gleam https://github.com/asdf-community/asdf-gleam.git
 
 # 설치 가능한 gleam 버전 보기
-asdf list all gleam
+$ asdf list all gleam
 
 # gleam 최신 버전 설치
-asdf install gleam latest
+$ asdf install gleam latest
 
 # 설치된 gleam 버전 보기
-asdf list gleam
+$ asdf list gleam
 
 # 시스템의 기본 버전을 최신 버전으로 설정하기
-asdf global gleam latest
+$ asdf global gleam latest
 
 # 이 디렉토리에서는 특정 버전의 gleam 쓰기
-asdf local gleam 0.26.1
+$ asdf local gleam 0.26.1
 ```
 
 ### 설치
