@@ -36,6 +36,7 @@ ruby
 ### 용례
 
 ```bash
+# gleam이라는 언어를 설치해보자:
 # gleam 플러그인 설치
 $ asdf plugin-add gleam https://github.com/asdf-community/asdf-gleam.git
 
