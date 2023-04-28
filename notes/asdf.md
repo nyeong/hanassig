@@ -15,8 +15,16 @@ tags:
 다양한 프로그래밍 언어 버전을 하나의 프로그램으로 관리할 수 있다.
 
 - 명령어가 통일되어 편하다.
-- `$PATH`가 깔끔해져서 편하다. `rbenv`, `pyenv`와 같은 프로그램을 각각 쓰면
-  `$PATH`에 shims이 가득 차더라.
+
+  `asdf list` 명령어 한 번이면 지금 쓰고 있는 언어 버전이 쫙 나오니 보기 좋다.
+  
+- `$PATH`가 깔끔해져서 편하다.
+
+  `rbenv`, `pyenv`와 같은 프로그램을 각각 쓰면 `$PATH`에 shims이 가득 차더라.
+
+- 특정 디렉토리에서의 언어 버전을 강제할 수 있다.
+
+  `local` 명령어로 특정 프로젝트에서는 특정 언어 버전만 쓰도록 강제할 수 있다.
 
 ```bash
 $ asdf list
@@ -65,15 +73,14 @@ brew나 pacman 같은 패키지 매니저를 이용한 설치도 소개하고 �
 
 가이드에서 권장하는 설치 위치는 `~/.asdf`인데, 
 `~/.local/share/asdf`에 설치하면 홈 디렉토리를 깔끔하게 유지할 수 있다.
-설치 위치를 바꾸었으면 [환경변수도 바꾸어주자](https://asdf-vm.com/manage/configuration.html#environment-variables).
 
 ```bash
 $ mkdir -p ~/.local/share
 $ git clone https://github.com/asdf-vm/asdf.git ~/.local/share/asdf --branch v0.11.2
 ```
 
-설치 위치를 바꾸었으면 관련 변수도 바꾸어주어야한다. `.zshrc`와 같은 셸 설정파일에
-아래와 같이 `ASDF_DIR`을 설정한다.
+설치 위치를 바꾸었으면 관련 변수도 바꾸어주어야한다.[^1]
+`.zshrc`와 같은 셸 설정파일에 아래와 같이 `ASDF_DIR`을 설정한다.
 
 ```bash
 # asdf-vm
@@ -84,3 +91,9 @@ if [[ -d ~/.local/share/asdf ]]; then
   . $ASDF_DIR/asdf.sh
 fi
 ```
+
+[^1]: https://asdf-vm.com/manage/configuration.html#asdf-dir
+
+특정 언어를 쓰고 싶으면 그에 맞는 플러그인을 설치해주어야하는데,
+[asdf 커뮤니티](https://github.com/asdf-community)에서 상당히 많은 언어 환경을
+지원해준다.
