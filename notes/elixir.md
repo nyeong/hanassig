@@ -9,9 +9,9 @@ tags:
 
 혹은 아쉬운 점
 
-### trailing comma
+### 후행 쉼표를 허용하지 아니함
 
-자료구조 끝에 쉼표를 쓸 수 없다!
+trailing comma, 즉 후행 쉼표가 허용되지 않는다. 자료구조 끝에 쉼표를 쓸 수 없다!
 
 ```elixir
 defp deps do
@@ -222,6 +222,14 @@ https://elixir-lang.org/blog/2022/10/05/my-future-with-elixir-set-theoretic-type
 생각 외로 이런 언어가 많긴 하다. Clojure도 그렇고, CPython도 내 기억으론
 실행 전에 바이트코드로 컴파일된다.
 
+타입을 명시할 수 있는 시스템이 언어에 내장되어 있긴 하다.
+[Typespecs](https://hexdocs.pm/elixir/typespecs.html)라고 부른다.
+얼랭 때부터의 전통인 것 같다. 얼랭도 동적 타입 언어이면서 타입을 명시할 수 있는
+[Erlang Type Language](https://www.erlang.org/doc/reference_manual/typespec.html)을
+제공한다.
+
+사소하게 불편한 점이 있는데:
+
 1. 구조체의 타입은 타입스펙으로 별도로 선언해주어야함.
 2. 구조체는 모듈 이름을 따르면서, 구조체의 타입은 그렇게 할 수 없음(`t()`).
 3. 타입 표시에 자꾸 괄호(`()`)를 붙여야 함.
@@ -244,7 +252,9 @@ defmodule Plug.Conn do
 end
 ```
 
-이러다보니 각 필드를 두 번 선언해야한다. 고칠 때에도 두 번 고쳐야 하는데... 생각해보니 보통의 언어들도 초기값을 정의하려면 그런 것 같기도 하고?
+위에서 보는 것처럼 각 필드에 대한 타입을 따로, 기본값을 따로 선언해주어야 한다.
+
+고칠 때에도 두 번 고쳐야 하는데... 생각해보니 보통의 언어들도 초기값을 정의하려면 그런 것 같기도 하고?
 
 하지만 구조체는 모듈을 기준으로 선언하면서, 타입은 모듈 이름으로 선언 못하고,
 `t`를 붙여줘야하는 건 확실히 이상하고 어색하다. 거의 표준처럼 쓰고 있지만
@@ -260,10 +270,7 @@ end
 
 # `ends_with?`이라는 함수를 만드려면, 아래와 같이 `String.t()`로 선언해야 한다.
 @spec ends_with?(String.t(), String.t()) :: boolean()
-```
 
-추가로 위의 `ends_with?/2` 함수의 스펙은 괄호 없이 아래처럼 적어도 되긴 하다:
-
-```elixir
-@spec ends_with?(String.t, String.t) :: boolean
+# 이게 더 자연스럽지 않나??
+@spec ends_with?(String, String) :: boolean()
 ```
