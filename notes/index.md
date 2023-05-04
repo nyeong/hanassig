@@ -63,6 +63,7 @@ tags: []
   - [[web-backend]]
   - [[git-branch-name]]
   - [[git-with-mistakes]]
+  - [[final-newline]]
 - home-lab
   - [[openwrt]]
   - [[nginx-reverse-proxy]]
