@@ -49,6 +49,7 @@ tags: []
   - [[devenv]]
     - [[zsh]]
     - [[asdf]]
+    - [[zellij]]
   - [[design-pattern]]
   - [[exceptions]]
   - [[concurrency]]
@@ -70,6 +71,8 @@ tags: []
   - proxmox
     - [[proxmox-setup]]
     - [[proxmox-storage]]
+- life
+  - [[tax]]
 - diy
   - [[nth-week-today]]
 - 도보시오
