@@ -14,6 +14,7 @@ description: 내 개발환경 정리
 ## 시스템
 
 - MacBook Air (M1, 2020) -- [[macos]] 참고
+- [[uibox]]
 
 ## helix
 

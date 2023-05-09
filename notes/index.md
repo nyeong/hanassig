@@ -68,9 +68,10 @@ tags: []
 - home-lab
   - [[openwrt]]
   - [[nginx-reverse-proxy]]
-  - proxmox
+  - [[proxmox]]
     - [[proxmox-setup]]
     - [[proxmox-storage]]
+    - [[proxmox-archlinux]]
 - life
   - [[tax]]
 - diy
