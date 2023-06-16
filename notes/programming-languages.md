@@ -1,5 +1,7 @@
 ---
 title: 프로그래밍 언어
+date: 2023-04-21
+tags: []
 ---
 
 - [[elixir]]
@@ -16,7 +18,7 @@ title: 프로그래밍 언어
 - 타이핑 모델
   - 강타입인가 약타입인가?
   - 동적인가 정적인가?
-  - 명목적(*nominal*)인가 구조적(*structural*)인가?
+  - 명목적(_nominal_)인가 구조적(_structural_)인가?
 - 프로그래밍 패러다임
   - 함수형, 객체지향, 스택 기반, 배열 기반 등등등
   - 혹은 이 언어만의 특별한 점
@@ -35,10 +37,10 @@ title: 프로그래밍 언어
 - 문서화
 - [[exceptions]]
 - 다형성을 달성하는 방법
-	- [The Four Polymorphisms in C++](https://github.com/utilForever/modern-cpp-tutorial/blob/master/Articles/The%20Four%20Polymorphisms%20in%20C%2B%2B.md)
-	- [다형성이란 무엇인가](https://velog.io/@humonnom/%EB%8B%A4%ED%98%95%EC%84%B1%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-	- 파라메트릭 다형성, ad hoc 다형성
-	- 트레잇, 제네릭
+  - [The Four Polymorphisms in C++](https://github.com/utilForever/modern-cpp-tutorial/blob/master/Articles/The%20Four%20Polymorphisms%20in%20C%2B%2B.md)
+  - [다형성이란 무엇인가](https://velog.io/@humonnom/%EB%8B%A4%ED%98%95%EC%84%B1%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+  - 파라메트릭 다형성, ad hoc 다형성
+  - 트레잇, 제네릭
 - [[concurrency]]
 - 런타임에서 제공하는 기능들
 - 커뮤니티에서 권장하는 것들
@@ -55,7 +57,6 @@ C언어의 런타임은 [The C Runtime Initialization](https://www.embecosm.com/
 - [actix](https://github.com/actix/actix) — actor framework for rust
 
 [rfcs/0230](https://github.com/rust-lang/rfcs/blob/master/text/0230-remove-runtime.md)을 보면 예전에는 `librustrt`라는 이름의 런타임이 있었으나 현재는 완전 삭제되었다.
-
 
 ## 참고
 

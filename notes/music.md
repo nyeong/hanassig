@@ -16,7 +16,7 @@ title: 🎼 음악
 
 1. No Surprises - Radiohead
 1. Roundabout - Yes
-3. [재즈의 기초, 워킹베이스! 딱 이렇게 시작해주세요!](https://www.youtube.com/watch?v=xKwTARdoJgk)
+1. [재즈의 기초, 워킹베이스! 딱 이렇게 시작해주세요!](https://www.youtube.com/watch?v=xKwTARdoJgk)
 
 ## 다이어토닉 코드
 
@@ -24,7 +24,7 @@ diatonic chord. 어떤 음계에서 그 음계의 구성음으로만 이루어�
 
 ![](/assets/diatonic-chords.svg)
 
-다이어토닉 코드를 분석할 때에 로마숫자로 표기하면 특정 키에 얽매이지 않고 코드 진행을 볼 수 있어서 편리하다.
+다이어토닉 코드를 분석할 때에 로마숫자로 표기하면 특정 키에 얽매이지 않고 코드 진행을 볼 수 있어서 편리하다.
 
 ### 3화음의 경우
 

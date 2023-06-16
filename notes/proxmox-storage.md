@@ -15,7 +15,7 @@ tags:
 
 - 호스트 OS : Proxmox VE를 돌릴 공간
 - NAS, cloud : 클라우드 저장소 서비스를 대체하기 위함
-  - SMB, nextcloud, 
+  - SMB, nextcloud,
 - DB
 - 그 외 VM을 돌릴 가상 드라이브
 
@@ -23,7 +23,7 @@ tags:
 
 1. Proxmox VE에서 직접 스토리지 다루기 vs Guest NAS OS에 패스스루하기.
 2. NextCloud + SMB를 쓰려면 TrueNAS같은 운영체제를 설치하는 것이 좋은가?
-아니면 그냥 리눅스에 깔아도 무방한가?
+   아니면 그냥 리눅스에 깔아도 무방한가?
 3. NextCloud를 쓰면 SMB, AFP, NFS 같은 서비스들이 굳이 필요할까?
 
 ## NAS 운영하기

@@ -1,6 +1,6 @@
 ---
 title: 힙
-description: 
+description:
 date: 2023-04-14
 tags:
 ---
@@ -9,7 +9,7 @@ tags:
 
 ## 연산
 
-- 삽입, 삭제 :  $\mathcal O(\log n)$으로 구현할 수 있다.
+- 삽입, 삭제 : $\mathcal O(\log n)$으로 구현할 수 있다.
 
 ## 응용
 

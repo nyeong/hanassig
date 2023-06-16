@@ -1,6 +1,6 @@
 ---
 title: miryoku
-description: 
+description:
 date: 2023-02-24
 tags:
 ---
@@ -12,7 +12,6 @@ tags:
 손가락의 움직임을 최소로 한 것이 특징이다.
 
 home-row mod와 엄지키를 이용한 레이아웃을 적극 활용하여 움직임을 최소로 하였다.
-
 
 [My New Gears](notes/my-new-gears.md#Corne-Keyboard)에 miryoku flip inverted T 배열을 변형하여 쿼티 기반으로
 [사용중](https://github.com/nyeong/zmk-config/blob/main/config/corne.keymap) (2022-09-13)
@@ -27,10 +26,10 @@ home-row mod와 엄지키를 이용한 레이아웃을 적극 활용하여 움�
 
 ```
 그냥 누르면 아래의 값들이 입력된다:
-|  _  |  A  |  S  |  D  |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  _  | 
+|  _  |  A  |  S  |  D  |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  _  |
 
 길게 누르면 아래의 모드키가 눌린 것처럼 동작한다:
-|  _  | CTL | OPT | CMD | SHF |  _  |        |  _  | SHF | CMD | OPT | CTL |  _  | 
+|  _  | CTL | OPT | CMD | SHF |  _  |        |  _  | SHF | CMD | OPT | CTL |  _  |
 ```
 
 예를 들어, 복사를 위해 `<cmd>-c`를 누르려면 `k`를 꾹 누른 채로 `c`를 누르면 된다.
@@ -60,7 +59,6 @@ home-row mods와 마찬가지로, 아래의 키는 짧게 누르면 원래의 �
 | 펑션 | 숫자 | 기호 |        | 마우스 | 방향키 | 시스템 |
 ```
 
-
 ### 일반 레이아웃
 
 쿼티를 쓰고 있다. 콜맥을 쓰고 싶은 욕심은 있지만, helix와 vim 단축키 적응하는게
@@ -69,19 +67,19 @@ home-row mods와 마찬가지로, 아래의 키는 짧게 누르면 원래의 �
 home row mods가 적용되어 있어서 A, S, D, F, J, K, L, ;은 위에 기술된 대로 MODS키로 동작한다.
 
 ```
-|  _  |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  _  | 
-|  _  |  A  |  S  |  D  |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  _  | 
-|  _  |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M  |  ,  |  .  |  /  |  _  | 
-                  | ESC | SPC | TAB |        | ENT | BSP | DEL |            
+|  _  |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U  |  I  |  O  |  P  |  _  |
+|  _  |  A  |  S  |  D  |  F  |  G  |        |  H  |  J  |  K  |  L  |  ;  |  _  |
+|  _  |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M  |  ,  |  .  |  /  |  _  |
+                  | ESC | SPC | TAB |        | ENT | BSP | DEL |
 ```
 
 ### 펑션 레이아웃
 
 ```
-|  _  |     |     |     |     |     |        |     | F7  | F8  | F9  | F12 |  _  | 
-|  _  | CTL | OPT | CMD | SHF |     |        |  =  | F4  | F5  | F6  | F11 |  _  | 
-|  _  |     |     |     |     |     |        |  +  | F1  | F2  | F3  | F10 |  _  | 
-                  | *** | SPC | TAB |        | ENT | BSP | DEL |            
+|  _  |     |     |     |     |     |        |     | F7  | F8  | F9  | F12 |  _  |
+|  _  | CTL | OPT | CMD | SHF |     |        |  =  | F4  | F5  | F6  | F11 |  _  |
+|  _  |     |     |     |     |     |        |  +  | F1  | F2  | F3  | F10 |  _  |
+                  | *** | SPC | TAB |        | ENT | BSP | DEL |
 ```
 
 ### 숫자 레이아웃
@@ -89,10 +87,10 @@ home row mods가 적용되어 있어서 A, S, D, F, J, K, L, ;은 위에 기술�
 우측 키보드를 키패드처럼 쓸 수 있다. 따옴표(", ', `)는 모두 오른쪽 새끼손가락으로 입력할 수 있다.
 
 ```
-|  _  |     |     |     |     |     |        |     |  7  |  8  |  9  |  "  |  _  | 
-|  _  | CTL | OPT | CMD | SHF |     |        |  =  |  4  |  5  |  6  |  '  |  _  | 
-|  _  |     |     |     |     |     |        |  +  |  1  |  2  |  3  |  `  |  _  | 
-                  |     | *** |     |        |  -  |  0  |  .  |            
+|  _  |     |     |     |     |     |        |     |  7  |  8  |  9  |  "  |  _  |
+|  _  | CTL | OPT | CMD | SHF |     |        |  =  |  4  |  5  |  6  |  '  |  _  |
+|  _  |     |     |     |     |     |        |  +  |  1  |  2  |  3  |  `  |  _  |
+                  |     | *** |     |        |  -  |  0  |  .  |
 ```
 
 ### 기호 레이아웃
@@ -103,10 +101,10 @@ home row mods가 적용되어 있어서 A, S, D, F, J, K, L, ;은 위에 기술�
 부등호 기호(`<>`)를 괄호처럼 쓸 일이 종종 있는데, 여기에 욱여 넣을 수 없어서 아쉽다.
 
 ```
-|  _  |     |     |     |     |     |        |  (  |  &  |  *  |  ~  |  )  |  _  | 
-|  _  | CTL | OPT | CMD | SHF |     |        |  {  |  $  |  %  |  ^  |  }  |  _  | 
-|  _  |     |     |     |     |     |        |  [  |  !  |  @  |  #  |  ]  |  _  | 
-                  |     |     | *** |        |  _  |  |  |  \  |            
+|  _  |     |     |     |     |     |        |  (  |  &  |  *  |  ~  |  )  |  _  |
+|  _  | CTL | OPT | CMD | SHF |     |        |  {  |  $  |  %  |  ^  |  }  |  _  |
+|  _  |     |     |     |     |     |        |  [  |  !  |  @  |  #  |  ]  |  _  |
+                  |     |     | *** |        |  _  |  |  |  \  |
 ```
 
 ### 마우스 레이아웃
@@ -118,10 +116,10 @@ ZMK 펌웨어에서는 아직 마우스 키를 지원하지 않기 때문에 이
 방향키, HOME, END, PG UP, PG DN 등 네비게이션과 관련된 버튼을 모아둔 레이아웃.
 
 ```
-|  _  |     |HOME |  ↑  | END |PG UP|        |     |     |     |     |     |  _  | 
-|  _  |     |  ←  |  ↓  |  →  |PG DN|        |     | SHF | CMD | OPT | CTL |  _  | 
-|  _  |     |     |     |     |     |        |     |     |     |     |     |  _  | 
-                  | ESC | SPC | TAB |        |     | *** |     |            
+|  _  |     |HOME |  ↑  | END |PG UP|        |     |     |     |     |     |  _  |
+|  _  |     |  ←  |  ↓  |  →  |PG DN|        |     | SHF | CMD | OPT | CTL |  _  |
+|  _  |     |     |     |     |     |        |     |     |     |     |     |  _  |
+                  | ESC | SPC | TAB |        |     | *** |     |
 ```
 
 ### 시스템 레이아웃
@@ -133,10 +131,10 @@ ZMK 펌웨어에서는 아직 마우스 키를 지원하지 않기 때문에 이
 미디어 조절 버튼은 넣을 수 있길래 넣어봤는데 막상 써 본 적은 없다.
 
 ```
-|  _  |BR UP|REWND|PAUSE|FA FO|VL UP|        |     |     |     |     |     |  _  | 
-|  _  |BR DN|PREV |PLAY |NEXT |VL DN|        |     | SHF | CMD | OPT | CTL |  _  | 
-|  _  |BR AT|BTCLR|BTOFF|BT ON|MUTE |        |     |     |     |     |     |  _  | 
-                  | BT0 | BT1 | BT2 |        |     |     | *** |            
+|  _  |BR UP|REWND|PAUSE|FA FO|VL UP|        |     |     |     |     |     |  _  |
+|  _  |BR DN|PREV |PLAY |NEXT |VL DN|        |     | SHF | CMD | OPT | CTL |  _  |
+|  _  |BR AT|BTCLR|BTOFF|BT ON|MUTE |        |     |     |     |     |     |  _  |
+                  | BT0 | BT1 | BT2 |        |     |     | *** |
 ```
 
 ## 개선 여지

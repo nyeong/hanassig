@@ -12,71 +12,23 @@ tags: []
 고쳐야 할 점이 있다면 [저장소 이슈](https://github.com/nyeong/hanassig/issues/new)
 혹은 [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)를 통해 연락주시면 반영하겠습니다.
 
-## 글 목록
+## 최신 글
 
+[//begin]: # "recent"
+- [[n-plus-one-problem]]
+- [[typescript]]
+- [[arc-browser]]
+- [[git]]
 - [[index]]
-- [[hanassig]]
-- [[machine-learning]]
-- [[music]]
-- [[mathematical-induction]]
-- [[life-optimization]]
-  - [[my-new-gears]]
-    - [[ui36]]
-    - [[miryoku]]
-    - [[uibox]]
-    - [[macos]]
-      - [[arc-browser]]
-- computer science
-  - [[network]]
-  - [[cs-terms]]
-  - [[database]]
-  - [[algorithm]]
-    - [[time-complexity]]
-    - [[permutation-and-combination]]
-  - [[os]]
-    - [[unix-signal]]
-    - [[dining-philosophers]]
-  - [[data-structures]]
-    - [[minimum-spanning-tree]]
-    - [[disjoint-set]]
-    - [[dictionary]]
-    - [[linear-list]]
-  - [[category-theory]]
-    - [[order]]
-    - [[types-are-sets]]
-    - [[composition-and-programming]]
-    - [[monad-functor-applicative]]
-- programming
-  - [[devenv]]
-    - [[zsh]]
-    - [[asdf]]
-    - [[zellij]]
-    - [[git]]
-      - [[git-branch-name]]
-      - [[git-with-mistakes]]
-  - [[design-pattern]]
-  - [[exceptions]]
-  - [[concurrency]]
-  - [[programming-languages]]
-    - [[idris]]
-    - [[scala]]
-    - [[elixir]]
-    - [[python]]
-    - [[sql]]
-  - [[postgresql]]
-  - [[korean-encoding]]
-  - [[web-backend]]
-  - [[final-newline]]
-- home-lab
-  - [[openwrt]]
-  - [[nginx-reverse-proxy]]
-  - [[proxmox]]
-    - [[proxmox-setup]]
-    - [[proxmox-storage]]
-    - [[proxmox-archlinux]]
-- life
-  - [[tax]]
-- diy
-  - [[nth-week-today]]
-- 도보시오
-  - [[free-sources]]
+
+[//end]: #
+
+## 컴퓨터 과학
+
+- [[algorithm]]
+- [[data-structures]]
+- [[database]]
+- [[os]]
+- [[category-theory]]
+- [[network]]
+- [[programming-languages]]
