@@ -1,6 +1,7 @@
 # macOS
 .DS_Store
 
-.obsidian/
+.obsidian/plugins
+.obsidian/themes
 
 _tmp

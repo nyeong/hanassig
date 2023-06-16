@@ -1,0 +1,12 @@
+{
+  "alwaysUpdateLinks": true,
+  "livePreview": false,
+  "showFrontmatter": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notes",
+  "attachmentFolderPath": "assets",
+  "showUnsupportedFiles": true,
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "defaultViewMode": "preview"
+}
