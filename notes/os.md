@@ -19,7 +19,7 @@ tags:
 
 ### 협력형 멀티태스킹
 
-Cooperative multitasking. 혹은 비선점(*non-preemptive*) 멀티태스킹으로 부르기도 한다.
+Cooperative multitasking. 혹은 비선점(_non-preemptive_) 멀티태스킹으로 부르기도 한다.
 
 Windows 3.1, Mac OS 9 등 고전 운영체제에서 사용했던 방법으로 운용프로그램이 자발적으로 제어권을 반환하는 방법. 운용프로그램이 제어권을 독점할 문제가 있다.
 
@@ -39,7 +39,7 @@ Preemptive multitasking.
 
 협력적 멀티태스킹을 疑似(의사) 멀티태스킹이라고 부르기도 한다.
 
-> The term "preemptive multitasking" is sometimes mistakenly used when the intended meaning is more specific, referring instead to the class of scheduling policies known as _time-shared scheduling_, or _[time-sharing](https://en.wikipedia.org/wiki/Time-sharing "Time-sharing")_. - [Preemption (computing)](<https://en.wikipedia.org/wiki/Preemption_(computing)>)
+> The term "preemptive multitasking" is sometimes mistakenly used when the intended meaning is more specific, referring instead to the class of scheduling policies known as *time-shared scheduling*, or *[time-sharing](https://en.wikipedia.org/wiki/Time-sharing "Time-sharing")*. - [Preemption (computing)](<https://en.wikipedia.org/wiki/Preemption_(computing)>)
 
 ## 참고
 

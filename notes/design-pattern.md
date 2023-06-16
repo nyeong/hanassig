@@ -13,8 +13,8 @@ DI; Dependency Injection.
 
 [^1]: https://www.youtube.com/watch?v=ZasXwtTRkio
 
--   내가 쓸 인터페이스부터 정의하고 (의존성), 나중에 구현체 끼어넣기 (주입).
--   구현체만 바꾸면 동작이 그대로라 좋다.
+- 내가 쓸 인터페이스부터 정의하고 (의존성), 나중에 구현체 끼어넣기 (주입).
+- 구현체만 바꾸면 동작이 그대로라 좋다.
 
 ### 예시
 
@@ -24,7 +24,7 @@ class UserService {
     // userRepository는 여기서 의존성 주입한다.
     // 인스턴스 생성은 프레임워크에 맡긴다. (= IoC)
     @InjectRepository(User)
-    private readonly userRepository: Repository<User>,
+    private readonly userRepository: Repository<User>
   ) {}
 
   async create(body: BodyDto): Promise<ResponseDto> {
@@ -37,7 +37,7 @@ class UserService {
 ### 의문
 
 - UserController는 어차피 UserService에 의존하는데 (그렇게 설계했으니까) 이것마저 DI할 필요가 있을까?
--   모든 것들을 이것저것 DI하는데, 주입하는 대상을 바꾸었을 때 인터페이스가 바뀌는 상황이면 DI를 할 필요가 있을까?
+- 모든 것들을 이것저것 DI하는데, 주입하는 대상을 바꾸었을 때 인터페이스가 바뀌는 상황이면 DI를 할 필요가 있을까?
 
 ### 참고
 

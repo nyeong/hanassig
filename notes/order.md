@@ -18,21 +18,21 @@ $$
 
 ## 준순서
 
-어떤 집합 $S$에 대해 이항 관계 $\le$가 준순서(*preorder*)이려면, $\forall a, b, c \in S$에 대하여 아래를 만족해야한다.
+어떤 집합 $S$에 대해 이항 관계 $\le$가 준순서(_preorder_)이려면, $\forall a, b, c \in S$에 대하여 아래를 만족해야한다.
 
 - $a \le a$: 반사적
 - $a \le b \land b \le c \rightarrow a \le c$: 추이적
 
 ## 전순서
 
-어떤 집합 $S$에 대해 이항 관계 $\le$가 전순서(*total order*)이려면, $\forall a, b, c \in S$에 대하여 아래를 만족해야한다.
+어떤 집합 $S$에 대해 이항 관계 $\le$가 전순서(_total order_)이려면, $\forall a, b, c \in S$에 대하여 아래를 만족해야한다.
 
 - $a \le a$: 반사적
 - $a \le b \lor b \le a$: 연결적
 - $a \le b \land b \le a \rightarrow a = b$: 반대칭적
 - $a \le b \land b \le c \rightarrow a \le c$: 추이적
 
-전순서 관계인 집합의 원소는 그 크기를 비교하여 일렬로 늘여 놓을 수 있다. 이 때문에 선형 순서(*linear order*)라고 부르기도 한다.
+전순서 관계인 집합의 원소는 그 크기를 비교하여 일렬로 늘여 놓을 수 있다. 이 때문에 선형 순서(_linear order_)라고 부르기도 한다.
 
 ### 예시
 
@@ -42,7 +42,7 @@ $$
 
 ## 부분순서
 
-부분순서(*partial order*)는 전순서에서 **어떤 원소든 비교할 수 있다**는 성질이 빠진다.
+부분순서(_partial order_)는 전순서에서 **어떤 원소든 비교할 수 있다**는 성질이 빠진다.
 
 - $a \le a$: 반사적
 - $a \le b \land b \le a \rightarrow a = b$: 반대칭적
@@ -70,7 +70,7 @@ $$
 
 ### 반사적 관계
 
-모든 원소에 대해 스스로와의 관계가 성립한다면 반사적(*reflexive*)이다.
+모든 원소에 대해 스스로와의 관계가 성립한다면 반사적(_reflexive_)이다.
 
 $$
 a|a
@@ -79,23 +79,23 @@ $$
 - 정수에서 모든 수는 자기 자신과 같고($=$), 같거나 작고($\le$), 같거나 크다($\ge$).
 - 집합에서 모든 집합은 자기 자신을 부분집합($\subset$)으로 삼는다.
 
-정수의 $\ne$, $\gt$, $\lt$는 반사적이지 않다. 이를 비반사적(*irreflexive*)이라고 한다.
+정수의 $\ne$, $\gt$, $\lt$는 반사적이지 않다. 이를 비반사적(_irreflexive_)이라고 한다.
 
 ### 대칭 관계와 반대칭 관계
 
-$a|b$가 성립할 때 그 대칭적 관계, 즉 $b|a$도 성립하면 대칭적(*symmetric*)이다.
+$a|b$가 성립할 때 그 대칭적 관계, 즉 $b|a$도 성립하면 대칭적(_symmetric_)이다.
 
 $$
 a|b \Rightarrow b|a
 $$
 
-두 항이 같을 때에만 대칭 관계가 성립하면 반대칭적(*antisymmetric*)이다.
+두 항이 같을 때에만 대칭 관계가 성립하면 반대칭적(_antisymmetric_)이다.
 
 $$
 a|b \land b|a \Rightarrow a = b
 $$
 
-아예 대칭 관계가 성립하지 않으면 비대칭적(*asymmetric*)이다.
+아예 대칭 관계가 성립하지 않으면 비대칭적(_asymmetric_)이다.
 
 $$
 a|b \Rightarrow \lnot (b|a)
@@ -103,15 +103,14 @@ $$
 
 ### 추이적 관계
 
-두 관계로 새로운 관계를 유추할 수 있다면 추이적(*transitive*)이라고 한다.
+두 관계로 새로운 관계를 유추할 수 있다면 추이적(_transitive_)이라고 한다.
 
 $$
 a|b \lor b|c \Rightarrow a|c
 $$
 
-
 - 정수 a, b, c가 있을 때, $a < b$이고 $b < c$이면 $a < c$이다.
-	- $\forall a, b, c \in \mathbb{R}, a < b \land b < c \Rightarrow a < c$
+  - $\forall a, b, c \in \mathbb{R}, a < b \land b < c \Rightarrow a < c$
 - 집합 $A, B, C$에 대하여, $A \subseteq B \land B \subseteq C \Rightarrow A \subseteq C$
 
 ### 연결성?
@@ -119,7 +118,7 @@ $$
 종류가 여럿 있는데 용어 통일이 안 된 모양새이다.
 집합의 전체 원소에 대해 관계를 만족하는 것을 연결되어있다고 한다.
 
-- 연결되어있다(*connected*) : $a \neq b \Rightarrow (a|b \lor b|a)$
+- 연결되어있다(_connected_) : $a \neq b \Rightarrow (a|b \lor b|a)$
 - 혹은 $a|b \lor b|a \lor a = b$
 - 강하게 연결되어있다: $a|b \lor b|a$
 

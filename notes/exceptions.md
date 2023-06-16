@@ -21,7 +21,7 @@ int main() {
   if (file == NULL) {
     // handle error
   }
-  
+
   // do something with `file`
 }
 ```
@@ -42,11 +42,10 @@ res, err := Divide(3, 0)
 @spec divide(integer, integer) :: {:ok, integer} | {:error, :divide_by_zero}
 
 case divide(3, 0) do
-  {:ok, res} -> IO.puts("success!") 
+  {:ok, res} -> IO.puts("success!")
   {:error, e} -> IO.puts("input new value")
 end
 ```
-
 
 ### Result 모나드
 
@@ -58,7 +57,6 @@ enum Result<T, E> {
 ```
 
 ## 오류를 던지기
-
 
 ## 참고
 

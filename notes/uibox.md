@@ -14,25 +14,25 @@ tags:
 
 ## 하드웨어
 
-| 구분    | 이름             | 비용       |
-| ------- | ---------------- | ---------- |
-| 케이스  | Jonsbo N2        | 154,627 원 |
-| CPU     | i5-12400         |            |
-| 메인보드| B660I snow dream |            |
-| RAM     | DDR4 16GB        |            |
-| PSU     | Supernova 650 SFX|            |
-| HDD1    | WD 14TB          |            |
-| HHD2    | ? 2TB            |            |
+| 구분     | 이름              | 비용       |
+| -------- | ----------------- | ---------- |
+| 케이스   | Jonsbo N2         | 154,627 원 |
+| CPU      | i5-12400          |            |
+| 메인보드 | B660I snow dream  |            |
+| RAM      | DDR4 16GB         |            |
+| PSU      | Supernova 650 SFX |            |
+| HDD1     | WD 14TB           |            |
+| HHD2     | ? 2TB             |            |
 
 ## 운영체제
 
-Proxmox VE를 호스트로 사용 중.
+[[proxmox]]를 호스트 OS로 사용 중.
 
 [Proxmox VE Admin Guide](https://pve.proxmox.com/pve-docs/pve-admin-guide.html)
 
-- [[proxmox-setup]]
+## 기타
+
 - [[nginx-reverse-proxy]]
-- [[proxmox-storage]]
 
 ## 참고
 

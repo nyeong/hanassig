@@ -53,11 +53,11 @@ node |> left() |> right()
 고치는 것이다.
 
 ```elixir
-@spec left(Node) :: Node | nil
+@spec left(Node | nil) :: Node | nil
 def left(nil), do: nil
 def left(node), do: node.left
 
-@spec right(Node) :: Node | nil
+@spec right(Node | nil) :: Node | nil
 def right(nil), do: nil
 def right(node), do: node.right
 ```

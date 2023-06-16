@@ -1,6 +1,6 @@
 ---
 title: 딕셔너리
-description: 
+description:
 date: 2023-02-24
 tags:
 ---
@@ -50,8 +50,8 @@ linear_list_2 = ['철수', '영희', '명수', '상수']
 
 선형 리스트로 구현한다면 정렬의 유무에 따라 효과적인 연산이 달라진다. 정렬하지 않을 경우 수정연산이 효과적이고, 정렬할 경우 탐색연산이 효과적이다.
 
-| 연산                                 | unsorted array | sorted array | unsorted linked list (s/d) | sorted linked list (s/d) |
-|------------------------------------|:--------------:|:------------:|:--------------------------:|:------------------------:|
+| 연산                               | unsorted array | sorted array | unsorted linked list (s/d) | sorted linked list (s/d) |
+| ---------------------------------- | :------------: | :----------: | :------------------------: | :----------------------: |
 | $\operatorname{Search}(D, k)$      |     $O(n)$     | $O(\log n)$  |      $O(n)$ / $O(n)$       |     $O(n)$ / $O(n)$      |
 | $\operatorname{Insert}(D, x)$      |     $O(1)$     |    $O(n)$    |      $O(1)$ / $O(1)$       |     $O(n)$ / $O(n)$      |
 | $\operatorname{Delete}(D, x)$      |     $O(1)$     |    $O(n)$    |     $O(n)^*$ / $O(1)$      |    $O(n)^*$ / $O(1)$     |
@@ -65,15 +65,15 @@ linear_list_2 = ['철수', '영희', '명수', '상수']
 
 #### 이진 탐색 트리
 
-| 연산                                 | binary search tree |
-|------------------------------------|:------------------:|
-| $\operatorname{Search}(D, k)$      |       $O(\log n)$       |
-| $\operatorname{Insert}(D, x)$      |       $O(\log n)$       |
-| $\operatorname{Delete}(D, x)$      |       $O(\log n)$       |
-| $\operatorname{Max}(D)$            |       $O(\log n)$       |
-| $\operatorname{Min}(D)$            |       $O(\log n)$       |
-| $\operatorname{Successor}(D, x)$   |       $O(\log n)$       |
-| $\operatorname{Predecessor}(D, x)$ |       $O(\log n)$       |
+| 연산                               | binary search tree |
+| ---------------------------------- | :----------------: |
+| $\operatorname{Search}(D, k)$      |    $O(\log n)$     |
+| $\operatorname{Insert}(D, x)$      |    $O(\log n)$     |
+| $\operatorname{Delete}(D, x)$      |    $O(\log n)$     |
+| $\operatorname{Max}(D)$            |    $O(\log n)$     |
+| $\operatorname{Min}(D)$            |    $O(\log n)$     |
+| $\operatorname{Successor}(D, x)$   |    $O(\log n)$     |
+| $\operatorname{Predecessor}(D, x)$ |    $O(\log n)$     |
 
 ### 참고
 

@@ -92,4 +92,3 @@ $ sudo pveam available
 ```
 pct enter <vmid>
 ```
-

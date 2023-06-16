@@ -68,7 +68,7 @@ SQL이 아닌 명령어는 `\`으로 시작한다.
 ```sql
 CREATE TABLE cities (
   name       varchar(80),
-  location   point  
+  location   point
 );
 
 DROP TABLE cities;

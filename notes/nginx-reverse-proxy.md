@@ -23,10 +23,10 @@ sequenceDiagram
 이때 리버스 프록시를 운영하면 아래와 같은 이점이 있다.
 
 1. 보안. SSL 같은 암호화를 맡아서 처리를 할 수 있다.
-또한 내부 주소를 숨기고 도메인 주소만 노출할 수 있다.
+   또한 내부 주소를 숨기고 도메인 주소만 노출할 수 있다.
 2. 확장. 서브 도메인을 이용하여 여러 서비스를 하나의 도메인으로 노출할 수 있다.
 3. 성능. 캐싱, 압축을 적용하여 성능에서 이득을 볼 수 있긴 한데... 얼마나
-이득일지는 잘 모르겠다.
+   이득일지는 잘 모르겠다.
 
 ## 외부에서 홈 서버에 접속하기
 
@@ -50,7 +50,7 @@ sequenceDiagram
 4. 라우터는 받은 모든 HTTPS 요청을 Proxmox VE의 nginx에 넘긴다.
 5. nginx는 받은 요청을 검사하여 처리 후 적절한 서비스로 넘겨준다.
 
-따라서 
+따라서
 
 - 도메인을 DNS에 등록해야하고
 - 라우터에서 nginx로 포트 포워딩 해줘야하고
@@ -125,22 +125,20 @@ DNS 등록은 DNS 제공 서비스를 통해 해야하는데, 본래 쓰던 [clo
 이용하였다.
 
 - 타입: A
-- 이름: www, @, *
+- 이름: www, @, \*
 - 주소: 내 IP주소
 - proxy: DNS only
 - TTL: auto
 
 ![](/assets/cloudflare-dns-config.png)
 
-www와 루트(@), 와일드카드(*) 세 개를 등록하자. 완료하면 이제 [nyeong.me](http://nyeong.me)로
+www와 루트(@), 와일드카드(\*) 세 개를 등록하자. 완료하면 이제 [nyeong.me](http://nyeong.me)로
 접속하면 IP주소로 접속했을 때와 동일한 화면을 볼 수 있다.
 
 ### 레코드 종류
 
 - A 레코드
 - CNAME 레코드
-
-
 
 ## Let's Encrypt로 인증서 받기
 
@@ -179,8 +177,8 @@ $ acme.sh --issue \
 ```
 
 - acme.sh는 install 할 때 cron이 존재하는지 검사한다. 페도라는 `systemd`를
-이용하므로 cron이 없으므로 `--force` 명령어로 진행시킨다.
-`acme.sh --cron`
+  이용하므로 cron이 없으므로 `--force` 명령어로 진행시킨다.
+  `acme.sh --cron`
 
 이후 `acme.sh list` 확인하면 잘 발급되었음을 볼 수 있다.
 
@@ -193,7 +191,6 @@ nyeong.me    "ec-256"   *.nyeong.me  LetsEncrypt.org  2023-03-20T05:03:49Z  2023
 SSL 설정은 모질라의
 [SSL Configuration Generator](https://ssl-config.mozilla.org/#server=nginx&version=1.22.1&config=modern&openssl=3.0.5&guideline=5.6)를
 이용하였다.
-
 
 ```
 server {
@@ -226,6 +223,7 @@ server {
 ```
 
 ### 리버스 프록시
+
 ㅈ
 
 ### nextcloud
