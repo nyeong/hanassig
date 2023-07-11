@@ -10,18 +10,25 @@ tags: []
 
 배움이 부족하기에 내용에 옳지 않거나 오래된 것들이 있을 수 있습니다.
 고쳐야 할 점이 있다면 [저장소 이슈](https://github.com/nyeong/hanassig/issues/new)
-혹은 [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)를 통해 연락주시면 반영하겠습니다.
+혹은 [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)를 통해 연락주시면 반영하겠습니다
+.
 
 ## 최신 글
 
-[//begin]: # "recent"
-- [[n-plus-one-problem]]
-- [[typescript]]
-- [[arc-browser]]
-- [[git]]
-- [[index]]
+[//do]: # "recent"
 
-[//end]: #
+- [[index]]
+- [[web-backend]]
+- [[unix-signal]]
+- [[uibox]]
+- [[scala]]
+- [[python]]
+- [[proxmox-storage]]
+- [[proxmox-setup]]
+- [[programming-languages]]
+- [[postgresql]]
+
+[//end]: # "2023-07-11 11:17"
 
 ## 컴퓨터 과학
 
@@ -29,6 +36,27 @@ tags: []
 - [[data-structures]]
 - [[database]]
 - [[os]]
-- [[category-theory]]
 - [[network]]
 - [[programming-languages]]
+
+
+[//do]: # "inner-links"
+
+[algorithm]: algorithm.md
+[data-structures]: data-structures.md
+[database]: database.md
+[index]: index.md
+[network]: network.md
+[os]: os.md
+[postgresql]: postgresql.md
+[programming-languages]: programming-languages.md
+[proxmox-setup]: proxmox-setup.md
+[proxmox-storage]: proxmox-storage.md
+[python]: python.md
+[scala]: scala.md
+[uibox]: uibox.md
+[unix-signal]: unix-signal.md
+[web-backend]: web-backend.md
+
+[//end]: # "2023-07-11 11:17"
+
