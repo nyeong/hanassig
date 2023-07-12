@@ -31,3 +31,13 @@ tags:
 ## 참고
 
 - [2015-2017 가을학기 자료구조 및 실습 - YouTube](https://www.youtube.com/playlist?list=PL52K_8WQO5oXIATx2vcTvqwxXxoGxxsIz)
+
+[//do]: # "inner-links"
+
+[dictionary]: dictionary.md
+[disjoint-set]: disjoint-set.md
+[heap]: heap.md
+[linear-list]: linear-list.md
+[minimum-spanning-tree]: minimum-spanning-tree.md
+
+[//end]: # "2023-07-12 07:28"

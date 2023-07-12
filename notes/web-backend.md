@@ -10,7 +10,7 @@ tags:
   - HTTP
   - DNS, 도메인
 - 프로그래밍 언어와 웹 프레임워크
-  - Elixir with [[phoenix]]
+  - Elixir with phoenix
   - JavaScript with NextJS
 - 버전 컨트롤과 협업
   - Git
@@ -98,3 +98,9 @@ Cross Site Request Forgery attack. 크로스-사이트 요청 변조는 인증�
 
 - [Backend Developer Roadmap](https://roadmap.sh/backend)
 - [코드 리뷰는 스포츠다 - 재그지그의 개발 블로그](https://wormwlrm.github.io/2023/02/20/Code-Review-is-a-Sports.html)
+
+[//do]: # "inner-links"
+
+[database]: database.md
+
+[//end]: # "2023-07-12 07:28"

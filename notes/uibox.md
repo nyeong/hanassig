@@ -41,3 +41,10 @@ tags:
 - [클리앙 : 나스당](https://www.clien.net/service/board/cm_nas)
 - [2cpu, 지름이 시작되는 곳!](https://www.2cpu.co.kr/)
 - [homelabbity](https://www.reddit.com/r/homelab/)
+
+[//do]: # "inner-links"
+
+[nginx-reverse-proxy]: nginx-reverse-proxy.md
+[proxmox]: proxmox.md
+
+[//end]: # "2023-07-12 07:28"
