@@ -1,6 +1,7 @@
 # 하나씩
 
-배운 것들을 하나씩 정리합니다.
+배운 것들을 하나씩 정리합니다. 인덱스는 [notes/index.md](notes/index.md)를
+참고해주세요.
 
 - 라이센스: [CC BY-SA](LICENSE)
 - 퍼블리싱: [annyeong.me](https://annyeong.me)
