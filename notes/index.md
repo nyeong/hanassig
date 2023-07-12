@@ -10,7 +10,7 @@ tags: []
 
 배움이 부족하기에 내용에 옳지 않거나 오래된 것들이 있을 수 있습니다.
 고쳐야 할 점이 있다면 [저장소 이슈](https://github.com/nyeong/hanassig/issues/new)
-혹은 [연합우주 (@annyeong@stella.place)](https://stella.place/@annyeong)를 통해 연락주시면 반영하겠습니다
+혹은 메일(me@annyeong.me)를 통해 연락주시면 반영하겠습니다
 .
 
 ## 최신 글
