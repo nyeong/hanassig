@@ -11,15 +11,15 @@ defmodule Lexer do
   end
 
   def next_token(source, context) do
-    {ch, rest} = String.next_grapheme(source)
-    {source, context} = case ch do
-      "\n" ->
+    {source, context} = case source do
+      "\n[//do]: # " <> rest ->
         read_dynamic_block(rest, context)
       
-      "[" ->
+      "[[" <> rest ->
         read_inner_link(rest, context)
         
       _ ->
+        {ch, rest} = String.next_grapheme(source)
         {rest, add_buffer(context, ch)}
     end
 
@@ -27,7 +27,7 @@ defmodule Lexer do
   end
 
   def read_dynamic_block(source, context) do
-    pattern = ~r/^\[\/\/do\]: # "([a-z\-]+)".*/
+    pattern = ~r/^"([a-z\-]+)".*/
     case Regex.run(pattern, source) do
       [_, template_name | _] ->
         token = {:dynamic_block, template_name}
@@ -47,7 +47,7 @@ defmodule Lexer do
   end
 
   def read_inner_link(source, context) do
-    pattern = ~r/^\[([a-z\-]+)\]\]/
+    pattern = ~r/^([a-z\-]+)\]\]/
     case Regex.run(pattern, source) do
       [whole, link_id] ->
         token = {:inner_link, link_id}
@@ -158,7 +158,9 @@ end
 defmodule Renderer do
   def render(%Parser{} = parser) do
     rendered_tokens = Enum.reduce(parser.tokens, "", &render_tokens/2)
-    rendered_tokens <> render_inner_links(parser.inner_links)
+    rendered_tokens
+    |> String.trim_trailing()
+    |> then(&(&1 <> "\n" <> render_inner_links(parser.inner_links)))
   end
 
   def render_inner_links(inner_links) do
@@ -184,9 +186,9 @@ defmodule Renderer do
 
   def render_dynamic_block(content, name) do
     now = NaiveDateTime.utc_now() |> Calendar.strftime("%Y-%m-%d %H:%M")
-    ~s(\n[//do]: # "#{name}"\n\n) <>
-    content <>
-    ~s(\n\n[//end]: # "#{now}"\n)
+    ~s(\n[//do]: # "#{name}"\n\n)
+    <> content
+    <> ~s(\n\n[//end]: # "#{now}"\n)
   end
 end
 
