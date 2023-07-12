@@ -44,4 +44,3 @@ BFS; breadth-first search.
 큐가 필요하다.
 
 ### 활용
-

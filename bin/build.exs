@@ -54,7 +54,7 @@ defmodule Lexer do
         {skip_source(source, whole), add_token(context, token)}
 
       _ ->
-        {source, add_buffer(context, "[")}
+        {source, add_buffer(context, "[[")}
     end
   end
 
@@ -164,9 +164,13 @@ defmodule Renderer do
   end
 
   def render_inner_links(inner_links) do
-    Enum.map(inner_links, fn {id, path} -> "[#{id}]: #{String.slice(path, 6..-1)}" end)
-    |> Enum.join("\n")
-    |> render_dynamic_block("inner-links")
+    if Enum.empty?(inner_links) do
+      ""
+    else
+      Enum.map(inner_links, fn {id, path} -> "[#{id}]: #{String.slice(path, 6..-1)}" end)
+      |> Enum.join("\n")
+      |> render_dynamic_block("inner-links")
+    end
   end
 
   def render_tokens({:raw, str}, acc) do
@@ -192,9 +196,15 @@ defmodule Renderer do
   end
 end
 
-IO.read(:stdio, :eof)
-|> Lexer.tokenize()
-|> Parser.parse()
-|> Renderer.render()
-|> IO.puts()
-# |> IO.inspect()
+File.ls!("notes")
+|> Enum.map(fn note_name ->
+  if String.ends_with?(note_name, ".md") do
+    file_path = "notes/" <> note_name
+    content = File.read!(file_path)
+    |> Lexer.tokenize()
+    |> Parser.parse()
+    |> Renderer.render()
+
+    File.write!(file_path, content)
+  end
+end)

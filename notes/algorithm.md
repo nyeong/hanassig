@@ -25,3 +25,11 @@ tags:
 
 - Buck Shlegeris, [알고리즘 학습에 대한 조언](https://edykim.com/ko/post/advice-on-learning-algorithms/), 김용균 역.
 - [[data-structures]]
+
+[//do]: # "inner-links"
+
+[data-structures]: data-structures.md
+[dfs-bfs]: dfs-bfs.md
+[time-complexity]: time-complexity.md
+
+[//end]: # "2023-07-12 07:28"

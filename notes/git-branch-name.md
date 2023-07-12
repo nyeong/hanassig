@@ -45,3 +45,9 @@ $ ln -sf ~/.dotfiles/git/config ~/.config/git/config
 - [[devenv]]
 
 [^1]: [Linux team approves new terminology, bans terms like 'blacklist' and 'slave'](https://www.zdnet.com/article/linux-team-approves-new-terminology-bans-terms-like-blacklist-and-slave/)
+
+[//do]: # "inner-links"
+
+[devenv]: devenv.md
+
+[//end]: # "2023-07-12 07:28"

@@ -18,3 +18,11 @@ kvm 프로세스를 강제로 꺼주자:
 $ ps aux | grep [VM ID]
 $ kill -9 [PID]
 ```
+
+[//do]: # "inner-links"
+
+[proxmox-archlinux]: proxmox-archlinux.md
+[proxmox-setup]: proxmox-setup.md
+[proxmox-storage]: proxmox-storage.md
+
+[//end]: # "2023-07-12 07:28"

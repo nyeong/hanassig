@@ -47,3 +47,10 @@ Preemptive multitasking.
 - [국민대학교 OCW](https://ocw.kookmin.ac.kr/course/230)
 - 반효경, [운영체제](http://www.kocw.net/home/search/kemView.do?kemId=1046323), 이화여자대학교, 2014
 - [ostep-translations/korean at master · remzi-arpacidusseau/ostep-translations · GitHub](https://github.com/remzi-arpacidusseau/ostep-translations/tree/master/korean)
+
+[//do]: # "inner-links"
+
+[concurrency]: concurrency.md
+[unix-signal]: unix-signal.md
+
+[//end]: # "2023-07-12 07:28"

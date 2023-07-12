@@ -41,3 +41,13 @@ https://helix-editor.com/
 ## zellij
 
 zellij 써보는 중.
+
+[//do]: # "inner-links"
+
+[asdf]: asdf.md
+[macos]: macos.md
+[uibox]: uibox.md
+[vs-code]: vs-code.md
+[zsh]: zsh.md
+
+[//end]: # "2023-07-12 07:28"
