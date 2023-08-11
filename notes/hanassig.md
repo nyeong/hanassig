@@ -52,3 +52,6 @@ tags:
 - [MaggieAppleton/digital-gardeners](https://github.com/MaggieAppleton/digital-gardeners)
 - [TuanManhCao/digital-garden](https://github.com/TuanManhCao/digital-garden)
 - [테크니컬 라이팅 깔끔하게 완성하는 10가지 원칙](https://insight.infograb.net/blog/2023/03/30/technical-writing-guide/)
+- [Why engineers should focus on writing](https://www.yieldcode.blog/post/why-engineers-should-write/)
+  - [엔지니어가 글쓰기에 집중해야 하는 이유](https://news.hada.io/topic?id=9963)
+- [Stopping at 90%](https://austinhenley.com/blog/90percent.html)
