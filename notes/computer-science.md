@@ -14,3 +14,7 @@ https://www.youtube.com/watch?v=-J_xL4IGhJA
 > -- 에츠허르 데이크스트라
 
 ## 컴퓨터 공학과는 어떻게 다른가?
+
+## 참고
+
+- [[computer-architecture]]
