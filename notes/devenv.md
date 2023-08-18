@@ -20,6 +20,14 @@ description: 내 개발환경 정리
 
 helix를 주로 쓰고 있다. 이제 vim 커맨드는 불안해서 잘 못 쓰겠다.
 
+뭘 쓰는 아래 기능은 있어야 좋겠다:
+
+- fuzzy finder
+- modal editing
+- tree-sitter support
+- LSP support
+- multi cursor
+
 ### helix
 
 > A post-modern text editor.
@@ -59,13 +67,6 @@ helix가 다 괜찮은데 몇가지 불만이 있다.
 기존의 시스템과 결합하기가 어렵다. 나는 터미널 멀티플렉서로 zellij를 쓰고 있다.
 zellij의 여러 편리한 창 관리 시스템을 helix에서 쓸 수 없어서 아쉽다.
 
-### kakoune
-
-> Modal editor — Faster as in fewer keystrokes — Multiple selections
-> — Orthogonal design
-
-https://kakoune.org/
-
 helix가 나오기 전에는 kakoune을 썼다. kakoune에서 helix로 넘어간 결정적인 이유는
 [키맵 토론](https://github.com/helix-editor/helix/issues/165)이 활발하게
 이루어지고 있고, 상당 부분 합리적이라고 공감하여 내가 귀찮게 키맵 설정을 하지
@@ -75,6 +76,10 @@ helix가 나오기 전에는 kakoune을 썼다. kakoune에서 helix로 넘어간
 ## 터미널 멀티플렉서
 
 zellij 써보는 중.
+
+## 참고
+
+- [제 2회 EXCELCON - Neovim으로 생산성 퀀텀점프하기](https://kodingwarrior.github.io/wiki/appendix/excelcon-2nd/)
 
 [//do]: # "inner-links"
 

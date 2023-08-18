@@ -64,6 +64,7 @@ C언어의 런타임은 [The C Runtime Initialization](https://www.embecosm.com/
 - 이광근, 컴퓨터과학이 여는 세계.
 - 지민규, [9가지 프로그래밍 언어로 배우는 개념: 1편 - 타입 이론](https://tech.devsisters.com/posts/programming-languages-1-type-theory).
 - 탐정토끼, [합성으로 연결되는 함수형과 객체지향](https://twinstae.github.io/composable/).
+- [utilForever/2023-MatKor-Rust-Interpreter](https://github.com/utilForever/2023-MatKor-Rust-Interpreter)
 
 [//do]: # "inner-links"
 

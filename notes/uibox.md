@@ -41,6 +41,7 @@ tags:
 - [클리앙 : 나스당](https://www.clien.net/service/board/cm_nas)
 - [2cpu, 지름이 시작되는 곳!](https://www.2cpu.co.kr/)
 - [homelabbity](https://www.reddit.com/r/homelab/)
+- [My Overkill Home Network - Complete Details 2023](https://blog.networkprofile.org/my-home-network-complete-details-2023/)
 
 [//do]: # "inner-links"
 
