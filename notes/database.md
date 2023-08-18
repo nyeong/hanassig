@@ -2,8 +2,10 @@
 title: 데이터베이스
 description: 데이터베이스
 date: 2023-02-24
-tags: []
+tags: [computer-science]
 ---
+
+- [[transaction]]
 
 ## 여러가지 키
 

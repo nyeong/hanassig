@@ -17,40 +17,99 @@ class Functor f where
   (<$) :: a -> f b -> f a
 
 class (Functor f) => Applicative f where
-    pure  :: a -> f a
-    (<*>) :: f (a -> b) -> f a -> f b
+  pure  :: a -> f a
+  (<*>) :: f (a -> b) -> f a -> f b
 ```
 
 ![](/assets/완전이해.jpg)
 
-## 모나드
+## 문제제기
 
-이진트리 하나를 생각해보자. 어떤 노드는 그 밑에 왼쪽노드와 오른쪽노드가
-있을 수도 있고, 없을 수도 있다.
+이진트리를 생각해보자. 어떤 노드는 그 밑에 왼쪽노드와 오른쪽노드가
+있을 수도 있고, 없을 수도 있다. 
 
 ```elixir
-@type Node :: %{ left: Node | nil, right: Node | nil }
+defmodule Node do
+  @type t :: %{left: Node.t | nil, right: Node.t | nil}
+  defstruct [:left, :right]
 
-@spec left(Node) :: Node | nil
-def left(node), do: node.left
+  @spec left(Node.t) :: Node.t | nil
+  def left(node), do: node.left
 
-@spec right(Node) :: Node | nil
-def right(node), do: node.right
+  @spec right(Node.t) :: Node.t | nil
+  def right(node), do: node.right
+end
 ```
 
-어떤 노드 `n`의 왼쪽 자식이 노드라면 그 노드도 자식이 있을 수 있다.
-`n`의 왼쪽 자식의 오른쪽 자식을 구하려면 어떻게 해야할까?
+여기서는 엘릭서로 표현하였으나, 대부분의 언어는 크게 다르지 않다.
+파이썬이면 아래와 같을 것이다.
 
-그냥 `n |> left() |> right()`하면 직관적이어서 좋겠지만, `left()`에서 `nil`이
-반환되는 경우를 생각해야 한다.
+```python
+class Node():
+  left: Optional[Node]
+  right: Optional[Node]
+
+  def __init__(self, left=None, right=None):
+    self.left = left
+    self.right = right
+```
+
+어떤 노드 `node`의 왼쪽 자식이 노드라면 그 노드도 자식이 있을 수 있다.
+`node`의 왼쪽 자식의 오른쪽 자식을 구하려면 함수를 중첩하여 `right(left(node))`
+꼴로 호출을 하거나, 파이프 연산자(`|>`)를 이용하여 `node |> left() |> right()`
+꼴로 구할 것이다.
+
+그런데 `node`에게 왼쪽 자식이 없다면 어떨까?
+
+```iex
+iex> %Node{} |> left() |> right()
+** (KeyError) key :right not found in: nil.
+```
+
+`%Node{} |> left()`가 `nil`이므로 `nil |> right()`를 하게 되는데, `nil`에서
+`:right`를 찾을 수 없으므로 에러가 발생한다.
+
+따라서 "어떤 노드의 왼쪽 자식의 오른쪽 자식"을 얻으려면 적절하게 에러를 예상하고
+처리해주어야한다.
+
+```elixir
+# 먼저 확인하고 실행하거나
+# LBLY: Look Before You Leap
+case node |> left() do
+  nil -> nil
+  node -> node |> right()
+end
+
+# 일단 접근하고 예외로 처리하거나
+# EAFP: Easier to Ask for Forgiveness
+try do
+  node |> left() |> right()
+rescue
+  e in KeyError -> nil
+end
+```
+
+왜 이런 에러처리가 필요할까? `left()`의 반환 타입과 `right()`의 인자 타입이
+다르기 때문이다. 용어로 바꾸어 표현하면 `left`의 공역(*codomain*)과
+`right`의 정의역(*domain*)이 서로 맞지 않기 때문이다. 함수가 입력으로
+받는 값들의 집합을 정의역(*domain*), 결과로 내뱉는 값들이 속한 집합을
+공역(*codomain*)이라고 한다.
+
+![](../assets/domain-codomain-range.jpg)
 
 ```
-node |> left() |> right()
-** (KeyError) key :left not found in: nil.
+인자타입 ---f--> 반환타입
+  정의역         공역
+  domain         codomain
 ```
 
-엘릭서스럽게 이 상황을 타파하는 간단한 방법은 저 두 함수가 `nil`을 받도록
-고치는 것이다.
+`left`와 `right` 함수는 `Node`를 받아 `Node | nil`을 반환한다. 이를 그대로
+`Node`만을 받는 `right`에 넣는다면 `nil`이 반환될 때 분명 문제가 생긴다.
+
+이 상황을 타파하는 간단한 방법은 저 두 함수가 `nil`을 받도록 고치는 것이다.
+반환타입도 `Node | nil`이고, 인자타입도 `Node | nil`이므로 두 함수를 연결하여도
+아무 문제가 생기지 않는다. 함수 내부에서 입력타입에 대한 분기처리는 `cond`든,
+try-rescue든 패턴매칭이든 무엇이든 상관 없다.
 
 ```elixir
 @spec left(Node | nil) :: Node | nil
@@ -60,29 +119,74 @@ def left(node), do: node.left
 @spec right(Node | nil) :: Node | nil
 def right(nil), do: nil
 def right(node), do: node.right
+
+%Node{} |> left() |> right()
+# => nil
 ```
 
-함수를 고치지 않고 해결할 수 있을까? 패턴 매칭이나 `case`로 해결할 수 있겠지만,
-구조가 깊어질 수록 표현하기 어렵다.
+`Node | nil`은 `Node`에 `nil`이라는 특별한 맥락이 붙은 타입이다. 이렇게 특수한
+맥락을 표현하기 위하여 타입을 확장할 수 있다.
+
+- `Node`가 없을 수도 있다면 `Node | nil`
+- `Node`가 여럿일 수 있다면 `[Node]`
+- 어떤 이유로든 실패할 수 있다면 `{:ok, Node} | {:error, reason}`
+
+
+
+매번 `Node`를 인자타입으로 삼는 함수를 만들 때마다 이런 경우를 모두 대비할
+수는 없다. 확장한 타입에서 깔끔하게 내가 원하는 정보만 가져올 수 있는 방법이
+있다면 `left()`의 인자타입을 바꾸지 않고서도 다른 여러 확장 타입에 대해서도
+적용할 수 있을 것이다.
+
+1. 어떤 타입들은 기존의 타입을 확장하여 맥락을 담는다.
+2. 이렇게 확장한 타입에서 원하는 값만 꺼내올 필요가 있다.
+
+## Functor
+
+위에서 `Node`가 없을 수도 있음을 표현하기 위해 `Node | nil`로 타입을 확장하였다.
+엘릭서 언어에서는 이를 별다른 타입으로 정의하지 않고 표현하기에, 다른 언어의
+템플릿 문법을 빌리자면 아래와 같다.
+
+- `T`가 없을 수도 있다면 `Option<T>`
+- `T`가 여럿일 수 있다면 `Vec<T>`
+- 어떤 이유로든 실패할 수 있다면 `Result<T, E>`
+
+이렇게 타입을 확장할 때, 기존의 함수를 쓸 수 있다면 편리할 것이다.
+
+펑터(*functor*)는 이럴 때 유용한 도구이다.
 
 ```elixir
-# 패턴매칭
-def left_right_node(%{left: %{right: lrnode}}), do: lrnode
-def left_right_node(_), do: nil
+# 이런 함수가 있을 때
+@spec left(Node) :: Node
 
-# case
-def left_right_node(node) do
-	case node.left do
-		%{left: left} ->
-			right(left)
-
-		_ ->
-			nil
-	end
-end
+# 이런 함수도 쓰고 싶다
+@spec left(Node | nil)  :: Node | nil
+@spec left([Node])  :: [Node]
+@spec left({:ok, Node})  :: {}
 ```
 
-`left/1`과 `right/1`을 파이핑하면 직관적으로 깊은 구조도 표현할 수 있다.
+
+```elixir
+@spec fmap((a -> b)) :: (a | nil -> b | nil)
+```
+
+```elixir
+%Node{}
+|> fmap(&left/1)
+|> fmap(&right/1)
+```
+
+Maybe Functor, 혹은 Optional Functor라고 부른다.
+
+List Functor라고 부른다.
+
+- `Node`가 없을 수도 있다면 `Node | nil`
+- `Node`가 여럿일 수 있다면 `[Node]`
+- 어떤 이유로든 실패할 수 있다면 `{:ok, Node} | {:error, reason}`
+
+따라서 `left(Node) :: Node | nil`로 인자타입을 그대로 두고
+함수를 연결할 수 있다면 좋을 것이다.
+
 함수를 고치지 않고 파이핑 할 수 있을까? `nil`인 경우를 처리해주는 함수를
 만들어 감싸주자.
 
@@ -173,3 +277,7 @@ def val ~>> f, do: f.(val)
 
 node ~>> left() ~>> right() ~>> right()
 ```
+
+## 참고
+
+- [Railway-Oriented Programming](https://kciter.so/posts/railway-oriented-programming)

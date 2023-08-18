@@ -55,3 +55,5 @@ tags:
 - [Why engineers should focus on writing](https://www.yieldcode.blog/post/why-engineers-should-write/)
   - [엔지니어가 글쓰기에 집중해야 하는 이유](https://news.hada.io/topic?id=9963)
 - [Stopping at 90%](https://austinhenley.com/blog/90percent.html)
+- [What makes developers productive?](https://jeremymikkola.com/posts/developer_productivity.html)
+  - [무엇이 개발자를 생산적이게 만드는가](https://news.hada.io/topic?id=10222)

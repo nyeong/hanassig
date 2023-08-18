@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "446c6dd18d5f6974",
+        "id": "4d103d10831e429f",
         "type": "tabs",
         "children": [
           {
-            "id": "57c494162f51edbb",
+            "id": "5f80d2eaf2309121",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/programming-languages.md",
-                "mode": "source",
+                "file": "notes/monad-functor-applicative.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": true
               }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/programming-languages.md",
+                "file": "notes/monad-functor-applicative.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/programming-languages.md",
+                "file": "notes/monad-functor-applicative.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/programming-languages.md"
+                "file": "notes/monad-functor-applicative.md"
               }
             }
           }
@@ -143,7 +143,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/programming-languages.md",
+                "file": "notes/monad-functor-applicative.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -166,7 +166,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.3462744074521955,
+                  "scale": 0.32132496924376264,
                   "close": true
                 }
               }
@@ -188,15 +188,19 @@
       "command-palette:명령어 팔레트 열기": true
     }
   },
-  "active": "57c494162f51edbb",
+  "active": "5f80d2eaf2309121",
   "lastOpenFiles": [
+    "notes/dgrep.md",
+    "notes/monad-functor-applicative.md",
+    "notes/law-of-excluded-middle.md",
+    "notes/index.md",
+    "notes/distributed-computing.md",
+    "notes/programming-languages.md",
     "bin/recent-notes.sh",
     "index.html",
     "bin/preprocessor.exs",
     "bin/render-templates.exs",
     "bin",
-    "notes/index.md",
-    "notes/programming-languages.md",
     "notes/elixir.md",
     "notes/nth-week-today.md",
     "notes/occams-razor.md",
@@ -217,9 +221,6 @@
     "notes/concurrency.md",
     "notes/free-sources.md",
     "notes/disjoint-set.md",
-    "notes/linear-list.md",
-    "notes/tax.md",
-    "notes/hanassig.md",
     "무제 파일.canvas",
     "notes/n-plus-one-problem.html",
     "notes/n-plus-one-problem.typ",

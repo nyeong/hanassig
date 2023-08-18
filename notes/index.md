@@ -39,6 +39,14 @@ tags: []
 - [[network]]
 - [[programming-languages]]
 
+## 프로그래밍
+
+- [[devenv]]
+
+## 인생
+
+- [[university]]
+
 [//do]: # "inner-links"
 
 [algorithm]: algorithm.md
