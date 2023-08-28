@@ -1,0 +1,83 @@
+= macOS
+An Nyeong <me@annyeong.me>
+:experimental:
+
+== dotfiles
+
+github:nyeong/.dotfiles 참고
+
+== 꿀팁
+
+=== ₩ 대신 백틱 입력하기
+
+``~/Library/KeyBindings/DefaultkeyBinding.dict``를 만들고 아래의 내용을 추가한다:
+
+[source,bash]
+{
+  "₩" = ("insertText:", "`");
+}
+
+명령어로 다 처리하려면 위의 내용을 복사한 채로 아래의 명령어를 실행한다:
+
+[source,bash]
+mkdir -p ~/Library/KeyBindings && pbpaste > ~/Library/KeyBindings/DefaultkeyBinding.dict
+
+=== 파인더 타이틀 아이콘 딜레이 조절
+
+macOS Big Sur부터 타이틀바의 아이콘은 기본적으로 숨겨져 있고, 마우스를 올려야 나온다.
+
+타이틀바에 아이콘을 계속 표시하려면 아래의 명령어를 Terminal에 입력한다:
+
+[source,bash]
+defaults write com.apple.Preview NSWindowSupportsAutomaticInlineTitle -bool false && killall Finder
+
+계속 표시하지는 않되, 마우스를 올리면 딜레이 없이 바로 나오게 하고자 하면 아래의 명령어를 입력한다:
+
+[source,bash]
+defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0" && killall Finder
+
+=== shift + space로 IME 전환하기
+
+언제부터인가 IME 전환에 kbd:[Shift+Space]를 지정할 수가 없다. 정확히는 kbd:[Shift]가 지정이 안된다.
+
+아래 명령어로 강제로 등록해야한다.
+
+[source,bash]
+/usr/libexec/PlistBuddy -c "Set AppleSymbolicHotKeys:60:value:parameters:2 131072" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+=== Karabiner로 Vim 스타일 방향키 쓰기
+
+https://karabiner-elements.pqrs.org/[Karabiner]로 키 입력을 커스텀해서
+kbd:[Caps Lock+hjkl]를 방향키로 쓰자.
+
+[source,bash]
+----
+# karabiner 설치
+brew install karabiner-elements
+# 설정 파일 다운로드
+git clone https://github.com/nyeong/.dotfiles ~/.dotfiles
+# 설정 복사
+mkdir -p ~/.config/karabiner/assets/complex_modifications
+ln -sf ~/.dotfiles/karabiner/nyeong.json ~/.config/karabiner/assets/complex_modifications
+----
+
+이후 Karabiner 켜고 complex-modifications에서 원하는 설정을 켜자.
+
+=== Hammerspoon으로 ESC 누를 때마다 영문 IME로 바꾸기
+
+Vim, Helix 등 모달 에디터를 사용하면 ESC로 노말 모드로 변경하면 IME도 함께 영문으로
+바꾸어야 한다. ESC가 눌릴 때마다 IME도 자동으로 영문으로 바꾸도록 설정하자.
+
+[source,bash]
+----
+# hammerspoon 설치
+brew install hammerspoon
+# 설정 파일 위치를 ~/.config/hammerspoon으로 바꾸기
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
+# 설정 복사
+ln -sf ~/.dotfiles/hammerspoon ~/.config/hammerspoon
+----
+
+== 참고
+
+- https://johngrib.github.io/wiki/hammerspoon-tutorial-00/

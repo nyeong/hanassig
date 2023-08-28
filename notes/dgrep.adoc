@@ -1,0 +1,9 @@
+= dgrep
+An Nyeong <me@annyeong.me>
+:toc:
+
+1. 문제 정의 및 분석
+2. 싱글 스레드 모델
+3. 멀티 스레드 모델
+4. 액터 모델
+5. CSP 모델
