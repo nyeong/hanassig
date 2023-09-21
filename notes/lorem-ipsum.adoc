@@ -1,4 +1,117 @@
 = 로렘 입숨
 An Nyeong <me@annyeong.me>
-:description: 
+:description: asciidoc 문법 예시
 :keywords: asciidoc
+
+문법을 참고하거나, 스타일 적용을 확인할 목적으로 자주 쓰는 asciidoc 문법을 정리하였습니다.
+일반적인 용례와 다르거나 생략이 있을 수 있습니다.
+정확한 문법은
+https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc Language Documentation]를
+참고하시기 바랍니다.
+
+== 문단
+
+로렘 입숨(lorem ipsum; 줄여서 립숨, lipsum)은 출판이나 그래픽 디자인 분야에서 폰트,
+타이포그래피, 레이아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기
+텍스트로, 최종 결과물에 들어가는 실제적인 문장 내용이 채워지기 전에 시각 디자인 프로젝트
+모형의 채움 글로도 이용된다.
+
+이런 용도로 사용할 때 로렘 입숨을 그리킹(greeking)이라고도 부르며, 때로 로렘 입숨은 공간만
+차지하는 무언가를 지칭하는 용어로도 사용된다.
+
+== 문서 정의
+
+[source, asciidoc]
+----
+= 문서 이름
+작성자 <이메일>
+:description: 문서 설명\
+여러줄써야 한다면 `\`로 이스케이프하여 여러 줄 작성.
+:keywords: 문서 주요 키워드
+----
+
+== 블록 문법
+
+=== 코드블록
+
+[source, elixir]
+----
+IO.puts "hello, world!"
+----
+
+마크다운과 동일하게 백틱(`) 세 개로 감싸도 괜찮다.
+
+=== 인용
+
+> 인용 내용
+> -- 출처, 인용 정보
+
+=== 참고 문헌
+
+asciidoc 자체 문법은 아니고, ebook 등으로 렌더링하기 위한 관습인듯.
+
+1. 섹션 하나를 만들고 `[bibliography]`라고 아이디를 준다.
+2. `[[[name]]]`으로 레퍼런스를 정의한다.
+3. `<<name>>`으로 레퍼런스를 인용한다.
+
+인용법은 아래처럼 하자:
+
+[1] 저자, "책 이름". 출판사, 년도.
+
+[source, adoc]
+----
+<<taoup>>
+
+[bibliography]
+== 참고
+
+.Optional list title
+- [[[taoup]]] Eric Steven Raymond. 'The Art of UNIX
+  Programming'. Addison-Wesley. ISBN 0-13-142901-9.
+- [[[walsh-muellner]]] Norman Walsh & Leonard Muellner.
+  'DocBook - The Definitive Guide'. O'Reilly & Associates. 1999.
+  ISBN 1-56592-580-7.
+----
+
+=== 리스트
+
+리스트를 이어주려면 아래처럼 해야한다.
+
+[source, adoc]
+----
+. 이 줄은 리스트 아이템의 첫 문단입니다.
++
+이 줄은 리스트 아이템의 두 번쨰 문단입니다.
+----
+
+== 인라인 문법
+
+=== 주석
+
+footnote 매크로로 주석을 작성한다.footnote:[이때 띄어쓰기는 필요 없다.]
+
+=== 링크
+
+일반적인 주소를 넣으면 자동으로 링크로 렌더링해준다.
+
+[source, adoc]
+----
+https://example.com[Example]
+----
+
+=== 크로스 레퍼런스
+
+[source, adoc]
+----
+<<index.adoc#>>
+----
+
+=== 키보드 매크로
+
+kbd:[Ctrl+\]]
+
+알아서 `+`는 렌더링에서 빼주므로 편리하다.
+
+== 참고
+
+- https://docs.asciidoctor.org/asciidoc/latest/[AsciiDoc Language Documentation]
