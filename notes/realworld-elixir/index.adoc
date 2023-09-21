@@ -1,0 +1,195 @@
+= RealWorld Elixir 개발 일지
+
+. 저장소: https://github.com/nyeong/realworld-elixir[nyeong/realworld-elixir]
+
+== 목적
+
+나는 웹을 공부하면서 온전한 웹 페이지를 처음부터 끝까지 개발한 경험은 부족하다.
+블로그 클론 프로젝트인 RealWorld를 명세에 따라 구현하며 인/허가, CRUD, 웹 보안, 데이터베이스 등
+주제를 공부하자.
+
+== 목표
+
+온전한 백엔드 구현:::
+  https://realworld-docs.netlify.app/docs/specs/backend-specs/introduction[주어진 백엔드 명세]를 온전히 구현한다.
+테스트 주도 개발:::
+  RealWorld 프로젝트에서 제공하는 
+  https://github.com/gothinkster/realworld/tree/main/apps/api-testing-cypress[crypress]와는 별개로
+  자체적인 테스트 도구를 갖추고 시작하자.
+벤치마킹:::
+  잘 짰는지 평가할 방법이 필요하다. 어느정도 성능이 나오는지 측정할 방법을 찾아보자.
+의사결정, 기록 남기기:::
+  블로그랑 GitHub Issue 등을 활용하여 남기자.
+보안 테스트:::
+  <<owasp>>를 참고하여 웹 보안을 달성하자.
+추가 기능 한 가지 구현:::
+  명세에 정의되어 있지 않는 추가 기능을 하나 구현하자.
+
+== 설치
+
+https://hexdocs.pm/phoenix/installation.html[Phoenix 문서]
+
+```bash
+# Hex 패키지 매니저 설치.
+$ mix local.hex
+# Phoenix 프로젝트 생성
+$ mix phx.new real_world
+# 의존성 설치, 컴파일, DB 생성
+$ cd real_world
+$ mix do deps.get, deps.compile, ecto.create, phx.server
+```
+
+```bash
+$ git remote add https://github.com/nyeong/realworld-elixir.git
+$ git push origin main
+```
+
+== 데이터베이스 스키마 설계
+
+난 데이터베이스에는 영 젬병이다. 컴퓨터 공학을 전공했으나 데이터베이스 관련 강의를 들은 적이 없다.
+주워들은 바로는 데이터베이스를 설계하기 위해서는 아래의 과정을 거친다:
+
+. 요구사항 분석
++
+프로젝트에서 데이터베이스의 역할을 분석한다.
+. 개념적 설계
++
+객체, 객체의 속성, 객체 사이의 관계를 도출하여 ERD를 작성한다.
+. 논리적 설계
++
+ERD를 바탕으로 쓰고자하는 데이터베이스의 논리구조에 적합한 릴레이션 스키마를 설계한다.
+이 과정에서 정규화를 적용하여 데이터베이스의 정합성을 높인다.
+. 물리적 설계
++
+릴레이션 스키마를 바탕으로 특정 데이터베이스 시스템을 감안하여 물리적 스키마를 설계한다.
+이 과정에서 필요시 역정규화를 하여 데이터베이스의 효율을 높인다.
+. 구현
++
+SQL을 작성하여 실행한다.
+
+[source,bash]
+----
+$ mix phx.gen.auth Accounts User users --hashing-lib argon2
+----
+
+아래의 파일들이 수정되거나 추가된다:
+
+----
+lib
+├── real_world/accouts
+│   │          ├── user.ex
+│   │          ├── user_notifier.ex
+│   │          └── user_token.ex
+│   └── accounts.ex
+└── real_world_web
+    ├── components/layouts/root.html.heex
+    ├── controllers/user_session_controller.ex
+    ├── live
+    │   ├── user_confirmation_instructions_live.ex
+    │   ├── user_confirmation_live.ex
+    │   ├── user_forgot_password_live.ex
+    │   ├── user_login_live.ex
+    │   ├── user_registration_live.ex
+    │   ├── user_reset_password_live.ex
+    │   └── user_settings_live.ex
+    ├── router.ex
+    └── user_auth.ex
+priv
+└── repo/migrations
+         └── 20230921103152_create_users_auth_tables.exs
+----
+
+요약하면 아래의 작업을 해준 셈이다.
+
+. users 마이그레이션을 생성하여 데이터베이스 스키마를 만들 준비를 함.
+. users 스키마를 생성하여 Ecto를 이용하여 데이터를 조작할 준비를 함.
+. users를 검증하는 기본적인 changeset을 생성함.
+. users를 생성할 때 비밀번호를 Argon2 알고리즘으로 암호화하고, 로그인할 때 이를 검증함.
+. 회원가입 시 이메일로 검증 토큰을 보내는 로직을 생성함.
+. Accounts 모듈을 생성하여 User와 관련된 동작을 노출함.
+. 위 기능에 대한 controller와 liveview를 생성함.
+. 세션에서 유저 토큰을 가져와 conn에 유저 정보를 삽입하는 미들웨어를 생성하고 이를 파이프라인에 끼워넣음
+
+[source, bash]
+----
+$ mix do deps.get, deps.compile, ecto.migrate
+$ mix phx.server
+----
+
+. Accounts: User, UserToken, UserNotifier 등의 모듈을 담을 모듈.
++
+Web에서는 `Accounts` 모듈만 가져다 쓰면 되도록 꼭 필요한 정보만 노출하는 역할을 한다.
+. User: User 스키마를 정의할 모듈.
+. users: 테이블 이름.
+
+``priv/repo/migrations``에 마이그레이션이 생성된다. ``Ecto.Migration``을 이용하여 정의.
+
+[source, elixir]
+----
+create table(:users) do
+  add :email, :citext, null: false
+  add :hashed_password, :string, null: false
+  add :confirmed_at, :naive_datetime
+  timestamps()
+end
+----
+
+`citext` 필드는 대소문자를 구별하지 않는(case-insensitive) 타입이다.
+지원하지 않는 DB도 있다고 하는데, PostgreSQL에서는 다행히 지원한다.
+지원하지 않는 경우, 저장하기 전에 모두 소문자로 바꾸는 편이 좋다.
+
+많은 작업을 공짜로 해준 것은 좋지만 이메일 인증이나 이에 대한 LiveView는 지금
+하려는 작업이 아니고, 직접 만들고 싶어서 작업 내용을 날렸다.
+
+[source, bash]
+----
+# 마이그레이션 취소하기
+$ mix ecto.rollback
+# 커밋하지 않은 변경사항 초기화하기
+$ git checkout .
+# git으로 추적되지 않는 파일 날리기
+$ git clean -fd
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+                                                                                          
+nothing to commit, working tree clean
+----
+
+대신 `phx.gen.json`을 이용하여 json view를 생성하고 가장 기본적인 CRUD에 대한
+도움만 받자.
+
+[source, bash]
+----
+$ mix phx.gen.json Accounts User users username:string email:string bio:text image:string hashed_password:string
+* creating lib/real_world_web/controllers/user_controller.ex
+* creating lib/real_world_web/controllers/user_json.ex
+* creating lib/real_world_web/controllers/changeset_json.ex
+* creating test/real_world_web/controllers/user_controller_test.exs
+* creating lib/real_world_web/controllers/fallback_controller.ex
+* creating lib/real_world/accounts/user.ex
+* creating priv/repo/migrations/20230921111351_create_users.exs
+* creating lib/real_world/accounts.ex
+* injecting lib/real_world/accounts.ex
+* creating test/real_world/accounts_test.exs
+* injecting test/real_world/accounts_test.exs
+* creating test/support/fixtures/accounts_fixtures.ex
+* injecting test/support/fixtures/accounts_fixtures.ex
+                                                                                          
+Add the resource to your :api scope in lib/real_world_web/router.ex:
+                                                                                          
+    resources "/users", UserController, except: [:new, :edit]
+                                                                                          
+                                                                                          
+Remember to update your repository by running migrations:
+                                                                                          
+    $ mix ecto.migrate
+----
+
+`ecto.migrate` 돌리기 전에, 마이그레이션을 조금만 손보자.
+
+== 참고
+
+- https://realworld-docs.netlify.app/[RealWorld]
+- https://github.com/gothinkster/realworld[gothinkster/realworld]
+- [[[owasp]]] https://cheatsheetseries.owasp.org/index.html[OWASP Cheat Sheet Series]

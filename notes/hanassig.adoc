@@ -1,4 +1,4 @@
 = 하나씩
 An Nyeong <me@annyeong.me>
 
-== asciidoc
+배운 거 기록하는 곳.

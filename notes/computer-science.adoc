@@ -1,0 +1,80 @@
+= 컴퓨터 과학
+An Nyeong <me@annyeong.me>
+
+대학을 얼레벌레 졸업해버려서 막상 까보면 CS에 대해 별로 아는 게 없다.
+CS를 뭘 보고 배워야 하는지를 정리하자.
+
+== 주제
+
+1. 프로그래밍
+2. 컴퓨터 구조
+3. 자료구조와 알고리즘
+4. <<os,운영체제>>
+5. 컴퓨터 네트워크
+6. 데이터베이스
+7. 프로그래밍 언어
+
+== 이름에 대하여
+
+> "컴퓨터 과학"이라는 이름은 엉망입니다. 먼저, 이건 과학이 아닙니다.
+> 그리고 그다지 컴퓨터에 대한 내용도 아닙니다.
+> 
+> -- 할 아벨슨, MIT 6.001 Structure and Interpretation 강의에서<<mit>>
+
+
+> 컴퓨터 과학에서의 컴퓨터는 천문학에서의 망원경 그 이상의 것이 아니다.
+>
+> -- 에츠허르 데이크스트라footnote:[데이크스트라가 먼저 한 말이 아니고, 그 시기에 통용된 비유라는 말이 있다.<<ts>>]
+
+기계적인 계산이란 무엇이고, 어디에 써먹을 수 있는지 고민하는 학문.
+
+== 알고리즘
+
+.자료
+. Steven Skiena, https://www.algorist.com/[The Algorithm Design Manual].
+
+[os]
+== 운영체제
+
+운영체제: 아주 쉬운 세 가지 이야기:::
+
+원문을 줄여서 OSTEP이라고 부른다.
+가상화, 동시성, 영속성 세 가지 관점으로 운영체제를 나누어 배운다.
+
+. https://pages.cs.wisc.edu/~remzi/OSTEP/[OSTEP]
+. https://pages.cs.wisc.edu/~remzi/OSTEP/Korean/[번역본]
+
+[db]
+== 데이터베이스
+
+<<database.adoc#>>
+
+.알아야하는 것
+. 데이터베이스 조작 (SQL)
+. 데이터 시스템 설계
+.. 인덱스
+.. 쿼리 처리와 최적화
+. 트랜잭션
+.. 동시성, 일관성, 복구
+. 데이터 모델링
+<<cs186>>
+
+.자료
+. https://use-the-index-luke.com/[SQL Indexing and Tuning e-Book]
+. https://www.youtube.com/@CS186Berkeley/playlists
+
+== 프로그래밍 언어론
+
+Crafting Interpreters:::
+
+- https://craftinginterpreters.com/contents.html
+
+[bibliography]
+== 참고
+
+- [[[mit]]] https://www.youtube.com/watch?v=-J_xL4IGhJA[Lecture 1A: Overview and Introduction to Lisp]
+- https://github.com/minnsane/TeachYourselfCS-KR/blob/main/README.md[컴퓨터과학 스스로 학습하기]
+- [[[ts]]] https://en.wikiquote.org/wiki/Computer_science
+- https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-ko.md
+- https://github.com/linkedin/school-of-sre
+- [[[cs186]]] Prof. Joe Hellerstein, https://www.youtube.com/watch?v=D_a2DNSEOa8&list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge&index=2[Introduction to Database Systems].

@@ -1,0 +1,6 @@
+= 동시성
+An Nyeong <me@annyeong.me>
+:description: 어플리케이션에서 동시성을 다루는 방법
+
+> 동시성은 여러 일을 한꺼번에 다루는 것이다. 병렬성은 여러 일을 한꺼번에 해내는 것이다.
+> -- Rob Pike, https://go.dev/blog/waza-talk

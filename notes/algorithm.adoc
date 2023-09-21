@@ -1,0 +1,32 @@
+= 알고리즘
+An Nyeong <me@annyeong.me>
+
+. 계산 복잡도
+. <<data-structures.adoc#,자료구조>>
+. 정렬
+. 탐색
+. 분할 정복
+. 그래프 탐색
+. 동적 계획법
+
+== 동적 계획법
+
+동적 계획법은 재귀를 이용하여 최적해를 찾는 알고리즘 기법이다.
+
+분할 정복과의 관계
+
+동적 계획법을 사용하여 문제를 풀 때에는 메모이제이션 혹은 타뷸레이션을 주로 사용한다.
+
+메모이제이션(memoization)은 계산 결과를 캐싱하여 중복 계산을 줄이는 최적화 기법이다. 하향식 해결법이다.
+
+타뷸레이션(tabulation)은 미리 필요한 계산을 전부 해버리는 것이다. 문제를 쪼개어 작은 문제로 만든 후
+작은 문제들을 해결하며 점점 큰 문제를 해결하는 상향식 해결법이다.
+
+[bibliography]
+== 참고
+
+- [[[dmt]]] https://programming.guide/dynamic-programming-vs-memoization-vs-tabulation.html[Dynamic programming vs memoization vs tabulation].
+- Steven S. Skiena, "The Algorithm Design Manual".
+- 와타노베 유타카, "프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문".
+- 박정흠, "자료구조". 가톨릭대학교.
+- Buck Shlegeris, https://edykim.com/ko/post/advice-on-learning-algorithms/[알고리즘 학습에 대한 조언]. 김용균 번역.

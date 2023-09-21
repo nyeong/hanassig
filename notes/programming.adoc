@@ -6,13 +6,16 @@ An Nyeong <me@annyeong.me>
 == Eager vs lazy
 
 Eager::
-  열렬한, 열심인. greedy라고도 한다.
+
+열렬한, 열심인. greedy라고도 한다.
 
 Lazy::
-  게으른.
+
+게으른.
 
 1. 계산할 때
-+
-
 2. 다른 서비스로 요청을 보낼 때
-+
+
+== 동시성
+
+<<concurrency.adoc#>> 참고

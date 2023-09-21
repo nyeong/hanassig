@@ -1,0 +1,14 @@
+= 개발환경
+
+== 툴
+
+. ls -> lsd
+. cat -> bat
+. find -> fd
+. grep -> ripgrep
+. fzf
+. asdf
+
+== 참고
+
+- https://news.hada.io/topic?id=4784

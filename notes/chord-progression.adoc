@@ -1,0 +1,56 @@
+= 코드 진행
+An Nyeong <me@annyeong.me>
+
+== 투 파이브
+
+ii^7^ - V^7^
+
+.투-파이브-원 코드진행
+ii^7^ - V^7^ - IV^7^
+
+== Just the two of us
+
+IV^△7^ - III^7^ - vi^7^ - v^7^ - I^7^
+
+최근 일본 음악에서 많이 나오는 진행. 마루노우치 새디스틱으로도 유명해서 일본에서는 마루노우치 진행이라고
+부르는 듯.
+
+video::GJoKl6M-FkI[youtube]
+
+- Bill Withers - Just The Two Of Us
+- 시이나 링고 - 丸の内ディスチック
+- 레오루 - 第六感
+
+== 팝-펑크 진행
+
+- I - V - vi - IV 
+- I - vi - IV - V
+
+혹은 이를 순서만 바꿔서 돌려쓴다. 락이고 단순하다 싶으면 이거 넣어보면 대부분 맞음.
+캐논코드를 변형한 형태이다.
+
+- Linkin Park - Numb
+
+.참고
+- https://en.wikipedia.org/wiki/I%E2%80%93V%E2%80%93vi%E2%80%93IV_progression[I–V–vi–IV progression]
+
+== 왕도진행
+
+IV^Δ7^ – V^7^ – iii^7^ - vi
+
+일본 음악에서 많이 써서 왕도 진행이라는 이름이 붙은 듯.
+
+의외로 "Never gonna give you up"이 이 진행이랑 비슷하다. 시작만 ii^7^이다.
+
+.참고
+- https://en.wikipedia.org/wiki/Royal_road_progression[Royal road progression]
+
+== 코무로 진행
+
+vi - IV - V - I 
+
+작곡가 코무로 테츠야가 많이 썼다고 하여 붙은 이름인 듯
+
+video::Itjv9yPEZRQ[youtube]
+
+- King Gnu - 百日

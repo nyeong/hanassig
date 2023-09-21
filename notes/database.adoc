@@ -1,0 +1,83 @@
+= 데이터베이스
+An Nyeong <me@annyeong.me>
+
+== SQL
+
+선언적임. 어떻게 가져오라고 명시하는 대신, 원하는 바만 명시함.
+
+DDL:: 데이터 정의 언어(Data Definition Language)
+
+CREATE, ALTER, DROP, TRUNCATE 등
+
+DML:: 데이터 조작 언어(Data Manipluation Language)
+
+SELECT, INSERT, UPDATE, DELETE 등
+
+=== JOIN
+
+외적(cross product), 곱집합(product), 데카르트 곱(cartesian product)이라고 부르는 연산이 기본이다.
+임의의 두 테이블을 곱하면 그 결과는 가능한 모든 쌍의 집합이다.
+
+image::./assets/cartesian-product.png
+
+[source, sql]
+----
+SELECT *
+FROM Cat, Butler
+WHERE Cat.butler_id = Butler.id
+
+SELECT *
+FROM Cat JOIN Butler
+ON Cat.butler_id = Butler.id
+----
+
+INNER JOIN:: 두 테이블 모두에 데이터가 있어야 포함됨
+OUTER JOIN:: 두 테이블을 조인할 때, 한 테이블에만 결과가 있어도 포함된다.
++
+어느 테이블을 기준으로 할 지 명시해야하므로 `LEFT OUTER JOIN`, ``RIGHT OUTER JOIN``처럼 기준을 명시해야한다.
+
+CROSS JOIN:: 한쪽 테이블의 모든 행과 다른 쪽 테이블의 모든 행을 조인
+SELF JOIN:: 자신이 자신과 조인
+
+=== 서브쿼리
+
+TODO
+
+=== 뷰
+
+TODO
+
+== 키
+
+키는 속성 혹은 속성의 집합이 될 수 있다.
+
+어떤 키를 이용하여 각각의 튜플을 특정해낼 수 있다면 그 키는 유일성을 만족한다.
+
+수퍼키(super key):: 유일성을 만족하는 키
+후보키(candidate key):: 최소한의 구성으로 유일성을 만족하는 키
+기본키(primary key):: 후보키 중 기본으로 사용하고자 선택한 키
+대체키(alternative key):: 기본키가 아닌 후보키
+외래키(foreign key):: 다른 릴레이션을 참고할 때 사용하는 키
+
+== 데이터베이스 설계
+
+.데이터베이스 설계 단계
+. 요구사항 분석
+  - 사용자의 관점에서, 데이터베이스가 무엇을 해주어야하는지 정의한다.
+. 개념적 설계
+  - 제일 고수준의 모델링
+  - ER 모델이 결과로 나온다.
+  - ORM(Object-Relational Mappings)의 도움을 받을 수 있다
+. 논리적 설계
+  - ER 모델을 DBMS 모델로 옮긴다
+  - 스키마의 일관성을 점검하고 정규화한다
+. 물리적 설계
+  - 인덱스, 디스크 레이아웃 등을 고민한다.
+. 보안 설계
+  - 누가 어떤 정보에 접근해야하는지 고민하고 제한하고 허가한다.
+
+[bibliography]
+== 참고
+
+- [[[cs186]]] Prof. Joe Hellerstein, https://www.youtube.com/watch?v=D_a2DNSEOa8&list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge[Introduction to Database Systems].
+- https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit[programmers school SQL 고득점 Kit]

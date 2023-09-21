@@ -1,0 +1,6 @@
+= 웹 보안
+An Nyeong <me@annyeong.me>
+
+== 참고
+
+- https://kciter.so/posts/basic-web-hacking
