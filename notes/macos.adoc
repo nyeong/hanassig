@@ -1,6 +1,6 @@
 = macOS
 An Nyeong <me@annyeong.me>
-:experimental:
+:keywords: devenv
 
 == dotfiles
 

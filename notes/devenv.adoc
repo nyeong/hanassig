@@ -1,5 +1,14 @@
 = 개발환경
 
+== 일상적으로 쓰는 개발도구
+
+- 셸: zsh
+- 편집기: helix, vs-code
+- 터미널 파인더: nnn
+- 터미널 멀티플렉서: zellij
+- dotfile 관리: github:[nyeong/.dotfiles]에서 git으로
+- 언어 버전 관리: git
+
 == 툴
 
 . ls -> lsd

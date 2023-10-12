@@ -3,3 +3,7 @@ An Nyeong <me@annyeong.me>
 
 - <<guitar-chord-formation.adoc#>>
 - <<chord-progression.adoc#>>
+
+== 카피
+
+- <<look-at-the-sea.adoc#>
