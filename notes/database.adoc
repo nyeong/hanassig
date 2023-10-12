@@ -3,14 +3,14 @@ An Nyeong <me@annyeong.me>
 
 == SQL
 
-선언적임. 어떻게 가져오라고 명시하는 대신, 원하는 바만 명시함.
+선언적임. 어떻게 가져오라고 명시하는 대신 원하는 바만 명시함.
 
 DDL:: 데이터 정의 언어(Data Definition Language)
-
++
 CREATE, ALTER, DROP, TRUNCATE 등
 
 DML:: 데이터 조작 언어(Data Manipluation Language)
-
++
 SELECT, INSERT, UPDATE, DELETE 등
 
 === JOIN
@@ -22,10 +22,12 @@ image::./assets/cartesian-product.png
 
 [source, sql]
 ----
+-- FROM - WHERE
 SELECT *
 FROM Cat, Butler
 WHERE Cat.butler_id = Butler.id
 
+-- JOIN - ON
 SELECT *
 FROM Cat JOIN Butler
 ON Cat.butler_id = Butler.id

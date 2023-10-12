@@ -1,5 +1,6 @@
 = 컴퓨터 과학
 An Nyeong <me@annyeong.me>
+:keywords: computer-science
 
 대학을 얼레벌레 졸업해버려서 막상 까보면 CS에 대해 별로 아는 게 없다.
 CS를 뭘 보고 배워야 하는지를 정리하자.

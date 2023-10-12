@@ -1,5 +1,6 @@
 = 코드 진행
 An Nyeong <me@annyeong.me>
+:keywords: music
 
 == 투 파이브
 

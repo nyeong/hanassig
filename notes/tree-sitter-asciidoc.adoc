@@ -1,7 +1,7 @@
 = Tree-sitter로 AsciiDoc 파서 만들기
 An Nyeong <me@annyeong.me>
 
-<<asciidoc.adoc#,AsciiDoc>>은 문서 편집에 적합한 경량 마크업 언어이다.
+<<asciidoc.adoc#>>은 문서 편집에 적합한 경량 마크업 언어이다.
 마크다운과 비슷한데, 좀 더 확장성 있다.
 
 이 언어는 다 좋은데 마크다운에 비해 여러 도구들이 부족하다. 내가 자주 쓰는

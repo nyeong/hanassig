@@ -1,5 +1,6 @@
 = 자료구조
 An Nyeong <me@annyeong.me>
+:keywords: data-structure
 
 > 나쁜 프로그래머는 코드를 신경씁니다. 훌륭한 프로그래머는 자료구조와 자료구조 사이의 관계를 신경씁니다.
 > -- 리누스 토르발즈, https://lwn.net/Articles/193245/[Re: Licensing and the library version of git]
@@ -74,6 +75,12 @@ https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html[BinaryHeap]이�
 연결 리스트와 같은 연결적인 자료구조는 정보를 잘게 쪼개고 포인터를 이용하여 논리적으로
 연결한다.
 
+== 그래프
+
+. 그래프
+. 방향 그래프
+. 가중치가 있는 그래프
+. 가중치가 있는 방향 그래프
 
 [bibliography]
 == 참고
@@ -81,3 +88,4 @@ https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html[BinaryHeap]이�
 - 와타노베 유타카, "프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문".
 - 박정흠, "자료구조". 가톨릭대학교.
 - Buck Shlegeris, https://edykim.com/ko/post/advice-on-learning-algorithms/[알고리즘 학습에 대한 조언]. 김용균 번역.
+- https://www.youtube.com/watch?v=algDLvbl1YY

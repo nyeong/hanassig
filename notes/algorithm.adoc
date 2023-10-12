@@ -1,8 +1,9 @@
 = 알고리즘
 An Nyeong <me@annyeong.me>
+:keywords: algorithm
 
 . 계산 복잡도
-. <<data-structures.adoc#,자료구조>>
+. <<data-structure.adoc#,자료구조>>
 . 정렬
 . 탐색
 . 분할 정복
@@ -21,6 +22,9 @@ An Nyeong <me@annyeong.me>
 
 타뷸레이션(tabulation)은 미리 필요한 계산을 전부 해버리는 것이다. 문제를 쪼개어 작은 문제로 만든 후
 작은 문제들을 해결하며 점점 큰 문제를 해결하는 상향식 해결법이다.
+
+== 그래프 탐색
+
 
 [bibliography]
 == 참고
