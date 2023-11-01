@@ -1,0 +1,5 @@
+= Linux
+
+cat, ls, dig, jq, ls, find, grep, ping, curl, sed, awk, find, grep, netstat, tcpdump, man
+
+bat, exa, dog, fx, fzf, gping, httpie, jq, rg, ss, wireshark, tshark, tldr

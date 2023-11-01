@@ -28,6 +28,13 @@ An Nyeong <me@annyeong.me>
 
 지속성. 내가 잘해야한다.
 
+== 빌드 시스템
+
+. 글을 작성한다.
+. 작성한 글의 관계를 분석하여 추가 파일을 생성한다.
+  - `keywords.adoc`: keywords 단위 보기
+. 모든 `.adoc` 파일을 `.html`로 렌더한다.
+
 == 참고
 
 - https://johngrib.github.io/[기계인간 John Grib]

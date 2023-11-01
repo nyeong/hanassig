@@ -1,0 +1,50 @@
+= neovim
+:keywords: devenv
+
+== 치트시트
+
+=== 디렉토리 열기
+
+== helix에서 vim으로
+
+helix에서 사용하던 주요 키맵을 vim에선 어떻게 쓰는지
+
+=== 이동
+
+h, j, k, l, w, e
+
+줄 처음, 시작, 끝으로 이동
+
+- helix: gh, gs, gl
+- vim: 0, ^, $
+
+=== 단어 삭제
+
+cw
+
+=== 찾아 바꾸기
+
+- helix: `%s찾을단어<ret>c바꿀단어<esc>`
+- vim: `%s/찾을단어/바꿀단어/g<ret>`
+
+helix에서는 ``%s찾을단어<ret>c바꿀단어<esc>``이다. ``%``로 문서 전체를 선택하고 ``s``로 선택
+영역에서 원하는 내용만 찾아 선택한다. 그 후 ``c``를 눌러 선택된 영역을 원하는 단어로 바꾼다.
+큰 과정을 잘게 쪼갤 수 있고, 각각의 동작도 유용해서 외우기 쉬운데, vim은 와닿지 않는 ed 명령어
+`:%s/찾을단어/바꿀단어/g<ret>`를 써야 해서 아쉽다.
+
+=== 파일탐색
+
+- helix: bf
+- 
+
+=== 버퍼
+
+버퍼 닫기
+
+- helix: bc
+- vim: bw
+
+[bibliography]
+== 참고
+
+- https://kodingwarrior.github.io/wiki/appendix/excelcon-2nd/[제 2회 EXCELCON - Neovim으로 생산성 퀀텀점프하기]

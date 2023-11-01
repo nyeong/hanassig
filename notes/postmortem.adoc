@@ -1,0 +1,20 @@
+= 포스트모템
+An Nyeong <me@annyeong.me>
+
+== 만든 것
+
+. CUKCAT
+. 오늘은 몇 주차
+. 슬세권
+. Opensource Tracker
+
+== 참여한 것
+
+. GlueSQL
+
+== 인생
+
+. 대학
+. 학군단
+. 군대
+. 취준
