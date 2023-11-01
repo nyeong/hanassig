@@ -224,3 +224,4 @@ let m = Mutex::new(5);
 - [데브시스터즈 서버 직군은 왜 코딩 면접을 볼까?](https://tech.devsisters.com/posts/server-position-coding-test/)
 - [주니어 웹 개발자가 알아야 할 '비동기 통신'](https://yozm.wishket.com/magazine/detail/1982/)
 - [동시성, 병렬, 비동기, 논블럭킹과 컨셉들](https://black7375.tistory.com/90)
+- 남정현, https://blog.cro.sh/slides/async-rust-programming-20220801-redistributable.pdf[Rust 비동기 프로그래밍]

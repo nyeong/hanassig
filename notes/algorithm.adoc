@@ -3,12 +3,25 @@ An Nyeong <me@annyeong.me>
 :keywords: algorithm
 
 . 계산 복잡도
+. 그리디
+. 누적합
 . <<data-structure.adoc#,자료구조>>
 . 정렬
+.. 병합정렬, 퀵정렬, 위상정렬
 . 탐색
-. 분할 정복
+.. 투 포인터
+.. 이분탐색
+.. 상한, 하한 탐색
+.. 슬라이딩 윈도우
 . 그래프 탐색
-. 동적 계획법
+.. DFS, BFS
+.. 백트래킹
+.. 경로탐색: 다익스트라,  A*, ...
+. 분할 정복(divide and conquer)
+. 동적 계획법(dynamic programming)
+. 문자열
+.. 트라이
+.. kmp
 
 == 동적 계획법
 
@@ -22,8 +35,6 @@ An Nyeong <me@annyeong.me>
 
 타뷸레이션(tabulation)은 미리 필요한 계산을 전부 해버리는 것이다. 문제를 쪼개어 작은 문제로 만든 후
 작은 문제들을 해결하며 점점 큰 문제를 해결하는 상향식 해결법이다.
-
-== 그래프 탐색
 
 
 [bibliography]
