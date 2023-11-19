@@ -1,0 +1,5 @@
+= 테스트
+
+== 참고
+
+. 하태호, https://engineering.linecorp.com/ko/blog/server-side-test-automation-4[서버 사이드 테스트 자동화 여정 - 4. 성능 테스트 자동화 목표 설정 및 테스트 환경 구성]

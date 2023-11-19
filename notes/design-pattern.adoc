@@ -1,0 +1,5 @@
+= 디자인 패턴
+
+== 참고
+
+. https://www.rinae.dev/posts/why-every-beginner-front-end-developer-should-know-publish-subscribe-pattern-kr[초보 프론트엔드 개발자들을 위한 Pub-Sub(Publish-Subscribe) 패턴을 알아보기]
