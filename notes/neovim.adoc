@@ -3,6 +3,30 @@
 
 == 치트시트
 
+=== Text object selection
+
+- `aw`: 단어 선택. 따름 공백 포함.
+- `iw`: 단어 선택. 따름 공백 미포함.
+- `i'`: ``'``로 둘러쌓인 것.
+
+=== 괄호 다루기
+
+with github:[tpope/vim-surround]
+
+- `ds(`: 괄호 지우기
+- `cs([`: 괄호 바꾸기
+- `ysiw(`: 괄호로 감싸기 (`ys`)
+- `yss(`: 괄호로 줄 전체 감싸기
+- (비주얼 모드에서) `S`: 영역 감싸기
+
+html 태그는 추가할 때에는 `<tag_name>`, 그 외에는 ``t``라고 쓰면 된다.
+
+=== 대소문자 변경
+
+- `g~<motion>`: 대소문자 맞바꿈
+- `gU<motion>`: 대문자로 바꿈
+- `gu<motion>`: 소문자로 바꿈
+
 === 디렉토리 열기
 
 == helix에서 vim으로
@@ -47,4 +71,5 @@ helix에서는 ``%s찾을단어<ret>c바꿀단어<esc>``이다. ``%``로 문서 
 [bibliography]
 == 참고
 
-- https://kodingwarrior.github.io/wiki/appendix/excelcon-2nd/[제 2회 EXCELCON - Neovim으로 생산성 퀀텀점프하기]
+. https://kodingwarrior.github.io/wiki/appendix/excelcon-2nd/[제 2회 EXCELCON - Neovim으로 생산성 퀀텀점프하기]
+. https://vimdoc.sourceforge.net/htmldoc/motion.html#left-right-motions

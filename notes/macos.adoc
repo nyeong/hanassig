@@ -34,7 +34,14 @@ defaults write com.apple.Preview NSWindowSupportsAutomaticInlineTitle -bool fals
 계속 표시하지는 않되, 마우스를 올리면 딜레이 없이 바로 나오게 하고자 하면 아래의 명령어를 입력한다:
 
 [source,bash]
-defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0" && killall Finder
+defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0"
+
+=== 스페이스 전환 속도 변경
+
+kbd:[Control + ←] 할 때 속도 변경
+
+[source,bash]
+defaults write com.apple.dock expose-animation-duration -float 0.1 && killall Dock
 
 === shift + space로 IME 전환하기
 
@@ -44,6 +51,21 @@ defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0" && ki
 
 [source,bash]
 /usr/libexec/PlistBuddy -c "Set AppleSymbolicHotKeys:60:value:parameters:2 131072" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+
+=== 키 반복
+
+키를 꾹 눌렀을 때 반복하여 입력할 수 있도록.
+
+[source,bash]
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+=== 스크린샷 저장 이름 변경
+
+스크린샷을 한 곳에 모아 관리하고 있는데, 언어 설정에 따라 이름이 달라져서 번거롭다. 아래 명령어로 Screenshot으로 통일하자.
+
+[source,bash]
+defaults write com.apple.screencapture name Screenshot
 
 === Karabiner로 Vim 스타일 방향키 쓰기
 

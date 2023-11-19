@@ -1,0 +1,15 @@
+= Zellij
+
+== pane 다루기
+
+* kbd:[ctrl+p r]: 오른쪽에 pane 추가
+* kbd:[ctrl+p d]: 아래쪽에 pane 추가
+* kbd:[ctrl+p x]: pane 끄기. 셸을 닫아도 꺼진다
+* kbd:[ctrl+p f]: pane 전체화면
+* kbd:[ctrl+p z]: pane 테두리 없애기
+* kbd:[ctrl+p w]: floating pane 토글. 닫는다고 꺼지지는 않고 안 보일 뿐.
+* kbd:[ctrl+p e]: floating <-> embed paen 토글 
+* kbd:[ctrl+p c]: pane 이름 바꾸기
+* kbd:[ctrl+p c]: pane 이름 바꾸기
+* kbd:[ctrl+h]: move 모드
+* kbd:[ctrl+n]: 크기 조절 모드
