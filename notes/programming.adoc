@@ -18,4 +18,4 @@ Lazy::
 
 == 동시성
 
-<<concurrency.adoc#>> 참고
+<<concurrency#,동시성>> 참고
