@@ -1,14 +1,6 @@
 = 음악
 An Nyeong <me@annyeong.me>
 
-- <<tone-making.adoc#>>
-- <<guitar-chord-formation.adoc#>>
-- <<chord-progression.adoc#>>
-
-== 카피
-
-- <<look-at-the-sea.adoc#>>
-
 == 참고
 
 . https://www.youtube.com/watch?v=Ivuy9QYLFVY[Introducing Nopia]

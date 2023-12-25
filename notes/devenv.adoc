@@ -20,4 +20,8 @@
 
 == 참고
 
-- https://news.hada.io/topic?id=4784
+* https://news.hada.io/topic?id=4784
+* https://github.com/m4xshen/dotfiles
+* https://github.com/alex35mil/dotfiles
+* https://github.com/ken-matsui/dotfiles
+* https://github.com/aca/dotfiles

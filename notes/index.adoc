@@ -1,13 +1,53 @@
 = 하나씩
 An Nyeong <me@annyeong.me>
 
-== 메타
+배운 것들을 하나씩 정리합니다.
 
-- <<keywords.adoc#>>
-- <<archive.adoc#>>
+== 전체 글 목록
 
-== 주제
+* <<keywords.adoc#>>
 
-- <<devenv.adoc#>>
-- <<postmortem.adoc#>>
+* <<computer-science.adoc#>>
+** <<concurrency.adoc#>>
+** <<data-structure.adoc#>>
+** <<database.adoc#>>
+** <<algorithm.adoc#>>
+** <<dgrep.adoc#>>
 
+* <<programming.adoc#>>
+** <<elixir.adoc#>>
+** <<design-pattern.adoc#>>
+** <<tree-sitter-asciidoc.adoc#>>
+** <<railway-oriented-programming#>>
+** <<typescript-promise.adoc#>>
+** <<test.adoc#>>
+** <<typescript.adoc#>>
+
+* 웹
+** <<web-security.adoc#>>
+
+* 블로깅
+** <<hanassig.adoc#>>
+** <<asciidoc-blog-pipeline.adoc#>>
+** <<lorem-ipsum.adoc#>>
+
+* <<music.adoc#>>
+** <<chord-progression.adoc#>>
+** <<guitar-chord-formation.adoc#>>
+** <<tone-making.adoc#>>
+
+* <<devenv.adoc#>>
+** <<git#>>
+** <<neovim.adoc#>>
+** <<linux.adoc#>>
+** <<helix.adoc#>>
+** <<macos.adoc#>>
+** <<zellij.adoc#>>
+
+* 일기
+** <<2023-being-hired.adoc#>>
+** <<edc.adoc#>>
+** <<postmortem.adoc#>>
+
+* 재무/금융
+** <<finance.adoc#>>

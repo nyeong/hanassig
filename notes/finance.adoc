@@ -1,0 +1,10 @@
+= 재무 관리
+:created_at: 2023-12-03 17:15
+
+youtube::9e4AJZ9U-kg
+
+== 참고
+. Stanford University, https://cs007.blog/2022/10/13/cs-007-course-material-2022/[CS 007: PERSONAL FINANCE FOR ENGINEERS]
+. 레이 달리오, https://www.youtube.com/watch?v=9e4AJZ9U-kg[경제는 어떻게 움직이는가]
+. 금융감독원, https://www.fss.or.kr/edu/fec/contMng/view.do?menuNo=300018&contentsSlno=138&check=2[생애주기별 금융생활 가이드북 1권_사회초년기]
+. 금융감독원, https://www.fss.or.kr/edu/fec/contMng/view.do?menuNo=300018&check=2&contentsSlno=546&pageIndex=8&search=title&searchWrd=&certYn=&eduTrgtCode=Y&eduTrgtCode=U&eduCntntLrgClsfcCode=100&eduCntntLrgClsfcCode=200&eduCntntLrgClsfcCode=300&eduCntntLrgClsfcCode=500&eduCntntLrgClsfcCode=600&order=regDt[신용을 지키는 나만의 요령]
