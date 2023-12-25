@@ -46,7 +46,6 @@ An Nyeong <me@annyeong.me>
 ** <<zellij#,Zellij>>
 
 * 일기
-** <<2023-being-hired#,2023 취직 후기>>
 ** <<edc#,EDC>>
 ** <<postmortem#,포스트모템>>
 
