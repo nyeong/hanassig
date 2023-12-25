@@ -5,49 +5,50 @@ An Nyeong <me@annyeong.me>
 
 == 전체 글 목록
 
-* <<keywords.adoc#>>
+* <<keywords#>>
 
-* <<computer-science.adoc#>>
-** <<concurrency.adoc#>>
-** <<data-structure.adoc#>>
-** <<database.adoc#>>
-** <<algorithm.adoc#>>
-** <<dgrep.adoc#>>
+* <<computer-science#>>
+** <<concurrency#>>
+** <<data-structure#>>
+** <<database#>>
+** <<algorithm#>>
+** <<dgrep#>>
 
-* <<programming.adoc#>>
-** <<elixir.adoc#>>
-** <<design-pattern.adoc#>>
-** <<tree-sitter-asciidoc.adoc#>>
+* <<programming#>>
+** <<elixir#>>
+** <<design-pattern#>>
+** <<tree-sitter-asciidoc#>>
 ** <<railway-oriented-programming#>>
-** <<typescript-promise.adoc#>>
-** <<test.adoc#>>
-** <<typescript.adoc#>>
+** <<test#>>
+** <<typescript#>>
+
+* 아키텍처
+** <<redis#>>
 
 * 웹
-** <<web-security.adoc#>>
+** <<web-security#>>
 
 * 블로깅
-** <<hanassig.adoc#>>
-** <<asciidoc-blog-pipeline.adoc#>>
-** <<lorem-ipsum.adoc#>>
+** <<hanassig#>>
+** <<asciidoc-blog-pipeline#>>
+** <<lorem-ipsum#>>
 
-* <<music.adoc#>>
-** <<chord-progression.adoc#>>
-** <<guitar-chord-formation.adoc#>>
-** <<tone-making.adoc#>>
+* <<music#>>
+** <<chord-progression#>>
+** <<guitar-chord-formation#>>
+** <<tone-making#>>
 
-* <<devenv.adoc#>>
-** <<git#>>
-** <<neovim.adoc#>>
-** <<linux.adoc#>>
-** <<helix.adoc#>>
-** <<macos.adoc#>>
-** <<zellij.adoc#>>
+* <<devenv#>>
+** <<neovim#>>
+** <<linux#>>
+** <<helix#>>
+** <<macos#>>
+** <<zellij#>>
 
 * 일기
-** <<2023-being-hired.adoc#>>
-** <<edc.adoc#>>
-** <<postmortem.adoc#>>
+** <<2023-being-hired#>>
+** <<edc#>>
+** <<postmortem#>>
 
 * 재무/금융
-** <<finance.adoc#>>
+** <<finance#>>
