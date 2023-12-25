@@ -5,50 +5,50 @@ An Nyeong <me@annyeong.me>
 
 == 전체 글 목록
 
-* <<keywords#>>
+* <<keywords#,키워드>>
 
-* <<computer-science#>>
-** <<concurrency#>>
-** <<data-structure#>>
-** <<database#>>
-** <<algorithm#>>
-** <<dgrep#>>
+* <<computer-science#,컴퓨터 과학>>
+** <<concurrency#,동시성>>
+** <<data-structure#,자료구조>>
+** <<database#,데이터베이스>>
+** <<algorithm#,알고리즘>>
+** <<dgrep#,dgrep 구현하기>>
 
-* <<programming#>>
-** <<elixir#>>
-** <<design-pattern#>>
-** <<tree-sitter-asciidoc#>>
-** <<railway-oriented-programming#>>
-** <<test#>>
-** <<typescript#>>
+* <<programming#,프로그래밍>>
+** <<elixir#,엘릭서>>
+** <<design-pattern#,디자인 패턴>>
+** <<tree-sitter-asciidoc#,Tree-sitter로 AsciiDoc 파서 만들기>>
+** <<railway-oriented-programming#,Railway Oriented Programming>>
+** <<test#,테스트>>
+** <<typescript#,TypeScript>>
 
 * 아키텍처
-** <<redis#>>
+** <<redis#,Redis>>
 
 * 웹
-** <<web-security#>>
+** <<web-security#,웹 보안>>
 
 * 블로깅
-** <<hanassig#>>
-** <<asciidoc-blog-pipeline#>>
-** <<lorem-ipsum#>>
+** <<hanassig#,하나씩>>
+** <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인 하나씩 구축하기>>
+** <<lorem-ipsum#,로렘 입숨>>
 
-* <<music#>>
-** <<chord-progression#>>
-** <<guitar-chord-formation#>>
-** <<tone-making#>>
+* <<music#,음악>>
+** <<chord-progression#,코드 진행>>
+** <<guitar-chord-formation#,기타 코드폼>>
+** <<tone-making#,톤 메이킹>>
 
-* <<devenv#>>
-** <<neovim#>>
-** <<linux#>>
-** <<helix#>>
-** <<macos#>>
-** <<zellij#>>
+* <<devenv#,개발환경>>
+** <<neovim#,neovim>>
+** <<linux#,Linux>>
+** <<helix#,Helix Editor>>
+** <<macos#,macOS>>
+** <<zellij#,Zellij>>
 
 * 일기
-** <<2023-being-hired#>>
-** <<edc#>>
-** <<postmortem#>>
+** <<2023-being-hired#,2023 취직 후기>>
+** <<edc#,EDC>>
+** <<postmortem#,포스트모템>>
 
 * 재무/금융
-** <<finance#>>
+** <<finance#,재무 관리>>

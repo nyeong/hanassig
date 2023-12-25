@@ -17,4 +17,3 @@ An Nyeong <me@annyeong.me>
 . 대학
 . 학군단
 . 군대
-. <<2023-get-job.adoc#>>

@@ -19,7 +19,7 @@ An Nyeong <me@annyeong.me>
 . 트리
 .. 이진트리
 ... AVL, 레드블랙 트리
-.. <<trie.adoc#>>
+.. trie
 
 === 우선순위 큐
 

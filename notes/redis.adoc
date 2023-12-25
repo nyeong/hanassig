@@ -1,0 +1,12 @@
+= Redis
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2023-12-25 20:05:10
+
+. https://build-your-own.org/blog/20230127_byor/
+
+[bibliography]
+== 참고
+
+. 작성자, 이름.

@@ -110,7 +110,7 @@ https://example.com[Example]
 
 [source, adoc]
 ----
-<<index.adoc#>>
+<<index#,하나씩>>
 ----
 
 === 키보드 매크로
