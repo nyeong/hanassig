@@ -13,3 +13,11 @@
 * kbd:[ctrl+p c]: pane 이름 바꾸기
 * kbd:[ctrl+h]: move 모드
 * kbd:[ctrl+n]: 크기 조절 모드
+
+== 세션 다루기
+
+* kbd:[ctrl+o]
+* `zellij a [session-name]`: 특정 세션 불러오기
+* `zellij ls`: 세션 목록 출력
+* `zellij k [session-name]`: 특정 세션 종료
+* `zellij ka`: 모든 세션 종료

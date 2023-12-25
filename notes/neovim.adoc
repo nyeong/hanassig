@@ -1,31 +1,106 @@
 = neovim
-:keywords: devenv
+
+* <<asciidoc-blog-pipeline.adoc#>>
+* <<neovim-with-zellij.adoc#>>
+
+== 키맵 고민
+
+대부분의 에디터는 키맵을 고민할 필요가 없다. 이미 다양한 기능을 편리하게 쓸 수 있는 키맵이 잘 짜여있다.
+VS Code, Helix, Zed 등의 에디터는 기본적으로 제공하는 기능들이 많고, 많은 기능을 한정된 키맵에 효율적으로
+배치해두었다. 자주 쓰지 않는 기능은 palette를 이용하여 명령을 입력하여 불러올 수도 있다.
+
+(neo)vim은 상황이 좀 다르다. vim의 키맵은 효율을 위해서가 아니라 역사에 의해서 만들어졌다. 레거시인 셈이다.
+예를 들어 vim에는 클립보드로 복사하는 기능이 별도로 없다. vi가 작성되었을 때에는 클립보드라는 게 없었기 때문이다.
+대신 레지스터라는 자체 저장소를 사용한다. `"` 뒤에 레지스터 이름을 누르면 그 레지스터에 복사한 내용을 넣을 수 있다.
+
+`+` 레지스터가 시스템 클립보드와 연결되므로 ``"+y``를 누르면 클립보드로 복사할 수는 있다.
+
+행 이동도 불편하다. 행 처음으로 이동은 `^`, 끝으로 이동은 ``$``이다. 정규식과 동일하므로 외우기는 쉽다.
+실제로 써보면 행의 왼쪽 끝으로 이동하기 위해서는 오른쪽에 있는 ``^``을, 오른쪽 끝으로 이동하기 위해서는
+왼쪽에 있는 ``$``을 눌러야 한다. 특수문자이므로 시프트를 눌러야하고, 숫자행이므로 손이 윗열로 이동해야하므로
+이 과정에서도 멈칫하게된다.
+
+또한 (neo)vim의 유용한 기능은 대부분 내장이 아니라 커뮤니티가 플러그인으로 확장한 기능들이다.
+어떤 플러그인의 어떤 기능을 어떤 키맵에 매핑할 지는 오로지 나의 선택이다.
+
+그래서 크게 두 가지를 고민하고 수정해야한다.
+
+
+. Helix https://github.com/helix-editor/helix/wiki/Keymap-brainstorm[Keymap brainstorm].
+. 이종립, https://youtu.be/oQh-fJZccjo?t=1185[Clojure에 빠진 사람 Vim푸라기라도 잡는다].
+
+== 플러그인
+
+* lsp
+** [ ] nvim-lspconfig
+** [ ] mason-lspconfig
+** [ ] mason
+* autocomplete
+** [ ] hrsh7th/cmp-nvim-lsp
+** [ ] hrsh7th/cmp-buffer
+** [ ] hrsh7th/cmp-path
+** [ ] hrsh7th/cmp-cmdline
+** [ ] hrsh7th/cmp-calc
+** [ ] hrsh7th/cmp-nvim-lsp-signature-help
+** [ ] hrsh7th/cmp-nvim-lsp-document-symbol
+* etc
+** [ ] glepnir/lspsaga.nvim
+** [ ] j-hui/fidget.nvim
+** [ ] folke/trouble.nvim
 
 == 치트시트
 
-=== Text object selection
+vim 자체 혹은 일반적인 플러그인의 명령어만 모음
 
-- `aw`: 단어 선택. 따름 공백 포함.
-- `iw`: 단어 선택. 따름 공백 미포함.
-- `i'`: ``'``로 둘러쌓인 것.
+=== 텍스트 오브젝트
+
+vim에서 대상을 지정하기 위한 명령어
+
+----
+[i|a][w|s|p|괄호쌍|t]
+----
+
+* `i`: inner. 내부 선택.
+* `a`: arround. 외부까지 선택.
+* `w`: word. 단어.
+* `s`: sentence. 문장.
+* `p`: paragraph. 문단.
+* `t`: 태그.
+
+예시:
+
+* `daw`: 단어 지우기
+* `cip`: 문장 지우고 수정하기
+* `yi(`: 괄호 안의 내용 복사하기
 
 === 괄호 다루기
 
-with github:[tpope/vim-surround]
+with github:[tpope/vim-surround].
 
-- `ds(`: 괄호 지우기
-- `cs([`: 괄호 바꾸기
-- `ysiw(`: 괄호로 감싸기 (`ys`)
-- `yss(`: 괄호로 줄 전체 감싸기
-- (비주얼 모드에서) `S`: 영역 감싸기
+----
+[y|d|c]s[모션|텍스트 오브젝트]감쌀 단어
+----
 
-html 태그는 추가할 때에는 `<tag_name>`, 그 외에는 ``t``라고 쓰면 된다.
+* `ys`: 감싸기
+* `ds`: 지우기
+* `cs`: 바꾸기
+
+이때 감쌀 괄호가 여는 괄호(`(, [, {`)면 안에 공백을 함께 추가한다.
+html 태그는 추가할 때에는 `<tag_name>` 혹은 ``t``라고 쓰면 된다.
+
+* `ds(`: 괄호 지우기
+* `cs([`: 괄호 바꾸기
+* `ysiw(`: 괄호로 감싸기 (`ys`)
+* `yss(`: 괄호로 줄 전체 감싸기
+* `ysi((`: 괄호를 괄호로 또 감싸기
+* (비주얼 모드에서) `S`: 영역 감싸기
+
 
 === 대소문자 변경
 
-- `g~<motion>`: 대소문자 맞바꿈
-- `gU<motion>`: 대문자로 바꿈
-- `gu<motion>`: 소문자로 바꿈
+* `g~<motion>`: 대소문자 맞바꿈
+* `gU<motion>`: 대문자로 바꿈
+* `gu<motion>`: 소문자로 바꿈
 
 === 디렉토리 열기
 
@@ -39,8 +114,8 @@ h, j, k, l, w, e
 
 줄 처음, 시작, 끝으로 이동
 
-- helix: gh, gs, gl
-- vim: 0, ^, $
+* helix: gh, gs, gl
+* vim: 0, ^, $
 
 === 단어 삭제
 
@@ -48,8 +123,8 @@ cw
 
 === 찾아 바꾸기
 
-- helix: `%s찾을단어<ret>c바꿀단어<esc>`
-- vim: `%s/찾을단어/바꿀단어/g<ret>`
+* helix: `%s찾을단어<ret>c바꿀단어<esc>`
+* vim: `%s/찾을단어/바꿀단어/g<ret>`
 
 helix에서는 ``%s찾을단어<ret>c바꿀단어<esc>``이다. ``%``로 문서 전체를 선택하고 ``s``로 선택
 영역에서 원하는 내용만 찾아 선택한다. 그 후 ``c``를 눌러 선택된 영역을 원하는 단어로 바꾼다.
@@ -58,18 +133,19 @@ helix에서는 ``%s찾을단어<ret>c바꿀단어<esc>``이다. ``%``로 문서 
 
 === 파일탐색
 
-- helix: bf
-- 
+* helix: bf
 
 === 버퍼
 
 버퍼 닫기
 
-- helix: bc
-- vim: bw
+* helix: bc
+* vim: bw
 
 [bibliography]
 == 참고
 
 . https://kodingwarrior.github.io/wiki/appendix/excelcon-2nd/[제 2회 EXCELCON - Neovim으로 생산성 퀀텀점프하기]
 . https://vimdoc.sourceforge.net/htmldoc/motion.html#left-right-motions
+. [[[mulcur]]] Christoph Hermann, https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db[You don’t need more than one cursor in vim]
+. ap, https://github.com/ap/vim-buftabline#why-this-and-not-vim-tabs[Why this and not Vim tabs?], vim-buftabline

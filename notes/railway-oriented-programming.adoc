@@ -1,0 +1,53 @@
+= Railway Oriented Programming
+An Nyeong <me@annyeong.me>
+:created_at: 2023-12-18 16:00
+
+Railway Oriented Programming에 대해 아는 대로 정리.
+업무에서 활용하고자 정리하므로 TypeScript를 기준으로 작성하였음.
+
+== 간단 요약
+
+. 전통적인 에러 핸들링(try-catch, if)은 코드 점핑이 많아 이해하기 어렵다.
+. ROP는 코드의 흐름을 순차적으로 모델링하는 방법론이다.
+. `Result -> Result` 꼴의 함수들의 합성으로 프로그램을 만들어서 실현하자.
+. 실패도 다음 함수의 입력으로 받자.
+
+== 에러 다루기
+
+코드 점핑이 많은 이유는 대부분 에러, 예외처리 때문이다.
+
+[quote, https://doc.rust-lang.org/stable/nomicon/unwinding.html[The Rustonomicon]]
+____
+- 무언가 없을 수 있다면 ``Option``을 쓰세요.
+- 무언가 잘못되었지만 처리할 수 있을 때에는 ``Result``를 쓰세요.
+- 무언가 잘못되었고 처리할 수 없다면 스레드는 panic 됩니다.
+- 재앙이 발생했다면 프로그램은 중지(abort)됩니다.
+____
+
+.에러를 다루는 원칙
+. 도메인 상 없을 수도 있다면 ``Option``을 반환한다.
+. 도메인 상 발생할 수 있는 에러라면 **반환**한다.
+.. DB에 쿼리하는 함수라면 DB 에러.
+. 시스템에서 발생한 문제라면 에러를 **던진**다.
+
+.숨겨진 출력
+
+[source]
+----
+----
+
+=== ADT
+
+== 타입스크립트에서
+
+github:[gcanti/fp-ts]:::
+Haskell, Scala 등에 영향을 받은 함수형 타입 라이브러리. Either, Option, pipe 등의 타입/함수를 지원한다.
+
+
+[bibliography]
+== 참고
+
+. Robin Pokorný, https://www.youtube.com/watch?v=AqeR-Fn75Sw[Railway Oriented TypeScript].
+. 아프니까병원이다, https://0e.medium.com/%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%89%E1%85%A5-rop%E1%84%80%E1%85%A1-%E1%84%86%E1%85%AF%E1%86%AB%E1%84%83%E1%85%A6-%E1%84%8A%E1%85%B5%E1%86%B8%E1%84%83%E1%85%A5%E1%86%A8%E1%84%8B%E1%85%A1-railway-oriented-programming-4e8070c04bda[그래서, ROP가 뭔데? (Railway oriented programming)].
+. Scott Wlaschin, https://fsharpforfunandprofit.com/rop[Railway Oriented Programming].
+. 이선협, https://kciter.so/posts/railway-oriented-programming[Railway-Oriented Programming].

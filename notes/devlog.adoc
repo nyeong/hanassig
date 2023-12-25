@@ -1,4 +1,0 @@
-= 개발일지
-
-. <<realworld-elixir/index.adoc#>>
-. 오늘은 몇 주차

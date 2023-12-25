@@ -1,0 +1,23 @@
+= 하나씩
+
+배운 것들을 하나씩 정리합니다.
+
+인덱스::: link:notes/index.adoc[]
+퍼블리싱::: https://h.annyeong.me/
+라이센스::: link:LICENSE[CC BY-SA]
+
+== 디렉토리 구조
+
+[source]
+----
+├── assets/ -- 이미지 등 첨부파일
+├── notes/  -- asciidoc 파일
+│   └── index.adoc -- 목차
+│   └── ...
+└── README.md
+----
+
+== 의존성
+
+https://asciidoc.org/[asciidoc] 형식을 이용하고 있으므로 별다른 의존성 없이 텍스트 형태로 문서를
+보실 수 있습니다.
