@@ -159,17 +159,65 @@ An Nyeong <me@annyeong.me>
 
 === 링크 보기가 불편하다
 
-asciidoc에서 다른 파일로 링크를 걸 수 있다. 문법이 크게 두가지 있다:
+asciidoc에서 다른 파일로 링크를 걸 수 있는 자체 문법이 있다. 마크다운의 ``[글 제목](링크)``와 비슷한데, 내부 파일끼리의 연결에만 쓰이는 문법이다.
 
 [source, asciidoc]
 ----
-. xref:other-file.adoc#section[보일 내용]
-. <<other-file.adoc#section,보일 내용>>
+<<other-file.adoc#section,글 제목>>
 ----
 
-. 특정 섹션을 가리키지 않더라도 `#` 까지는 표기해야한다. 귀찮고 난잡하다.
+아쉽게도 단점이 좀 있다.
+
 . 보일 내용은 수동으로 입력해주어야한다. 귀찮다.
 . 파일명이 먼저 나온다. 파일명을 왠만하면 영어로 적고 있는데, 영어를 잘 못해서 무슨 링크인지 한눈에 들어오지 않는다.
+
+글 제목을 별도로 입력하는 것은 정말 별로다. 링크를 열 때 별도로 입력해주어야 하는 것도 별로고, 글 제목이 바뀌었을 때 별도로 수정해주어야하는 것도 별로다. `<<파일명#>>` 패턴을 찾아서 실제 파일을 찾아 제목을 읽어 업데이트 해주는 스크립트를 작성하자.
+
+. 패턴을 찾아 파일 제목을 찾아 업데이트해주는 스크립트 ``bin/update_xref.rb``를 짠다.
+.. args로 넘어온 파일을 읽어 ``<<[a-z0-9-_]*#>>``를 찾는다.
+.. 해당 파일명대로 파일을 찾아 첫줄만 읽어 제목을 가져오고, ``<<link#,글 제목>>`` 형태로 고친다.
+. 이를 git pre-commit hook으로 등록한다.
+. 이제 adoc 파일을 고치고 이를 커밋하면 자동으로 링크를 찾아 글 제목을 추가해준다.
+
+수동으로 입력해야하는 불편함은 해소하였다. 그러나 한눈에 읽기 어려운 것은 여전하다:
+
+[source, asciidoc]
+----
+* <<computer-science#,컴퓨터 과학>>
+** <<concurrency#,동시성>>
+** <<data-structure#,자료구조>>
+** <<database#,데이터베이스>>
+** <<algorithm#,알고리즘>>
+** <<dgrep#,dgrep 구현하기>>
+----
+
+vim에는 원치 않은 글자를 숨기는 conceal이라는 편리한 기능이 있다. 이를 이용해서 `<<link#,글 제목>>` 형태의 링크를 제목만 나오도록 고쳐보자. 이미 github:[habamax/vim-asciidoctor]라는 플러그인에서 이를 구현해두었으므로 설치하고 설정하기만 하면 된다.
+
+. github:[habamax/vim-asciidoctor]를 설치한다.
+. ``conceallevel``을 3으로 설정한다.
+. ``g:asciidoctor_syntax_conceal``을 1로 설정한다.
+
+구체적으로는 아래와 같이 하였다.
+
+[source, lua]
+----
+-- nvim/lua/core/plugins.lua
+require('lazy').setup({
+    { 'habamax/vim-asciidoctor', config = require 'plugin.asciidoctor' },
+    -- 그 외의 플러그인들
+})
+
+-- nvim/lua/plugin/asciidoctor.lua
+-- 각 플러그인의 설정은 길든 짧든 별도로 분리하고 있다.
+return function ()
+    vim.g.asciidoctor_syntax_conceal = 1
+end
+
+-- nvim/ftplugin/asciidoc.lua
+vim.opt.conceallevel = 3
+----
+
+image::neovim-asciidoc-conceal.png[conceal을 적용한 index.adoc의 모습]
 
 === 글을 편리하게 검색하고 싶다
 
