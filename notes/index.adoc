@@ -44,6 +44,8 @@ An Nyeong <me@annyeong.me>
 ** <<helix#,Helix Editor>>
 ** <<macos#,macOS>>
 ** <<zellij#,Zellij>>
+** <<openwrt#,OpenWRT>>
+*** <<openwrt-wireguard#,OpenWrt에 WireGuard 설치하기>>
 
 * 일기
 ** <<edc#,EDC>>

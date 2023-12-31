@@ -1,0 +1,16 @@
+= OpenWRT
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2023-12-30 22:03:50
+
+이곳에 초록을 작성
+
+== 개요
+
+제품::: iptime AX2004M
+
+[bibliography]
+== 참고
+
+. https://qquack.org/category/openwrt/
