@@ -5,41 +5,41 @@ Generated at 2023-10-16 16:57:23 +0900
 
 == Algorithm
 
-- <<algorithm.adoc#,알고리즘>>
+- <<algorithm,알고리즘>>
 
 
 == Asciidoc
 
-- <<asciidoc.adoc#,asciidoc>>
-- <<lorem-ipsum.adoc#,로렘 입숨>>
-- <<hanassig.adoc#,하나씩>>
+- <<asciidoc,asciidoc>>
+- <<lorem-ipsum,로렘 입숨>>
+- <<hanassig,하나씩>>
 
 
 == Computer science
 
-- <<computer-science.adoc#,컴퓨터 과학>>
+- <<computer-science,컴퓨터 과학>>
 
 
 == Concurrency
 
-- <<concurrency.adoc#,동시성>>
+- <<concurrency,동시성>>
 
 
 == Data structure
 
-- <<data-structure.adoc#,자료구조>>
+- <<data-structure,자료구조>>
 
 
 == Devenv
 
-- <<macos.adoc#,macOS>>
+- <<macos,macOS>>
 
 
 == Music
 
-- <<chord-progression.adoc#,코드 진행>>
+- <<chord-progression,코드 진행>>
 
 
 == Os
 
-- <<concurrency.adoc#,동시성>>
+- <<concurrency,동시성>>

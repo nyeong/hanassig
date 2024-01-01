@@ -5,7 +5,7 @@ An Nyeong <me@annyeong.me>
 . 계산 복잡도
 . 그리디
 . 누적합
-. <<data-structure.adoc#,자료구조>>
+. <<data-structure,자료구조>>
 . 정렬
 .. 병합정렬, 퀵정렬, 위상정렬
 . 탐색
