@@ -30,7 +30,7 @@ An Nyeong <me@annyeong.me>
 
 * 블로깅
 ** <<hanassig#,하나씩>>
-** <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인 하나씩 구축하기>>
+** <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인>>
 ** <<lorem-ipsum#,로렘 입숨>>
 
 * <<music#,음악>>

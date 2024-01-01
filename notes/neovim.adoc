@@ -1,6 +1,6 @@
 = neovim
 
-* <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인 하나씩 구축하기>>
+* <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인>>
 * <<neovim-with-zellij#,neovim ♥️ zellij>>
 
 == 키맵 고민
