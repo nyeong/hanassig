@@ -1,4 +1,4 @@
-= Asciidoc 블로깅 파이프라인 하나씩 구축하기
+= Asciidoc 블로깅 파이프라인
 An Nyeong <me@annyeong.me>
 :keywords: hanassig
 
