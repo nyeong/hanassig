@@ -1,7 +1,7 @@
 = Tree-sitter로 AsciiDoc 파서 만들기
 An Nyeong <me@annyeong.me>
 
-<<asciidoc.adoc#>>은 문서 편집에 적합한 경량 마크업 언어이다.
+<<asciidoc>>은 문서 편집에 적합한 경량 마크업 언어이다.
 마크다운과 비슷한데, 좀 더 확장성 있다.
 
 이 언어는 다 좋은데 마크다운에 비해 여러 도구들이 부족하다. 내가 자주 쓰는
@@ -18,7 +18,7 @@ https://tree-sitter.github.io/tree-sitter/[Tree-sitter]는 파서 생성 도구�
 결과물을 C로 뱉어서 여러 환경에서 편리하게 쓸 수 있으며, 의존성이 매우 적고,
 다소 문법 오류가 있더라도 쓸만한 분석을 해준다고 한다.
 
-IDE와 같은 프로그램들은 Tree-sitter만 잘 지원하면 구문강조도 편리하게 할 수 
+IDE와 같은 프로그램들은 Tree-sitter만 잘 지원하면 구문강조도 편리하게 할 수
 있고, 코드 탐색도 편리하게 할 수 있다.
 반대로 파서 제작자는 Tree-sitter로 잘 작성만 하면 Tree-sitter를 잘 지원하는
 여러 프로그램에서 이득을 누릴 수 있다. 파서계의 LSP랄까.
