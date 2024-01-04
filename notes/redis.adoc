@@ -4,9 +4,45 @@ An Nyeong <me@annyeong.me>
 :keywords:
 :created_at: 2023-12-25 20:05:10
 
-. https://build-your-own.org/blog/20230127_byor/
+== 특징
+
+인메모리   ::: 인메모리 DB이므로 온디스크 DB에 비하여 빠름.
+싱글 스레드::: 명령 처리는 싱글 스레드에서 이벤트 루프로 동작함.
+KV 스토어  ::: 키-값 형태로 데이터를 저장하는 NoSQL DB. 값으로 다양한 자료구조를 지원함.
+확장성     ::: 마스터-레플리카 혹은 클러스터 등 확장성과 가용성이 뛰어남.
+
+== 활용
+
+.수행할 수 있는 역할
+메시지 브로커::: pub/sub, list, stream 등의 자료구조를 활용하여 서비스 간 통신에 활용할 수 있음.
+데이터 저장소::: 인메모리의 빠른 속도를 활용하여 쿼리 결과를 캐싱하거나, 세션 데이터를 활용하는 용도로 사용할 수 있다.
+
+.구현할 수 있는 예시
+. 리더보드
+. 캐싱
+. 카운팅
+. 분산 락
+. 세션 스토어
+
+== 자료구조
+
+. string
+. list
+. set
+. hash
+. sorted set
+. stream
+. geospatial
+. bitmap
+. bitfield
+. hyperloglog
+
+=== list
+
+랜덤 엑세스 안 됨.
 
 [bibliography]
 == 참고
 
-. 작성자, 이름.
+. 김가림, 개발자를 위한 레디스.
+. James Smith, https://build-your-own.org/redis/[Build Your Own Redis with C/C++].
