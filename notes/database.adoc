@@ -106,5 +106,6 @@ TODO
 [bibliography]
 == 참고
 
-- [[[cs186]]] Prof. Joe Hellerstein, https://www.youtube.com/watch?v=D_a2DNSEOa8&list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge[Introduction to Database Systems].
+. [[[cs186]]] Prof. Joe Hellerstein, https://www.youtube.com/watch?v=D_a2DNSEOa8&list=PLYp4IGUhNFmw8USiYMJvCUjZe79fvyYge[Introduction to Database Systems].
+. James Smith, https://build-your-own.org/database/[Build Your Own Database From Scratch].
 - https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit[programmers school SQL 고득점 Kit]
