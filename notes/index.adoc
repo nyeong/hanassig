@@ -40,6 +40,7 @@ An Nyeong <me@annyeong.me>
 
 * <<devenv#,개발환경>>
 ** <<neovim#,neovim>>
+** <<git#>>
 ** <<linux#,Linux>>
 ** <<helix#,Helix Editor>>
 ** <<macos#,macOS>>

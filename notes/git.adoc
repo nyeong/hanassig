@@ -1,0 +1,11 @@
+= git
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-01-04 15:11:50
+
+[bibliography]
+== 참고
+
+. Peter Cottle, https://learngitbranching.js.org/?locale=ko[LearnGitBranching].
+. simnalamburt, https://github.com/simnalamburt/cgitc/blob/master/abbreviations[simnalamburt/cgitc].
