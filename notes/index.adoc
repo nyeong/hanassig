@@ -51,6 +51,7 @@ An Nyeong <me@annyeong.me>
 * 일기
 ** <<edc#,EDC>>
 ** <<postmortem#,포스트모템>>
+** <<2024#>>
 
 * 재무/금융
 ** <<finance#,재무 관리>>
