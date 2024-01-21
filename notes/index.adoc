@@ -5,8 +5,6 @@ An Nyeong <me@annyeong.me>
 
 == 전체 글 목록
 
-* <<keywords#,키워드>>
-
 * <<computer-science#,컴퓨터 과학>>
 ** <<concurrency#,동시성>>
 ** <<data-structure#,자료구조>>
