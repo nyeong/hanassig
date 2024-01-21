@@ -1,0 +1,85 @@
+= TypeScript Best Practice
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-01-18 12:31:06
+
+나만의 타입스크립트 Best Practice
+
+== 패키지 매니저
+
+고민중. 일단은 npm.
+
+.선택지
+. npm
+. pnpm
+. yarn
+. 등등
+
+.왜
+. 딱히 npm에 대해 불편함을 느낀 적이 없다.
+. 모노레포를 도입하면 다른 선택지도 필요할까?
+
+
+== 포맷, 린팅
+
+https://biomejs.dev/[Biome]를 쓰자.
+
+.왜
+. eslint는 많이 느리다.
+. prettier랑 eslint랑 별개로 설정하고, 잘 굴러가도록 설정하는 것은 불편하다.
+. 세부적인 규칙 조정보다는 빠르게 통일 가능한 것이 중요하다.
+
+[source,bash]
+----
+npm i -D --save-exact @biomejs/biome
+----
+
+[source,json]
+----
+{
+  "$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    }
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "always",
+      "trailingComma": "all",
+      "arrowParentheses": "asNeeded",
+      "quoteStyle": "single"
+    }
+  }
+}
+----
+
+== 테스트
+
+.선택지
+. mocha - 테스트 격리성이 낮으나 빠름
+. jest - 각 테스트가 격리됨
+
+== 타입스크립트 런타임
+
+.선택지
+. Node.js + ts-node
+. Node.js + tsc
+. Deno
+. burn
+
+[bibliography]
+== 참고
+
+. 작성자, 이름.
+. if1live, https://if1live.github.io/posts/escape-from-jest-jest-is-slow/[Jest 탈출기 - Jest는 느리다]
