@@ -3,51 +3,11 @@ An Nyeong <me@annyeong.me>
 
 배운 것들을 하나씩 정리합니다.
 
-== 전체 글 목록
+== 주제별 정리
 
-* <<computer-science#,컴퓨터 과학>>
-** <<concurrency#,동시성>>
-** <<data-structure#,자료구조>>
-** <<database#,데이터베이스>>
-** <<algorithm#,알고리즘>>
-** <<dgrep#,dgrep 구현하기>>
+* <<hanassig#,하나씩>>
+* 올해: <<2024#,2024>>
 
-* <<programming#,프로그래밍>>
-** <<elixir#,엘릭서>>
-** <<design-pattern#,디자인 패턴>>
-** <<tree-sitter-asciidoc#,Tree-sitter로 AsciiDoc 파서 만들기>>
-** <<railway-oriented-programming#,Railway Oriented Programming>>
-** <<test#,테스트>>
-** <<typescript#,TypeScript>>
+== 음악
 
-* 아키텍처
-** <<redis#,Redis>>
-
-* 웹
-** <<web-security#,웹 보안>>
-
-* 블로깅
-** <<hanassig#,하나씩>>
-** <<asciidoc-blog-pipeline#,Asciidoc 블로깅 파이프라인>>
-** <<lorem-ipsum#,로렘 입숨>>
-
-* <<music#,음악>>
-** <<chord-progression#,코드 진행>>
-** <<guitar-chord-formation#,기타 코드폼>>
-** <<tone-making#,톤 메이킹>>
-
-* <<devenv#,개발환경>>
-** <<neovim#,neovim>>
-** <<linux#,Linux>>
-** <<helix#,Helix Editor>>
-** <<macos#,macOS>>
-** <<zellij#,Zellij>>
-** <<openwrt#,OpenWRT>>
-*** <<openwrt-wireguard#,OpenWrt에 WireGuard 설치하기>>
-
-* 일기
-** <<edc#,EDC>>
-** <<postmortem#,포스트모템>>
-
-* 재무/금융
-** <<finance#,재무 관리>>
+* <<chord-progression#>>
