@@ -33,11 +33,14 @@ An Nyeong <me@annyeong.me>
 
 로컬 환경만으로 완전하면 좋겠다. 검색이나 기록 등 기능 활용을 위해서 웹으로 배포할 필요가 없어야 한다.
 
-* <<asciidoc-blog-pipeline#>>
 * 검색: grep, rg 같은 검색 도구를 이용하면 로컬에서 쉽게 검색할 수 있다.
 * 태그: 빌드 시스템으로 주기적으로 `keywords.adoc` 파일을 생성하자.
 * 기록: git log를 잘 쓰면 된다.
 * 카테고리: 글 내부에서 링크를 걸자
+* 부족한 부분은 별도의 빌드 시스템을 만들어서 채우자
+** 링크의 제목을 자동으로 바꿔준다든가
+** LSP나 tree-sitter도 있으면 좋겠는데 asciidoc은 없더라.
+** <<asciidoc-blog-pipeline#>>
 
 === 용이성
 
