@@ -9,3 +9,5 @@ _tmp
 .ruby-lsp
 
 build/
+
+notes/*.html
