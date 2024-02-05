@@ -8,6 +8,45 @@ An Nyeong <me@annyeong.me>
 
 === 23-06WN
 
+.스크랩
+. 딜라이트룸 제품 인사이트 팀, https://yozm.wishket.com/magazine/detail/2272/[유저들은 공짜 선물을 싫어한다].
+* 가설: 7일 무료체험은 결제가 예약되기 때문에 이탈이 많다. 결제 예약 없는 맛보기가 있으면 전환률이 늘 것.
+* 기대: 1회 맛보기 → 7일 무료체험 → 결제.
+* 현상: 유저들이 맛보기 쿠폰을 받지 아니함.
+* 후속과제: 쿠폰에 대해 동등한 대가를 요구하면 쿠폰 획득률이 높아질 것.
+
+. https://kingofbackend.tistory.com/m/129[왜 개발자는 잘못된 기술 선택을 밥 먹듯이 하나?]
+.. 지루해서: 과시를 위해 적정 기술을 선택하지 아니함
+.. 이력서를 부풀리기 위해서
+.. 빠르게 진행되는 것처럼 보이려고 섣불리 결정을 내려서
+.. 기술에 대한 이해가 부족해서
+.. 문제에 대한 이해가 부족해서
+
+. https://yozm.wishket.com/magazine/detail/2442/[PM 생산성을 높이는 시간 관리 방법 'Day Theming']
+* Day Theming: 업무를 비슷한 카테고리로 묶어 배치 처리하는 시간 관리 전략.
+* Time Bloking: 시간 블록 단위로 업무를 분할하는 시간 관리 전략.
+* 둘이 같이 쓰면 좋다
+** 왜? context switching은 비용이 크다: 중단된 업무로 돌아왔을 때 생산성이 저하됨.
+** 라이브 이슈, 회의 등 현실적으로 day theming이 어려움
+* 적용법
+.. 주도적으로 활용할 수 있는 시간 파악한다.
+.. 요일 별로 해당 시간에 주제를 정한다.
+.. 느슨하게 정하여 업무 효율성을 높인다.
+
+. 김재석, https://m.thisisgame.com/webzine/pds/nboard/267/?n=184033["게임에서 농사 지으면 정신 건강 좋아져요"]. TIG.
+* 고려대, 이화여대 공동 연구
+* 《천수의 사쿠나히메》가 도시 성인의 정신 건강에 긍정적인 영향을 끼칠 수 있음
+
+.나중에
+. https://dhwthompson.com/2019/my-favourite-git-commit[My favourite Git commit]
+. @TkDodo, https://twitter.com/hewonjeong/status/1754087796967674177?s=12&t=d0dS9f7i4DIEEH1JjZnEmA[React 코드 베이스에서의 코드 관리]. @hewonjeong 역.
+. srrrse, https://without.boats/blog/let-futures-be-futures/[Let futures be futures].
+. dylayed, https://blog-17p.pages.dev/posts/working-in-us/[나도 실리콘밸리 개발자가 될 수 있나요?].
+. Mark Seemann, https://blog.ploeh.dk/2018/03/05/some-design-patterns-as-universal-abstractions/[Some design patterns as universal abstractions].
+. @scalalang2, https://scalalang.me/story-from-http1-to-http3/[HTTP/1부터 HTTP/3까지의 이야기].
+. 채널톡 Dugi, https://channel.io/ko/blog/bad-transactional[@Transactional의 해로움].
+. 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
+
 === 23-05WN
 
 . https://github.com/HakonHarnes/img-clip.nvim
