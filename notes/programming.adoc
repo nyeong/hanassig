@@ -72,7 +72,7 @@ int main() {
 
 아래 두 언어는 실패할 수 있는 함수를 이렇게 반환한다:
 
-go에서는 튜플로 준다: `(file * File, err error)`
+Go는 튜플로 준다: `(file * File, err error)`
 
 ```go
 f, err := os.Open("filename.ext")
@@ -82,7 +82,7 @@ if err != nil {
 // do something with the open *File f
 ```
 
-elixir에서는 유니온으로 준다: `{:ok, result} | {:error, reason}`
+Elixir는 유니온으로 준다: `{:ok, result} | {:error, reason}`
 
 ```elixir
 case File.open("foo.tar.gz", [:read, :compressed]) do
@@ -93,7 +93,7 @@ case File.open("foo.tar.gz", [:read, :compressed]) do
 end
 ```
 
-Rust
+Rust는 명목적인 새 타입으로 준다: `Result<T, E>`
 
 ```rust
 use std::fs::File;
