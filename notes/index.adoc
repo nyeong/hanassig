@@ -8,6 +8,15 @@ An Nyeong <me@annyeong.me>
 * <<hanassig#,하나씩>>
 * 올해: <<2024#,2024>>
 
-== 음악
+=== 개발환경
+
+* <<neovim#>>
+
+=== 프로그래밍
+
+* <<programming#>>
+* <<typescript#>>
+
+=== 음악
 
 * <<chord-progression#>>
