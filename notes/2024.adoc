@@ -8,7 +8,35 @@ An Nyeong <me@annyeong.me>
 
 === 23-06WN
 
+.나중에
+. @TkDodo, https://twitter.com/hewonjeong/status/1754087796967674177?s=12&t=d0dS9f7i4DIEEH1JjZnEmA[React 코드 베이스에서의 코드 관리]. @hewonjeong 역.
+. srrrse, https://without.boats/blog/let-futures-be-futures/[Let futures be futures].
+. dylayed, https://blog-17p.pages.dev/posts/working-in-us/[나도 실리콘밸리 개발자가 될 수 있나요?].
+. Mark Seemann, https://blog.ploeh.dk/2018/03/05/some-design-patterns-as-universal-abstractions/[Some design patterns as universal abstractions].
+. @scalalang2, https://scalalang.me/story-from-http1-to-http3/[HTTP/1부터 HTTP/3까지의 이야기].
+. 채널톡 Dugi, https://channel.io/ko/blog/bad-transactional[@Transactional의 해로움].
+. 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
+
 .스크랩
+. https://dhwthompson.com/2019/my-favourite-git-commit[My favourite Git commit]
+* Git 커밋 메시지는 코드베이스를 시간에 따라 문서화를 할 수 있는 좋은 도구이다.
+* 좋아하는 커밋: Dan Carley, https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46[Convert template to US-ASCII to fix error]. GOV.UK.
+  ** 제목에 무얼 했는지와 왜 했는지가 들어가있으면서도 간결함. (템플릿 변경, 에러를 고치기 위해)
+  ** 내용에는 무슨 문제를 겪었고, 재현 방법과 어떻게 해결했는지 들어가있음.
+  ** https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46#commitcomment-35572625[@celtric의 답글]이 인상깊다:
+    *** 왜 변경했는지를 알려면 변경사항과 가장 가까운 곳, 커밋 메시지를 보는 것이 이상적이다
+    *** README, 주석으로 문서화하기에는 너무 국소적이고 일시적인 문제이다.
+    *** 커밋 메시지를 검색할 수 없는 것은 검색 엔진의 한계이지, 커밋 메시지의 한계가 아니다.
+  ** https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46#commitcomment-35660587[@QazerLab의 답글]도 도움된다:
+    *** `git log --grep`, `git log -S`, `git log -G`, `git bisect` 등의 도구를 사용하면 커밋 메시지를 활용할 수 있다.
+* 왜 바꿨는지에 대해 설명함
+* 검색 가능함
+  ** 에러 로그가 포함되어 있기에 이를 이용해 ``git log --grep``으로 찾을 수 있음
+* 과정을 설명함
+* 팀이 배울 수 있음: 정보량이 많고 설명적이기 때문
+* 코드 뒤에 사람이 있음을 보여줌
+  ** `Now the tests work! One hour of my life I won't get back..`
+
 . Troika Tech, https://troikatech.com/blog/2020/09/24/fp-ts-error-handling-the-functional-way/[fp-ts overview: Error handling, the fnctional way (part 1)]
 * 관련: <<typescript#error-handling>>
 * fp-ts를 이용해서 TypeScript에서 뻥셔널하게 에러 핸들링하기.
@@ -59,16 +87,6 @@ An Nyeong <me@annyeong.me>
 . 김재석, https://m.thisisgame.com/webzine/pds/nboard/267/?n=184033["게임에서 농사 지으면 정신 건강 좋아져요"]. TIG.
 * 고려대, 이화여대 공동 연구
 * 《천수의 사쿠나히메》가 도시 성인의 정신 건강에 긍정적인 영향을 끼칠 수 있음
-
-.나중에
-. https://dhwthompson.com/2019/my-favourite-git-commit[My favourite Git commit]
-. @TkDodo, https://twitter.com/hewonjeong/status/1754087796967674177?s=12&t=d0dS9f7i4DIEEH1JjZnEmA[React 코드 베이스에서의 코드 관리]. @hewonjeong 역.
-. srrrse, https://without.boats/blog/let-futures-be-futures/[Let futures be futures].
-. dylayed, https://blog-17p.pages.dev/posts/working-in-us/[나도 실리콘밸리 개발자가 될 수 있나요?].
-. Mark Seemann, https://blog.ploeh.dk/2018/03/05/some-design-patterns-as-universal-abstractions/[Some design patterns as universal abstractions].
-. @scalalang2, https://scalalang.me/story-from-http1-to-http3/[HTTP/1부터 HTTP/3까지의 이야기].
-. 채널톡 Dugi, https://channel.io/ko/blog/bad-transactional[@Transactional의 해로움].
-. 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
 
 === 23-05WN
 
@@ -129,6 +147,7 @@ An Nyeong <me@annyeong.me>
 . 1월 초. 정희원, https://www.yes24.com/Product/Goods/123318244[느리게 나이 드는 습관].
 
 . 2월 초. 김지혜, https://ridibooks.com/books/754040660[선량한 차별주의자].
+. 02-29. 쿠이 료코, 던전밥 13권.
 
 [2024-본영상물]
 == 본 영상물
