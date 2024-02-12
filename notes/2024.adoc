@@ -4,133 +4,15 @@ An Nyeong <me@annyeong.me>
 :keywords:
 :created_at: 2024-02-02 13:36:02
 
-== 주차별
-
-=== 23-06WN
-
-.나중에
-. @TkDodo, https://twitter.com/hewonjeong/status/1754087796967674177?s=12&t=d0dS9f7i4DIEEH1JjZnEmA[React 코드 베이스에서의 코드 관리]. @hewonjeong 역.
-. srrrse, https://without.boats/blog/let-futures-be-futures/[Let futures be futures].
-. dylayed, https://blog-17p.pages.dev/posts/working-in-us/[나도 실리콘밸리 개발자가 될 수 있나요?].
-. Mark Seemann, https://blog.ploeh.dk/2018/03/05/some-design-patterns-as-universal-abstractions/[Some design patterns as universal abstractions].
-. @scalalang2, https://scalalang.me/story-from-http1-to-http3/[HTTP/1부터 HTTP/3까지의 이야기].
-. 채널톡 Dugi, https://channel.io/ko/blog/bad-transactional[@Transactional의 해로움].
-. 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
-
-.스크랩
-. https://dhwthompson.com/2019/my-favourite-git-commit[My favourite Git commit]
-* Git 커밋 메시지는 코드베이스를 시간에 따라 문서화를 할 수 있는 좋은 도구이다.
-* 좋아하는 커밋: Dan Carley, https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46[Convert template to US-ASCII to fix error]. GOV.UK.
-  ** 제목에 무얼 했는지와 왜 했는지가 들어가있으면서도 간결함. (템플릿 변경, 에러를 고치기 위해)
-  ** 내용에는 무슨 문제를 겪었고, 재현 방법과 어떻게 해결했는지 들어가있음.
-  ** https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46#commitcomment-35572625[@celtric의 답글]이 인상깊다:
-    *** 왜 변경했는지를 알려면 변경사항과 가장 가까운 곳, 커밋 메시지를 보는 것이 이상적이다
-    *** README, 주석으로 문서화하기에는 너무 국소적이고 일시적인 문제이다.
-    *** 커밋 메시지를 검색할 수 없는 것은 검색 엔진의 한계이지, 커밋 메시지의 한계가 아니다.
-  ** https://github.com/alphagov/govuk-puppet/commit/63b36f93bf75a848e2125008aa1e880c5861cf46#commitcomment-35660587[@QazerLab의 답글]도 도움된다:
-    *** `git log --grep`, `git log -S`, `git log -G`, `git bisect` 등의 도구를 사용하면 커밋 메시지를 활용할 수 있다.
-* 왜 바꿨는지에 대해 설명함
-* 검색 가능함
-  ** 에러 로그가 포함되어 있기에 이를 이용해 ``git log --grep``으로 찾을 수 있음
-* 과정을 설명함
-* 팀이 배울 수 있음: 정보량이 많고 설명적이기 때문
-* 코드 뒤에 사람이 있음을 보여줌
-  ** `Now the tests work! One hour of my life I won't get back..`
-
-. Troika Tech, https://troikatech.com/blog/2020/09/24/fp-ts-error-handling-the-functional-way/[fp-ts overview: Error handling, the fnctional way (part 1)]
-* 관련: <<typescript#error-handling>>
-* fp-ts를 이용해서 TypeScript에서 뻥셔널하게 에러 핸들링하기.
-* 도메인 에러와 관리 불가능한 에러는 분리해야한다.
-* 정적 함수형 프로그래밍 도구는 코드 자체가 문서가 될 수 있다.
-  ** 이 함수가 어떤 오류가 발생할 수 있는지 반환 타입이 알려줌
-  ** 예외 처리를 깜빡할 수가 없음.
-  ** 분기 표현이 단순해지므로 코드 가독성이 좋아짐.
-* `Either<E, A>`. ``E``이거나 ``A``인 타입.
-  ** 일반적으로, ``E``로 에러를 표현하고, ``A``로 옳은 값을 표현한다.
-* 처리하기
-  ** 옳은 값(`A`)일 경우 `map`, `chain`
-  ** 그른 값(`E`)일 경우 `mapLeft`, `orElse`
-* 예외를 ``Either``로 변환하기
-  ** `Either.tryCatch`
-* 꺼내기
-  ** `isLeft`, ``isRight``로 분기처리
-  ** ``getOrElse``로 `E -> A`
-  ** ``fold``로 `E | A -> B`
-
-. 딜라이트룸 제품 인사이트 팀, https://yozm.wishket.com/magazine/detail/2272/[유저들은 공짜 선물을 싫어한다].
-* 가설: 7일 무료체험은 결제가 예약되기 때문에 이탈이 많다. 결제 예약 없는 맛보기가 있으면 전환률이 늘 것.
-* 기대: 1회 맛보기 → 7일 무료체험 → 결제.
-* 현상: 유저들이 맛보기 쿠폰을 받지 아니함.
-* 후속과제: 쿠폰에 대해 동등한 대가를 요구하면 쿠폰 획득률이 높아질 것.
-
-. https://kingofbackend.tistory.com/m/129[왜 개발자는 잘못된 기술 선택을 밥 먹듯이 하나?]
-.. 지루해서: 과시를 위해 적정 기술을 선택하지 아니함
-.. 이력서를 부풀리기 위해서
-.. 빠르게 진행되는 것처럼 보이려고 섣불리 결정을 내려서
-.. 기술에 대한 이해가 부족해서
-   * 시간을 내서 기술을 별도로 공부해야함
-.. 문제에 대한 이해가 부족해서
-   * 문제를 명확하게 분석할 수 있는 방법론이 필요함
-   * 과거의 경험을 휘발시키지 않을 문서화가 필요함
-
-. https://yozm.wishket.com/magazine/detail/2442/[PM 생산성을 높이는 시간 관리 방법 'Day Theming']
-* Day Theming: 업무를 비슷한 카테고리로 묶어 배치 처리하는 시간 관리 전략.
-* Time Bloking: 시간 블록 단위로 업무를 분할하는 시간 관리 전략.
-* 둘이 같이 쓰면 좋다
-  ** 왜? context switching은 비용이 크다: 중단된 업무로 돌아왔을 때 생산성이 저하됨.
-  ** 라이브 이슈, 회의 등 현실적으로 day theming이 어려움
-* 적용법
-  .. 주도적으로 활용할 수 있는 시간 파악한다.
-  .. 요일 별로 해당 시간에 주제를 정한다.
-  .. 느슨하게 정하여 업무 효율성을 높인다.
-
-. 김재석, https://m.thisisgame.com/webzine/pds/nboard/267/?n=184033["게임에서 농사 지으면 정신 건강 좋아져요"]. TIG.
-* 고려대, 이화여대 공동 연구
-* 《천수의 사쿠나히메》가 도시 성인의 정신 건강에 긍정적인 영향을 끼칠 수 있음
-
-=== 23-05WN
-
-. https://github.com/HakonHarnes/img-clip.nvim
-* neovim에서 편리하게 이미지를 첨부할 수 있는 플러그인
-
-. 다이어리를 어떻게 활용할 것인가
-* 트래블러스 노트를 샀다!
-* done-list로 활용하자
-  ** 주간: 어떻게 시간/돈을 쓰는지 간단하게 기록하고 모아보기
-  ** 일간: 하루에 어떻게 시간을 쓰는지 간단하게 정리하기
-* 참고: https://youtu.be/fZcgUcUgUfA?t=403[トラベラーズノートを仕事で大活躍させる最強セットアップ方法とアイテム紹介]
-
-. 블로그를 어떻게 쓸 것인가 <<hanassig#>>
-* 말 그대로 web+log로 활용하자
-* 읽은 책, 본 영화 등 간단하게 중요 내용 요약하자
-  *** 읽을 때 다이어리에 정리하고, 그 중 중요한 내용을 블로그에 옮기자
-* 유튜브, 인터넷 글 등 짧게 훑어보고 정리해두기
-  *** 이런 글은 컴퓨터로 읽으니 컴퓨터로 메모하는 게 편하다
-  *** 링크 등 출처를 남기기에도 더 편하다
-* 일 단위는 빡세다. 주 단위로 정리하자
-* log 페이지에 정리하고 주제별 페이지에 요약하자
-* 정보의 흐름은 무조건 다이어리 → 블로그
-
-. 내 관심사
-* 세상 사는 법을 공부하자
-  ** http://www.kocw.net/home/m/cview.do?cid=9cb31acaec0c1684[민법개론]을 배우자
-  ** 세금 잘 내는 법을 배우자: 연말정산, 개인종소세 신고 등
-* 전문 지식을 잘 배우자
-  ** TypeScript, 인프라, 데이터베이스, Git, 동시성 등등
-  ** 개발환경 잘 가꾸기. neovim, LSP, tree-sitter 등등
-* 취미를 잘 즐기자
-  ** 음악, 일렉기타
-  ** DIY. 키보드
-* 잘 살자
-  ** 금융을 배우자
-  ** 집을 구하자
-
-. 슈카월드, https://www.youtube.com/watch?v=WsWZPnPyQrY[국민연금 개혁, 쉽게 이해하기].
-* "부유한 우리 세대가 많이 부담해야한다. 미래 세대를 배려해야한다."
-* 현 세대의 재산세, 양도 소득세를 높이고 미래 세대의 노동 소득세를 줄이자.
+. <<2024-05wn#>>
+. <<2024-06wn#>>
 
 [2024-읽은책]
 == 읽[는은] 책
+
+. 02-29. 쿠이 료코, 던전밥 13권.
+
+. 2월 초. 김지혜, https://ridibooks.com/books/754040660[선량한 차별주의자].
 
 . 1월 초. 에릭 노머드, https://m.yes24.com/Goods/Detail/108748841[쏙쏙 들어오는 함수형 코딩].
 
@@ -148,8 +30,6 @@ An Nyeong <me@annyeong.me>
 
 . 1월 초. 정희원, https://www.yes24.com/Product/Goods/123318244[느리게 나이 드는 습관].
 
-. 2월 초. 김지혜, https://ridibooks.com/books/754040660[선량한 차별주의자].
-. 02-29. 쿠이 료코, 던전밥 13권.
 
 [2024-본영상물]
 == 본 영상물
