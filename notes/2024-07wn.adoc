@@ -3,3 +3,17 @@ An Nyeong <me@annyeong.me>
 :description:
 :keywords:
 :created_at: 2024-02-12 23:04:19
+
+== 스크랩
+
+. @taekie, https://twitter.com/taekie/status/1755096128339734817[전국 우편번호 부여 순서]
+* 전국 우편번호 부여 순서를 한 장으로 정리한 이미지.
+* 정보를 인지하기 편한 매체로 변환하는 작업은 언제 보아도 신기하다.
+
+. @minsangk, https://twitter.com/minsangk/status/1755573828577874198[코리안 백엔드 개발자의 엑셀 가재도구 코드셋]
+* 수작업 엑셀 파일을 시스템으로 포용한 과정.
+
+== 잡생각
+
+. 관심 가는 오토바이 신차:
+  * CF모토 파피오XO, MT450, 히말라얀450 등.
