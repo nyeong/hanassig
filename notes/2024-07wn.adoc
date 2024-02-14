@@ -16,4 +16,10 @@ An Nyeong <me@annyeong.me>
 == 잡생각
 
 . 관심 가는 오토바이 신차:
-  * CF모토 파피오XO, MT450, 히말라얀450 등.
+* CF모토 파피오XO, MT450, 히말라얀450 등.
+
+. <<typescript#>> 공부를 좀 해야겠다.
+* https://google.github.io/comprehensive-rust/[Comprehensive Rust 🦀]
+  ** 구글 Rust 교육과정.
+  ** 보고 따라하자.
+* 나머지는 <<typescript#>> 문서에 추가해둠.

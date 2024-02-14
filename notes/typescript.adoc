@@ -6,9 +6,42 @@ An Nyeong <me@annyeong.me>
 
 타입스크립트를 잘 쓰자
 
-. 에러 핸들링
+[error-handling]
+== 에러 핸들링
+
+언어의 자유도가 높아서 일반적으로 쓰는 세 가지 방법 모두 쓸 수 있다:
+
+. throw-catch
+. Go처럼
+. Either 모나드
+
+
+=== throw-catch
+
+```typescript
+try {
+  throw Error();
+  // 아니면
+  doSomethingCanThrowError();
+  // 아니면
+  await doSomethingCanThrowError();
+} catch (error) {
+
+} finally {
+
+}
+```
+
+== 유용할 것 같은 링크들
+
+. https://www.totaltypescript.com/tutorials[TotalTypeScript]
+. https://typehero.dev/[TypeHero]
+. https://github.com/type-challenges/type-challenges[type-challenges]
+. https://basarat.gitbook.io/typescript/[TypeScript Deep Dive]
+. Jonathan Cardoso, https://www.digitalocean.com/community/tutorial-series/how-to-code-in-typescript[How To Code in TypeScript]. DigitalOcean.
 
 [bibliography]
 == 참고
 
-. 작성자, 이름.
+. https://github.com/jbl428/functional-programming[functional-programming]
+. 이선협, https://kciter.so/posts/railway-oriented-programming[Railway-Oriented Programming].
