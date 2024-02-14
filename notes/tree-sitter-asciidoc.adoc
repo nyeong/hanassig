@@ -1,115 +1,30 @@
-= Tree-sitter로 AsciiDoc 파서 만들기
+= tree-sitter로 AsciiDoc 파서 만들기
 An Nyeong <me@annyeong.me>
 
 <<asciidoc>>은 문서 편집에 적합한 경량 마크업 언어이다.
 마크다운과 비슷한데, 좀 더 확장성 있다.
 
-이 언어는 다 좋은데 마크다운에 비해 여러 도구들이 부족하다. 내가 자주 쓰는
-helix 에디터는 tree-sitter와 LSP가 있으면 편리하게 쓸 수 있는데, AsciiDoc에
-해당하는 tree-sitter 구현이 없다. 이게 없으면 구문 강조가 안 된다.
-
-어떻게 만들 수 없을까?
-
-== Tree-sitter
+https://github.com/tree-sitter/tree-sitter[tree-sitter]는 파서 생성 도구이다.
+빠르고 의존성이 적어 텍스트 에디터에 많이 사용한다.
+파서이기 때문에 단순한 코드 하이라이팅을 넘어서 쓸 수 있다.
 
 youtube:https://www.youtube.com/watch?v=a1rC79DHpmY
 
-https://tree-sitter.github.io/tree-sitter/[Tree-sitter]는 파서 생성 도구이다.
-결과물을 C로 뱉어서 여러 환경에서 편리하게 쓸 수 있으며, 의존성이 매우 적고,
-다소 문법 오류가 있더라도 쓸만한 분석을 해준다고 한다.
+== 기대효과
 
-IDE와 같은 프로그램들은 Tree-sitter만 잘 지원하면 구문강조도 편리하게 할 수
-있고, 코드 탐색도 편리하게 할 수 있다.
-반대로 파서 제작자는 Tree-sitter로 잘 작성만 하면 Tree-sitter를 잘 지원하는
-여러 프로그램에서 이득을 누릴 수 있다. 파서계의 LSP랄까.
+많은 텍스트 편집기들이 tree-sitter를 이용하여 하이라이팅 등 다양한 작업을 하고 있다. <<zed-tree>>를 보면
+어떻게 zed 편집기에서 tree-sitter를 활용하는지 볼 수 있다.
 
-== 배경지식
-
-컴파일러 이론에 대한 지식이 없어서 문서를 이해하는 게 힘들다. 모르는 용어를
-정리해보자. 오토마타 전문가가 되고 싶은 건 아니니 대략적으로만 알아보자:
-
-파서:::
-  구문 분석을 수행하는 프로그램을 파서라고 부른다.
-	일반적으로 프로그램을 컴파일하려면 아래의 과정을 거친다.
-+
-1. Lexer: str -> token: 렉서가 소스코드의 각 문자를 분석하여 토큰을 만든다.
-   ``1 + 2 * 3``이라는 소스가 있다면, `1`, `+`, `2`, `*`, ``3``과 같이 가장
-	 최소의 의미 단위로 분석한다.
-2. Parser: token -> parse-tree: 파서가 토큰을 구조적으로 분석하여 트리를 만든다.
-   ``1 + 2 * 3``은 일반적으로 연산자 우선순위에 의해 `2 * 3` 먼저 평가해야한다.
-	 이러한 정보를 담은 자료구조를 생성하며 일반적으로 트리 형태이다.
-3. 이후 생성된 parse-tree를 컴파일러, 인터프리터 등등이 적절하게 써먹는다.
-+
-이런 파서에는 크게 두 가지 종류가 있다. 일반적으로 하향식 파서가 작성이
-편리하나 성능이 떨어지고, 상향식 파서가 작성이 까다로우나 성능이 좋은 것 같다.
-상향식 파서:::
-  단말노드에서 출발하여 루트노드로 이동하며 분석하는 파서이다.
-	Tree-sitter는 상향식 파서의 일종인 GLR 파싱 알고리즘을 쓴다.
-+
-GLR 파싱 알고리즘은 LR 파싱의 일종으로 Generalized LR이라는 뜻이다.
-LR의 L은 왼쪽부터 탐색함을, R은 오른쪽을 우선함을 의미한다.
-
-하향식 파서:::
-  루트노드에서 단말노드로 내려가며 분석하는 파서이다.
-  LL파서, 재귀하향식 파서 등이 하향식 파서이다.
-	대부분 컴파일러, 인터프리터 책에서 작성하는 것이 재귀 하향 파서인듯.
-
-LR(1):::
-  종종 문서 중간에 LR(1)과 같은 표현이 등장하는데, 파서 이름 뒤에 괄호와 숫자가
-  등장한다면 n개의 문자를 미리본다(lookahead)는 뜻이다.
-
-.재귀 하향 파서의 예
-- https://github.com/disjukr/hwpkit/blob/master/hwpkit/src/read/naive-xml-parser.ts[disjukr/hwpkit]
-- https://github.com/MerHS/biryo/blob/master/src/main/scala/net/kinetc/biryo/parser/WikiParser.scala[MerHS/biryo]
-
-구문강조:::
-  기존의 구문 강조 기술에 대해 정확히 아는 바는 없지만 아마 대부분 정규표현식에
-	의존하는 듯하다.
-	https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide[VS Code 문서]와
-	https://github.com/asciidoctor/asciidoctor-vscode/blob/master/syntaxes/Asciidoctor.json[Asciidoctor의 적용 예]를 보면 대부분의 구문강조에 정규표현식 패턴매칭을
-	적극적으로 쓰는 것을 볼 수 있다.
-+
-Tree-sitter는 이와 다르게 소스를 파싱해서 구문트리를 만든 후 이를 이용해서
-구문강조 한다.
-
-EBNF:::
-  extended Backus–Naur form; 문맥자유언어를 기술하기 위한 표기법이다.
-	이름에서 알 수 있듯이, BNF라는 게 먼저 있었고, 이를 확장하여 EBNF가 되었다.
-	몇가지 기호로 이루어진 단순한 언어이기 때문에
-	https://cswr.github.io/JsonSchema/spec/grammar/[JSON EBNF] 예시만 보아도
-	어렵지 않게 이해가 된다.
-  +
-  그럼 문맥자유언어는 무엇인가? EBNF로 기술할 수 있는 언어이다...라고 하면
-  안되겠죠? 촘스키 언어위계론에서 분류하는 계층 중 하나이다.
-
-촘스키 언어위계론:::
-  노엄 촘스키가 형식언어를 네 가지의 계층으로 구분한 것이다.
-	숫자가 낮을수록 상위계층이다.
-
-+
-[start=0]
-. 귀납적 가산 언어 (recursively-enumerable language) -- 튜링머신에 대응
-. 문맥 의존 언어 (context-sensitive language) -- 선형 구속형 비결정론 튜링머신에 대응
-. 문맥 자유 언어 (context-free language) -- 비결정론적 푸시다운 오토마타에 대응
-+
-대부분의 프로그래밍 언어가 여기에 속한다.
-. 정규언어 (regular language) -- 유한 상태 기계에 대응
-
-+
-여기서 형식언어란, 특정한 규칙을 따르는 문자열을 의미한다.
-
-== 문법 작성하기
-
-https://tree-sitter.github.io/tree-sitter/creating-parsers#writing-the-grammar
-
-문서에서는 다음의 두 규칙을 강조한다:
-
-1. 직관적인 구조로 짜라.
-2. LR(1)을 준수하라.
+https://ast-grep.github.io/[ast-grep]의 용례를 보면, tree-sitter로 구문 분석하여 AST를 생성하고,
+이를 이용해서 편집할 수도 있다.
 
 [bibliography]
 == 참고
 
-- [[[ts]]] https://tree-sitter.github.io/tree-sitter/creating-parsers
-- https://blog.naver.com/bestowing/221636494349
-- https://www.youtube.com/watch?v=iBzMdefX77Y
+. [[[zed-tree]]] Max Brunsfeld, https://zed.dev/blog/syntax-aware-editing[Enabling low-latency, syntax-aware editing using Tree-sitter]. Zed Industries.
+. 강승식 교수, https://www.youtube.com/watch?v=iBzMdefX77Y[컴파일러 13-1주. 8장 LR 파싱 1 개요].
+. Derek, https://derek.stride.host/posts/comprehensive-introduction-to-tree-sitter[A Comprehensive Introduction to Tree-sitter].
+. 튜토리얼들
+.. [[[ts]]] https://tree-sitter.github.io/tree-sitter/creating-parsers[Creating parsers]. tree-sitter.
+.. Aerijo, https://gist.github.com/Aerijo/df27228d70c633e088b0591b8857eeef[Guide to your first Tree-sitter grammar].
+.. Ben Siraphob, https://siraben.dev/2022/03/01/tree-sitter.html[How to write a tree-sitter grammar in an afternoon].

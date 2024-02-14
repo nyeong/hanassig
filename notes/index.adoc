@@ -9,11 +9,11 @@ An Nyeong <me@annyeong.me>
 * <<hanassig#,하나씩>>
 * 올해: <<2024#,2024>>
 * <<2024-07wn#,2024-07WN>>
-* <<2024-06wn#,2024-06WN>>
 
 === 개발환경
 
 * <<neovim#>>
+* <<tree-sitter-asciidoc#>>
 
 === 프로그래밍
 
