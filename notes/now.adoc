@@ -35,7 +35,7 @@ An Nyeong <me@annyeong.me>
   * 동시성
   * 업무 파이프라인
 
-== 👀
+== 읽을려는 글 북마크 👀
 
 . http://www.kocw.net/home/m/cview.do?cid=9cb31acaec0c1684[민법개론]
 . @TkDodo, https://twitter.com/hewonjeong/status/1754087796967674177?s=12&t=d0dS9f7i4DIEEH1JjZnEmA[React 코드 베이스에서의 코드 관리]. @hewonjeong 역.
