@@ -1,7 +1,7 @@
 = tree-sitter로 AsciiDoc 파서 만들기
 An Nyeong <me@annyeong.me>
 
-<<asciidoc>>은 문서 편집에 적합한 경량 마크업 언어이다.
+asciidoc은 문서 편집에 적합한 경량 마크업 언어이다.
 마크다운과 비슷한데, 좀 더 확장성 있다.
 
 https://github.com/tree-sitter/tree-sitter[tree-sitter]는 파서 생성 도구이다.
