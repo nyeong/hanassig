@@ -17,7 +17,6 @@ An Nyeong <me@annyeong.me>
 
 . 1월 초. 에릭 노머드, https://m.yes24.com/Goods/Detail/108748841[쏙쏙 들어오는 함수형 코딩].
 
-[거인의노트]
 . 1월 초. 김익한, https://m.yes24.com/Goods/Detail/117722000[거인의 노트].
 ** 생각하는 힘을 기르자
   .. 평가하라: 바둑선수가 복기하듯
