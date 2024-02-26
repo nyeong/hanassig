@@ -6,7 +6,7 @@ An Nyeong <me@annyeong.me>
 == 주제별 정리
 
 * <<now#>>
-* <<2024-08wn#,2024#08>>
+* <<2024-09wn#,2024#09>>
 * <<hanassig#,하나씩>>
 * 올해: <<2024#,2024>>
 
@@ -14,6 +14,7 @@ An Nyeong <me@annyeong.me>
 
 * <<neovim#>>
 * <<tree-sitter-asciidoc#>>
+* <<git#>>
 
 === 프로그래밍
 
