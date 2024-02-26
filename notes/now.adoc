@@ -45,3 +45,6 @@ An Nyeong <me@annyeong.me>
 . @scalalang2, https://scalalang.me/story-from-http1-to-http3/[HTTP/1부터 HTTP/3까지의 이야기].
 . 채널톡 Dugi, https://channel.io/ko/blog/bad-transactional[@Transactional의 해로움].
 . 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
+. 박지호, https://www.youtube.com/watch?v=Z0d7ZrxY-i0[우형의 새로운 백엔드 개발 표준].
+. 이동욱, https://www.youtube.com/watch?v=Ty9DDg1_5Pw&t=7s[인프런 아키텍처 2023 ~ 2024].
+. 권순규, https://techblog.woowahan.com/2631/[MySQL을 이용한 분산락으로 여러 서버에 걸친 동시성 관리]
