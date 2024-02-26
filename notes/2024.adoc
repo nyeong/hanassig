@@ -4,6 +4,8 @@ An Nyeong <me@annyeong.me>
 :keywords:
 :created_at: 2024-02-02 13:36:02
 
+. <<2024-09wn#>>
+. <<2024-08wn#>>
 . <<2024-07wn#>>
 . <<2024-06wn#>>
 . <<2024-05wn#>>
@@ -34,5 +36,6 @@ An Nyeong <me@annyeong.me>
 [2024-본영상물]
 == 본 영상물
 
-. 01-21 (일) https://m.megabox.co.kr/movie-detail?rpstMovieNo=23097300[엔드 오브 에반게리온].
-. 01-21 (일) http://www.cgv.co.kr/movies/detail-view/?midx=87942[걸즈 앤 판처 최종장 4화].
+. 02-25 (일) 장재현 감독, 파묘.
+. 01-21 (일) 안노 히데아키, https://m.megabox.co.kr/movie-detail?rpstMovieNo=23097300[엔드 오브 에반게리온].
+. 01-21 (일) 미즈시마 츠토무, http://www.cgv.co.kr/movies/detail-view/?midx=87942[걸즈 앤 판처 최종장 4화].
