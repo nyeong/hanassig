@@ -47,4 +47,22 @@ An Nyeong <me@annyeong.me>
 . 정희원, https://www.chosun.com/opinion/specialist_column/2024/01/31/QZH7F5RFFBCWLACQOTRWMK5MRY/[의자 없는 지하철 보며, 잔인한 ‘의자 뺏기’ 게임을 생각했다].
 . 박지호, https://www.youtube.com/watch?v=Z0d7ZrxY-i0[우형의 새로운 백엔드 개발 표준].
 . 이동욱, https://www.youtube.com/watch?v=Ty9DDg1_5Pw&t=7s[인프런 아키텍처 2023 ~ 2024].
-. 권순규, https://techblog.woowahan.com/2631/[MySQL을 이용한 분산락으로 여러 서버에 걸친 동시성 관리]
+. 권순규, https://techblog.woowahan.com/2631/[MySQL을 이용한 분산락으로 여러 서버에 걸친 동시성 관리].
+. https://blog.hoy.im/dailyscrum[성공적인 데일리 스크럼 문화를 위한 가이드].
+. https://news.hada.io/topic?id=13531[호기심 많은 소프트웨어 엔지니어를 위한 학습자료 모음].
+. https://news.hada.io/topic?id=5717[월50만원($400)으로 80TB 트래픽과 5M 페이지뷰를 처리하는 방법].
+. https://austinhenley.com/blog/90percent.html[Stopping at 90%]
+. https://jeremymikkola.com/posts/developer_productivity.html[What makes developers productive?]
+. https://blog.lemonbase.team/%EB%A0%88%EB%AA%AC%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EC%9D%98-%EB%8D%94%ED%95%98%EA%B8%B0%EC%97%90%EC%84%9C-%EA%B3%B1%ED%95%98%EA%B8%B0%EB%A1%9C-%EA%B0%80%EB%8A%94-%EC%97%AC%EC%A0%95-ac01ea36bb5c[레몬베이스 엔지니어의 더하기에서 곱하기로 가는 여정]
+. https://www.youtube.com/watch?v=U6I-Kwj-AvY[1 Problem, 24 Programming Languages]
+. https://www.developing.dev/p/6-software-engineering-templates[6 Software Engineering Templates I Wish I Had Sooner].
+. https://shivag.github.io/cs145-stanford-fa23/[Intro to Big Data Systems].
+. Rafal Dittwald, https://www.youtube.com/watch?v=vK1DazRK_a0[Solving Problems the Clojure Way]
+. https://expo.dev/blog/what-are-environment-variables[What every dev should know about using Environment Variables].
+. https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/
+. https://www.youtube.com/watch?v=vX8i0Bcb08I[Functional Programming in Postgresql].
+. https://web.stanford.edu/class/cs346/2015/redbase.html
+. https://docs.google.com/document/u/0/d/1iBPwWMyszvtI9saJwPx4myZ-ApQvJgfgcXDuWxPH54w/mobilebasic
+. https://news.hada.io/topic?id=13356
+. https://github.com/TabbyML/tabby
+. https://github.com/codecrafters-io/build-your-own-x
