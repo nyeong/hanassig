@@ -1,0 +1,14 @@
+= 어떻게 배울 것인가
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-03 23:04:43
+
+이곳에 초록을 작성
+
+[bibliography]
+== 참고
+
+. 김창준, https://web.archive.org/web/20230314135134/http://agile.egloos.com/5749946[당신이 제자리 걸음인 이유 : 지루하거나 불안하거나].
+. Veritasium, https://www.youtube.com/watch?v=yiG0nOK7woU[전문가와 비전문가의 차이].
+. Veritasium, https://www.youtube.com/watch?v=UBVV8pch1dM[생각의 과학].

@@ -7,8 +7,13 @@ An Nyeong <me@annyeong.me>
 
 * <<now#>>
 * <<2024-09wn#,2024#09>>
+
+=== 계획하고 살기
+
 * <<hanassig#,하나씩>>
+* <<learning#>>
 * 올해: <<2024#,2024>>
+* <<performance-indicator#>>
 
 === 개발환경
 
@@ -21,6 +26,11 @@ An Nyeong <me@annyeong.me>
 * <<programming#>>
 * <<typescript#>>
 
-=== 음악
+=== 취미
 
 * <<chord-progression#>>
+* <<keyboard-diy#>>
+
+=== 기타
+
+* <<bookmark#>>

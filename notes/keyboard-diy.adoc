@@ -1,0 +1,14 @@
+= 키보드 만들기
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-05 22:42:50
+
+이곳에 초록을 작성
+
+
+[bibliography]
+== 참고
+
+. https://gura7060.tistory.com/2[자작 키보드 PCB 기판 설계 시 참고하면 좋은 자료들].
+. https://github.com/00Lyun00/Charybdis-Nano-Buildlog/blob/main/Buildlog/Korean%20Version.md[Charybdis Nano Buildlog].

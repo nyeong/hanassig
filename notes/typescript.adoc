@@ -45,3 +45,5 @@ try {
 
 . https://github.com/jbl428/functional-programming[functional-programming]
 . 이선협, https://kciter.so/posts/railway-oriented-programming[Railway-Oriented Programming].
+. https://ahnheejong.gitbook.io/ts-for-jsdev[자바스크립트 개발자를 위한 타입스크립트].
+. https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed?tab=readme-ov-file[You Don't Know JS Yet].
