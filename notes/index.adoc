@@ -6,10 +6,11 @@ An Nyeong <me@annyeong.me>
 == 주제별 정리
 
 * <<now#>>
-* <<2024-09wn#,2024#09>>
+* <<2024-11wn#,2024#11>>
 
 === 계획하고 살기
 
+* <<organizing-thoughts#>>
 * <<hanassig#,하나씩>>
 * <<learning#>>
 * 올해: <<2024#,2024>>
@@ -17,9 +18,11 @@ An Nyeong <me@annyeong.me>
 
 === 개발환경
 
+* <<devenv#>>
 * <<neovim#>>
 * <<tree-sitter-asciidoc#>>
 * <<git#>>
+* <<system-design#>>
 
 === 프로그래밍
 
