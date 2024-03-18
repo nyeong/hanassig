@@ -1,0 +1,12 @@
+= 2024#11
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-13 10:34:53
+
+이곳에 초록을 작성
+
+[bibliography]
+== 참고
+
+. 작성자, 이름.

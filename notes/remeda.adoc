@@ -1,0 +1,25 @@
+= Remeda
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-13 11:01:47
+
+> The first "data-first" and "data-last" utility library designed specifically for TypeScript
+
+요즘 잘 쓰고 있는 유틸리티 라이브러리.
+
+== 동기
+
+나에게 TypeScript는 낯선 언어이다.
+
+. 타입을 잘 활용하고 싶다.
+. pipe를 쓰고 싶다.
+
+== 비동기 파이프라인
+
+
+
+[bibliography]
+== 참고
+
+. @if1live, https://if1live.github.io/posts/escape-from-lodash-remeda/[lodash 탈출기 - lodash의 대안과 결정].

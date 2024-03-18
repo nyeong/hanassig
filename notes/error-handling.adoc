@@ -1,0 +1,104 @@
+= 오류를 다루는 방법
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-18 11:01:09
+
+== 오류의 종류
+
+오류라고 통틀었는데, 실패와 에러로 분리해보자.
+
+. 예측할 수 있다면 실패이다.
+. 예측할 수 없다면 에러이다.
+
+.오류가 날 수 있는 곳
+. 비즈니스 로직의 오류
+. 시스템의 오류
+. 외부의 오류
+
+[quote, The Rustonomicon]
+----
+- If something might reasonably be absent, Option is used.
+- If something goes wrong and can reasonably be handled, Result is used.
+- If something goes wrong and cannot reasonably be handled, the thread panics.
+- If something catastrophic happens, the program aborts.
+----
+
+== 어떻게 오류를 처리해야 하는가
+
+.언제 분기를 처리하는가
+. LBYL; Look Before You Leap
+. EAFP; Easier to Ask for Forgiveness than Permission
+
+.어떻게 오류임을 알려주는가
+. 평범한 값으로 반환하기
+. 특수한 값으로 반환하기
+. 오류를 던지기
+
+== 어떻게 오류임을 알려주는가
+
+=== 평범한 값으로 반환하기
+
+반환할 수 있는 값 중 하나를 특별한 값으로 정해 오류라고 약속할 수 있다.
+
+[source, c]
+----
+#include <stdio.h>
+
+int main() {
+  FILE * file = fopen("somefile", "r");
+  if (file == NULL) {
+    // handle error
+  }
+  // do something with file
+}
+----
+
+=== 특수한 값으로 반환하기
+
+오류가 날 수 있는 함수는, 목표한 값에 오류 정보를 추가로 붙여서 준다. 붙이는 방법과 분리하는 방법은
+조금씩 다르지만,  동일하다.
+
+Go는 튜플로 준다: `(file * File, err error)`
+
+[source, go]
+----
+f, err := os.Open("filename.ext")
+if err != nil {
+    // handle error
+}
+// do something with the open *File f
+----
+
+Elixir는 유니온으로 준다: `{:ok, result} | {:error, reason}`
+
+[source, elixir]
+----
+case File.open("foo.tar.gz", [:read, :compressed]) do
+  {:ok, file} ->
+    // do something with file
+  {:error, reason} ->
+    // handle error
+end
+----
+
+Rust는 명목적인 새 타입으로 준다: `Result<T, E>`
+
+[source, rust]
+----
+use std::fs::File;
+use std::io::Read;
+
+fn main() {
+    let file = File::open("foo.txt");
+    match file {
+        Ok(file) => file,
+	    Err(error) => // handle error
+    }
+}
+----
+
+[bibliography]
+== 참고
+
+- https://doc.rust-lang.org/stable/nomicon/unwinding.html#unwinding[The Rustonomicon]

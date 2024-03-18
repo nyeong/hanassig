@@ -6,7 +6,6 @@ An Nyeong <me@annyeong.me>
 == 주제별 정리
 
 * <<now#>>
-* <<2024-11wn#,2024#11>>
 
 === 계획하고 살기
 
@@ -14,7 +13,7 @@ An Nyeong <me@annyeong.me>
 * <<hanassig#,하나씩>>
 * <<learning#>>
 * 올해: <<2024#,2024>>
-* <<performance-indicator#>>
+* <<finance#>>
 
 === 개발환경
 

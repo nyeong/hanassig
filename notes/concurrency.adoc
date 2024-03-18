@@ -40,7 +40,7 @@ CPU 파이프라이닝을 통해 CPU를 병렬적으로 쓸 수 있다. 명령�
 
 === 동시성이 필요한 이유
 
-- 실세계가 동시적이기 때문에 
+- 실세계가 동시적이기 때문에
   - 프로그램은 좋든 싫든, 의도했든 안했든 실세계와 상호작용한다. 그 실세계가 동시적이므로 동시성이 필요하다.
   - 동시성이 없다면 파일을 다운 받으며 마우스를 움직일 수 없다.
 - 더 나은 성능을 위해
@@ -225,3 +225,4 @@ let m = Mutex::new(5);
 - [주니어 웹 개발자가 알아야 할 '비동기 통신'](https://yozm.wishket.com/magazine/detail/1982/)
 - [동시성, 병렬, 비동기, 논블럭킹과 컨셉들](https://black7375.tistory.com/90)
 - 남정현, https://blog.cro.sh/slides/async-rust-programming-20220801-redistributable.pdf[Rust 비동기 프로그래밍]
+. https://x.com/simnalamburt/status/1309545412160675840?s=20[스레드 세이프티 고려 안한 인터프리터 언어에 스레드 넣는 타 선례들]

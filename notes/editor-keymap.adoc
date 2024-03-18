@@ -1,0 +1,12 @@
+= 편집기 단축키
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-15 13:13:00
+
+가능하면 단축키를 설정할 수 있는 에디터를 사용하고, 방법을 통일하자
+
+[bibliography]
+== 참고
+
+. 작성자, 이름.

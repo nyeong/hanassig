@@ -1,0 +1,48 @@
+= 다형성을 달성하는 방법
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-16 16:09:36
+
+. 덕 타이핑
+. 서브타입에 의한 다형성
+. 매개변수에 의한 다형성
+
+== 덕 타이핑
+
+> 오리처럼 걷고, 오리처럼 운다면, 그건 오리가 틀림 없다.
+
+[source, ruby]
+----
+class Duck
+  def walk = # do something
+  def quack = # do something
+end
+
+class Dog
+  def walk = # do something
+  def quack = # do something
+end
+
+ducks = [Duck.new, Dog.new]
+ducks.each do |duck|
+  duck.walk
+  duck.quack
+end
+----
+
+구조적 타이핑과 비슷하다. 다만 덕 타이핑은 런타임에, 실제로 호출되는 값/메소드만으로 동등성을 판단한다.
+
+== 서브타입
+
+크게 둘로 나눌 수 있다:
+
+. 명목적 타이핑(nominal typing)
+. 구조적 타이핑(structural typing)
+
+== 매개변수
+
+[bibliography]
+== 참고
+
+. 홍재민, https://product.kyobobook.co.kr/detail/S000210397750[타입으로 견고하게 다형성으로 유연하게].
