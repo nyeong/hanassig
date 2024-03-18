@@ -66,3 +66,5 @@ An Nyeong <me@annyeong.me>
 . https://news.hada.io/topic?id=13356
 . https://github.com/TabbyML/tabby
 . https://github.com/codecrafters-io/build-your-own-x
+. https://github.com/ByteByteGoHq/system-design-101
+. https://sourceacademy.org/sicpjs/index[Structure and Interpretation of Computer Programs —  JavaScript Edition].

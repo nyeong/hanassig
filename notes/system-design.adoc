@@ -1,0 +1,11 @@
+= 시스템 설계
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-11 14:00:20
+
+[bibliography]
+== 참고
+
+. @darjeelingt, https://twitter.com/darjeelingt/status/1766261553492644226[일반적인 백엔드 써버 튜닝 방법].
+. 김종혁, https://maxkim-j.github.io/posts/nodejs-server-monitoring/[Nodejs 서버 모니터링 환경과 메트릭 이해하기].

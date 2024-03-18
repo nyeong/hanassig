@@ -4,9 +4,14 @@ An Nyeong <me@annyeong.me>
 :keywords:
 :created_at: 2024-03-05 22:39:38
 
+.한국어권
 . https://ahnheejong.name/[ahn.heejong]
 . https://parksb.github.io/
 . https://blog.outsider.ne.kr/
 . https://zzsza.github.io/[어쩐지 오늘은]
+. https://johngrib.github.io/
+. https://jeho.page/
+
+.영어권
 . https://www.jvt.me/
 . https://gwern.net/index

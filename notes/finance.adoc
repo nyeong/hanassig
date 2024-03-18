@@ -1,6 +1,8 @@
 = 재무 관리
 :created_at: 2023-12-03 17:15
 
+* <<predictable-consumption#>>
+
 youtube::9e4AJZ9U-kg
 
 == 참고

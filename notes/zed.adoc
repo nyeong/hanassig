@@ -1,0 +1,18 @@
+= Zed
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-11 11:16:53
+
+https://zed.dev/
+
+== 장점
+
+. 빠름. 상당히 큰 크기의 파일을 편집할 때 VS Code, neovim에 비해 체감상 빠릿하였다.
+. tree-sitter, LSP가 빌트인이라 별도 설정이 필요하지 않아 편리하다.
+. 내장된 글꼴이 이쁘다.
+
+[bibliography]
+== 참고
+
+. 작성자, 이름.

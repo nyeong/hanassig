@@ -1,0 +1,37 @@
+= 예측 가능한 소비생활 만들기
+An Nyeong <me@annyeong.me>
+:description:
+:keywords:
+:created_at: 2024-03-16 17:14:36
+
+== 통장 쪼개기
+
+[mermaid]
+....
+graph TD;
+    급여통장 --> 생활비통장
+    급여통장 --> 비상금통장
+    급여통장 --> 저축통장[저축/투자]
+    급여통장 --> 행복통장
+    비상금통장 -->|부족한 생활비| 생활비통장
+    비상금통장 -->|비상금 초과분 저축| 저축통장
+    생활비통장 --> 생활비[생활비로 사용]
+    생활비통장 -->|절약한 생활비| 비상금통장
+....
+
+. 사용 목적에 맞게 통장을 만든다
+* 급여 통장
+* 생활비 통장
+* 저축 통장
+* 비상금 통장
+* 행복 통장
+
+. 예정된 생활비 내에서 소비한다
+* 부족분은 비상금 통장을 활용하여 융통성있게 운용한다.
+* 아낀 금액은 비상금 통장에 저축한다.
+* 비상금 목표액 초과분은 저축한다.
+
+== 참고
+
+. 금융감독원, https://www.fss.or.kr/edu/fec/contMng/view.do?menuNo=300018&check=2&contentsSlno=546&pageIndex=8&search=title&searchWrd=&certYn=&eduTrgtCode=Y&eduTrgtCode=U&eduCntntLrgClsfcCode=100&eduCntntLrgClsfcCode=200&eduCntntLrgClsfcCode=300&eduCntntLrgClsfcCode=500&eduCntntLrgClsfcCode=600&order=regDt[신용을 지키는 나만의 요령]
+
