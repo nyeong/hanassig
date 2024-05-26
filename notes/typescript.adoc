@@ -8,7 +8,6 @@ An Nyeong <me@annyeong.me>
 
 . <<remeda#>>
 
-[error-handling]
 == 에러 핸들링
 
 언어의 자유도가 높아서 일반적으로 쓰는 세 가지 방법 모두 쓸 수 있다:

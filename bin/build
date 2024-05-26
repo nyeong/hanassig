@@ -1,9 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative '../../hana/lib/hana'
-
-LIB_DIR='/Users/subin/Repos/hana/lib'
-NOTES_DIR='/Users/subin/Repos/hanassig/notes'
-BUILD_DIR='/Users/subin/Repos/hanassig/build'
-
-Hana.build(NOTES_DIR, BUILD_DIR)

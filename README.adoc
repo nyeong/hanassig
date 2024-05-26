@@ -10,10 +10,17 @@
 
 [source]
 ----
-├── assets/ -- 이미지 등 첨부파일
-├── notes/  -- asciidoc 파일
-│   └── index.adoc -- 목차
+├── figures/ -- 이미지 등 첨부파일
+├── notes/   -- asciidoc 파일
+│   ├── index.adoc -- 목차
 │   └── ...
+│
+├── bin/    -- 실행파일
+├── lib/    -- 빌드를 위한 코드
+├── app/    -- 프론트엔드 코드
+│   ├── static/    -- 그대로 복사되는 내용들
+│   ├── templates/
+│   └── styles/
 └── README.md
 ----
 

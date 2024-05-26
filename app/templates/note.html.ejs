@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page.title %></title>
+    <meta name="description" content="<%= page.description %>">
+    <meta name="keywords" content="<%= page.keywords %>">
+    <link rel="canonical" href="https://example.com/some-article/">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/about">소개</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h1><%= title %></h1>
+            </header>
+            <%- content %>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 An Nyeong. All rights reserved.</p>
+    </footer>
+</body>
+</html>

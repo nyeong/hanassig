@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative '../../hana/lib/hana'
-
-NOTES_DIR='/Users/subin/Repos/hanassig/notes'
-
-Hana.lint(NOTES_DIR)

@@ -11,3 +11,6 @@ _tmp
 build/
 
 notes/*.html
+
+# pnpm
+node_modules/
