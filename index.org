@@ -1,0 +1,8 @@
+#+title: 하나씩
+#+description: 배운 것들을 하나씩 정리합니다
+#+author: An Nyeong
+
+* 개발환경
+- [[file:emacs.org]]
+
+* 프로그래밍
