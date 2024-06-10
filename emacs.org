@@ -35,8 +35,10 @@ vim vs emacs 같은 논쟁도 이제 옛말이다.
 Emacs를 써보려고 하는 가장 큰 이유.
 
 ** 참고자료
-[[https://orgmode.org/worg/]]
 
-웹사이트로 봐도 되고, 저장소를 git으로 내려받아 로컬에서 봐도 된다.
+- [[https://orgmode.org/worg/]]
+
+  org-mode 커뮤니티 문서.
+  웹사이트로 봐도 되고, 저장소를 git으로 내려받아 로컬에서 봐도 된다.
 
 - [[file:org-mode-cheatsheet.org]]
