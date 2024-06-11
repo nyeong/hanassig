@@ -6,3 +6,5 @@
 - [[file:emacs.org]]
 
 * 프로그래밍
+
+- [[file:typescript.org]]

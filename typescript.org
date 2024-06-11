@@ -1,0 +1,2 @@
+#+title: TypeScript
+#+description: 돈벌이 언어
