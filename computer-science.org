@@ -1,0 +1,36 @@
+#+title: 컴퓨터 과학
+
+* 공부할 것들
+
+- 컴퓨터 구조
+
+  - [[https://csapp.cs.cmu.edu/][Computer System: A Programmer's Perspective, 3/E]]
+  - https://csapp.cs.cmu.edu/3e/labs.html
+  - https://product.kyobobook.co.kr/detail/S000001868716
+  - https://github.com/simnalamburt/snucse/tree/main/System%20Programming
+
+- 운영체제
+
+  - https://pages.cs.wisc.edu/~remzi/OSTEP/
+  - [[https://github.com/remzi-arpacidusseau/ostep-translations/tree/master/korean][remzi-arpacidusseau/ostep-translations]]
+  - [[https://github.com/kaist-cp/rv6][kaist-cp/rv6]]
+
+- 자료구조
+
+- 알고리즘
+
+- DB
+
+  - SQL AntiPatterns
+
+- PL
+
+- ML
+
+- 수학
+
+- 동시성
+
+- 디지털 논리회로
+
+  - CODE

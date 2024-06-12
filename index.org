@@ -3,7 +3,13 @@
 #+author: An Nyeong
 
 * 개발환경
+
 - [[file:emacs.org]]
+- file:mac-os.org
+
+* 공부할 거
+
+- file:computer-science.org
 
 * 프로그래밍
 

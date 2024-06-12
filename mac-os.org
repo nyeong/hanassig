@@ -1,0 +1,11 @@
+#+title: macOS 개발환경
+
+* 자주 쓰는 앱
+
+- Raycast
+- Hammerspoon
+- Arc Browser
+- Maccy
+- Karabiner-Elements
+- WezTerm
+- Zed
