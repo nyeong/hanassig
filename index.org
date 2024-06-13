@@ -4,13 +4,19 @@
 
 * 개발환경
 
-- [[file:emacs.org]]
-- file:mac-os.org
+- [[./emacs.org]]
+- [[./mac-os.org]]
+- 알아야 할 것 : git, linux/unix, ...
+
+* 취미
+
+- [[./homelab.org]]
 
 * 공부할 거
 
-- file:computer-science.org
+- [[./computer-science.org]]
 
 * 프로그래밍
 
-- [[file:typescript.org]]
+- [[./typescript.org]]
+- [[./technical-writing.org]]
