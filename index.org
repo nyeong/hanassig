@@ -20,3 +20,4 @@
 
 - [[./typescript.org]]
 - [[./technical-writing.org]]
+- [[./vose's-alias-method.org]]

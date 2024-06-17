@@ -1,0 +1,43 @@
+#+title: Emacs에서 TypeScript 쓰기
+
+* 기본 설정
+
+~SPC f p~ 를 눌러 ~init.el~ 를 열고 ~:lang~ 밑의 ~javascript~ 를 찾아 아래처럼 켜준다. 이 둘을 쓰려면 ~:tools~ 밑의 ~lsp~ 와 ~tree-sitter~ 도 켜줘야 한다:
+
+#+BEGIN_SRC elisp
+(doom!
+    :lang
+    (javascript +lsp +tree-sitter)
+
+    :tools
+    lsp
+    tree-sitter)
+#+END_SRC
+
+자세한 설명을 보고 싶으면 각 패키지 위에 커서를 두고 ~K~ 를 누르면 문서를 볼 수 있다.
+
+* biome
+
+1. ~packages.el~ 에 ~lsp-biome~ 명시
+
+    ~SPC f p~ 를 눌러 ~packages.el~ 을 열고 아래를 입력한다:
+
+    #+begin_src elisp
+(package! lsp-biome
+  :recipe (:host github :repo "cxa/lsp-biome"))
+#+end_src
+
+2. ~config.el~ 에서 활성화
+
+   https://github.com/cxa/lsp-biome 를 참고하여 초기 설정을 한다.
+
+   #+begin_src elisp
+(after! lsp-biome
+  (setq-default lsp-biome-organize-imports-on-save t)
+  (setq-default lsp-biome-autofix-on-save t)
+  (setq-default lsp-biome-format-on-save t))
+ #+end_src
+
+3. 쓸 프로젝트에 biome 세팅
+
+   https://biomejs.dev/guides/getting-started/ 를 참고하여 biome를 설치한다.

@@ -1,0 +1,283 @@
+#+title: Emacs 치트시트
+
+evil-mode 기준 치트시트
+
+* SPACE
+
+#+BEGIN_EXAMPLE
+<SPC>
+├── b: 버퍼
+│   ├── [/]: 이전/다음 버퍼.
+│   ├── n/p: 이전/다음 버퍼.
+│   ├── l: 마지막 버퍼 선택.
+│   ├── k/K: 버퍼 종료. K는 모든 버퍼.
+│   ├── b/B: 버퍼 선택. b는 워크스페이스만, B는 전부.
+│   ├── c/C: 버퍼 복사.
+│   ├── m/M: 북마크. M은 지우기.
+│   ├── i/I: ibuffer??
+│   ├── N: 새 빈 버퍼.
+│   ├── O: 다른 버퍼 다 끄기.
+│   ├── r: Revert buffer.
+│   ├── R: 버퍼 이름 바꾸기.
+│   ├── s/S: 버퍼 저장. S는 모든 버퍼.
+│   ├── x/X: 스크래치 버퍼 띄우기. X는 스크래치 버퍼로 이동.
+│   ├── u: 루트 권한으로 버퍼 저장.
+│   ├── y: 버퍼 전체 복사.
+│   └── z/Z: 버퍼 버리기??
+├── f: 파일
+│   ├── c: 프로젝트 설정 열기.
+│   ├── C: 현재 파일 복사 (경로까지 지정).
+│   ├── d: 디렉토리 찾기.
+│   ├── D: 현재 파일 삭제.
+│   ├── e: emacs.d에서 파일 찾기.
+│   ├── E: emacs.d에서 파일 탐색.
+│   ├── f/F: 파일 찾기. F는 여기서 찾기.
+│   ├── l: 파일 위치? 잘 몰겠쑤
+│   ├── p/P: 개인 설정에서 파일 찾기/탐색
+│   ├── r: 최근 파일들
+│   ├── R: 파일 이름 바꾸기/옮기기
+│   ├── s/S: 파일 저장하기. S는 다른 이름으로 저장.
+│   ├── u/U: sudo
+│   └── y/Y: 현재 파일 경로 복사. Y는 프로젝트 루트로부터의 경로.
+├── c: code
+│   ├── a: (LSP) 코드 액션
+│   ├── c/C: 컴파일/재컴파일
+│   ├── d/D: 정의/레퍼런스로 점프
+│   ├── e/E: 버퍼/영역 평가. E는 평가한 값으로 영역 대체
+│   ├── f: 버퍼/영역 포매팅.
+│   ├── i: 구현 찾기
+│   ├── j/J: (LSP) 심볼로 점프
+│   ├── k: 문서로 점프
+│   ├── l: LSP
+│   │   ├── l: LSP
+│   │   └──
+│   ├── o: LSP Organize imports??
+│   ├── r: (LSP) 이름 바꾸기
+│   ├── s: repl로 보내기
+│   ├── S: (LSP) 심볼 탐색
+│   ├── t: 정의 탐색
+│   ├── w/W: 뒤에 이어지는 공백/빈줄 삭제
+│   └── x: 에러 목록
+├── g: git
+│   ├── ': Forge dispatch??
+│   ├── .: Magit file dispatch??
+│   ├── /: Magit dispatch??
+│   ├── [/]: 이전/다음 hunk??로 이동
+│   ├── b: (Magit) 브랜치 변경
+│   ├── B: (Magit) git blame
+│   ├── c: 생성
+│   │   ├── l: LSP
+│   │   └──
+│   ├── C: (Magit) 복제
+│   ├── D: (Magit) 파일 삭제
+│   ├── f: 찾기
+│   │   ├── l: LSP
+│   │   └──
+│   ├── F: (Magit) git fetch
+│   ├── g/G: (Magit) git status. G는 현재 위치에서
+│   ├── l: 나열
+│   │   ├── l: LSP
+│   │   └──
+│   ├── L: (Magit) buffer log
+│   ├── o: 브라우저에서 열기
+│   │   ├── l: LSP
+│   │   └──
+│   ├── r: Revert hunk?? at point
+│   ├── R: Revert file
+│   ├── s: stage hunk at point??
+│   ├── S: git stage this file
+│   ├── t: git time
+│   ├── U: 이 파일을 unstage
+│   └── y/Y: 리모트 주소 복사. Y는 홈페이지.
+├── h: help
+│   ├── RET: emacs 메뉴얼
+│   ├── ': describe char
+│   ├── .: display local help
+│   ├── ?: help for help
+│   ├── a/A: apropos??
+│   ├── b: 키 바인딩 검색
+│   ├── c: 키 입력하여 설명보기
+│   ├── C: describe coding system
+│   ├── d: doom
+│   │   ├── c: 설정 파일로 이동
+│   │   └── h: 도움말
+│   ├── e: echo 메시지 보기
+│   ├── E: doom/sandbox
+│   ├── f: emacs 함수 설명 보기
+│   ├── F: describe face?
+│   ├── g: GNU 프로젝트 홈페이지 열기
+│   ├── i: emacs 설명
+│   ├── I: describe-input-method
+│   ├── k: describe-key
+│   ├── K: 해당 키 문서로 이동
+│   ├── l: view-lossage??
+│   ├── L: describe language environmet
+│   ├── m: describe mode
+│   ├── M: doom/describe-active-mode
+│   ├── n: doom/help-news
+│   ├── o: describe-symbol
+│   ├── O: 온라인에서 검색
+│   ├── p: doom package help
+│   ├── P: find-library
+│   ├── q: help-quit
+│   ├── r: reload
+│   │   └── r: doom/reload
+│   ├── R: info-display-manual
+│   ├── s: describe-syntax
+│   ├── S: info-lookup-symbol
+│   ├── t: 테마 로딩
+│   └── T: doom/toggle-profiler
+├── m: major mode에 따라 달라지는듯?
+├── n: note
+│   ├── *: symbol로 노트 찾기
+│   ├── a: Org agenda
+│   ├── c/C: Toggle/cancel last org-clock
+│   ├── d: open deft
+│   ├── f/F: 파일 찾기/탐색
+│   ├── l: Org store link
+│   ├── m: 태그 검색
+│   ├── n: Org capture
+│   ├── N: Goto capture
+│   ├── o: Active org-clock
+│   ├── s: 노트 검색
+│   ├── S: org agenda 헤드라인 검색
+│   ├── t: todo list
+│   ├── v: view 검색
+│   └── y/Y
+├── i: insert
+│   ├── e: 이모지 삽입
+│   ├── f/F: 현재 파일 이름/경로 삽입
+│   ├── p: evil ex path
+│   ├── r: from evil register
+│   ├── s: snippet
+│   ├── u: 유니코드
+│   └── y: 클립보드에서 삽입
+├── o: open
+│   ├── -: Dired??
+│   ├── a: org agenda
+│   │   ├── a: 아젠다
+│   │   ├── m: 태그로 검색
+│   │   ├── t: 할일목록
+│   │   └── v: view serach
+│   ├── A: org agenda
+│   ├── b: 브라우저??
+│   ├── d: 디버거
+│   ├── f: 새 프레임??
+│   ├── F: 프레임 선택
+│   ├── i/I: iTerm으로 열기??
+│   ├── o/O: 파일/프로젝트 파인더로 열기
+│   ├── p/P: 사이드바 열기
+│   └── r/R: REPL 열기
+├── p: 프로젝트
+│   ├── !/&: 프로젝트 루트에서 명령어 실행. &는 비동기로.
+│   ├── ./>: 프로젝트 탐색. >는 다른 프로젝트.
+│   ├── a: 새 프로젝트 추가
+│   ├── b: 프로젝트 버퍼로 전환
+│   ├── c: 프로젝트 컴파일
+│   ├── C: 마지막 명령어 재실행
+│   ├── d: remove known project
+│   ├── D: discover projects in folder
+│   ├── e: 프로젝트 .dir-locals 편집
+│   ├── f/F: 프로젝트에서 파일 찾기. F는 다른 프로젝트.
+│   ├── g: 프로젝트 설정
+│   ├── i: 프로젝트 캐시 무효화
+│   ├── k: 프로젝트 버퍼 끄기
+│   ├── o: 형제 파일 찾기
+│   ├── p: 프로젝트 바꾸기
+│   ├── r: 프로젝트 최근 파일 찾기
+│   ├── R: 프로젝트 실행
+│   ├── s: 프로젝트 파일 저장
+│   ├── t: 프로젝트 TODO 목록 보기
+│   ├── T: 프로젝트 테스트
+│   └── x/X: 스크래치 버퍼 열기
+├── q: quit/session
+│   ├── d: emacs 서버 재시작
+│   ├── f: 프레임 삭제
+│   ├── F: 현재 프레임 클리어
+│   ├── K: emacs 완전 종료
+│   ├── l/L: 마지막 세션 복구
+│   ├── q/Q: emacs 끄기 (Q는 저장 없이)
+│   ├── r/R: emacs 재시작 (R은 복구 없이)
+│   └── s/S: 세션 저장 (S는 파일로)
+├── s: search
+│   ├── b/B: 버퍼에서 찾기 (B는 열린 모든 버퍼에서)
+│   ├── d/D: 현재 디렉토리에서 찾기 (D는 다른 디렉토리에서)
+│   ├── e: .emacs.d에서 찾기
+│   ├── f: 전체 시스템에서 찾기
+│   ├── i: 심볼로 이동
+│   ├── j: 점프리스트
+│   ├── k/K: look up in local/all docsets
+│   ├── l/L: 링크로 이동
+│   ├── m: 북마크로 이동
+│   ├── o/O: 웹에서 찾기
+│   ├── p/P: 현재/다른 프로젝트에서 찾기
+│   ├── r: 마크로 이동하기
+│   ├── s/S: 버퍼에서 찾기
+│   ├── t: Dictionary
+│   ├── T: Thesaurus
+│   └── u: undo history
+├── t: toggle
+│   ├── c: column 제한 표기 켜기/끄기
+│   ├── i: 들여쓰기 가이드
+│   ├── I: 들여쓰기 스타일
+│   ├── l: 줄번호 스타일
+│   └── w: soft-line
+└── w: window
+    ├── v/s: vertical/horizontal로 화면 분할
+    ├── h/j/k/l: 윈도우 이동
+    ├── H/J/K/L: 윈도우 바꾸기
+    ├── u/C-r: 윈도우 undo/redo
+    └── d: delete window
+#+END_EXAMPLE
+
+* 켜고 끄기
+
+* 프로젝트 관리
+
+하나의 emacs 화면에서 여러 프로젝트를 켜고 왔다갔다 할 수 있다.
+
+| 키        | 설명                                   |
+|-----------+----------------------------------------|
+| ~SPC p a~ | 프로젝트 추가하기                      |
+| ~SPC p p~ | 프로젝트 전환                          |
+| ~SPC .~   | 현재 디렉토리에서 파일 찾기            |
+| ~SPC f F~ | 현재 디렉토리에서 재귀적으로 파일 찾기 |
+| ~SPC SPC~ | 프로젝트 내에서 파일 찾기              |
+
+* 파일
+
+| 키        | 설명                                   |
+|-----------+----------------------------------------|
+| ~SPC SPC~ | 프로젝트에서 파일 찾기                 |
+| ~SPC .~   | 현재 디렉토리에서 파일 찾기            |
+| ~SPC f F~ | 현재 디렉토리에서 재귀적으로 파일 찾기 |
+
+* 버퍼 관리
+
+| 키      | 설명                               |
+|---------+------------------------------------|
+| ~SPC ,~ | 다른 버퍼로 바꾸기                 |
+| ~SPC <~ | 다른 버퍼로 바꾸기 (프로젝트 무관) |
+
+* 편집
+
+| 키        | 설명             |
+|-----------+------------------|
+| ~SPC s i~ | 심볼 리스트 보기 |
+
+* 검색하기
+
+모를 때마다 찾아 보는 게 제일 좋다.
+
+- ~describe-bindings~ :: 단축키로 함수를 찾거나, 함수로 단축키를 찾을 수 있다. ~SPC h b b~
+
+  있다
+
+* 패키지
+
+** multi-cursor
+
+- ~gzz~ : 현재 위치에 추가 커서 만들기
+- ~gzt~ : 미러링 토글
+- ~gzm~ : 선택된 내용으로 모두 찾기
+- ~gzd/D~ : 선택된 내용 사이 이동

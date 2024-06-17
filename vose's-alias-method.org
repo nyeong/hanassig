@@ -1,0 +1,49 @@
+#+title: O(1)에 수행 기능한 가중치 있는 랜덤 뽑기
+#+description: Vose's Alias Method로 상수 시간에 랜덤 뽑기
+
+흔히 가중치 있는 랜덤을 뽑으려면 아래처럼 $O(n)$이 걸립니다:
+
+1. 확률 테이블 $P$ 를 받는다. $P$ 의 원소 $p_i$ 는 $0 \leq p_i \leq 1$ 이고, $\sum_{i=1}^{n} p_i = 1$ 이다.
+2. $0 \leq x \leq 1$ 인 균등 확률을 하나 뽑습니다. $P$ 의 각 원소를 누적하며 순회한 값이 최초로 $x$ 를 넘어서면 해당 인덱스를 취합니다.
+
+/Vose's Alias  Method/ 를 이용하면, $O(n)$ 으로 전처리를 해두면 $O(1)$ 으로 가중치 랜덤을 뽑을 수 있습니다.
+
+* O(n) 방법
+
+#+begin_src typescript
+class ProbabilityTable {
+    readonly probabilities: readonly number[]
+
+    constructor(...numbers: number[]) {
+        const sum = numbers.reduce((x, acc) => x + acc)
+        if (Math.round(sum * 100) / 100 !== 1) {
+            throw new TypeError(`Sum of ProbabilityTable should be 1 but ${sum}`)
+        }
+        this.probabilities = numbers
+    }
+
+    sample(): number {
+        const x = Math.random()
+        let cumculativeSum = 0
+
+        for (let i = 0; i < this.probabilities.length; i++) {
+            cumculativeSum += this.probabilities[i]
+            if (x < cumculativeSum) {
+                return i
+            }
+        }
+
+        return this.probabilities.length - 1
+    }
+
+    get length() {
+        return this.probabilities.length
+    }
+}
+#+end_src
+
+* Vose's Alias Method
+
+* 참고
+
+- https://www.keithschwarz.com/darts-dice-coins/

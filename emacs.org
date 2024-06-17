@@ -48,6 +48,19 @@ doom emacs는 제공되는 패키지를 쉽게 활성화/비활성화 할 수 �
 emacs 프리셋 중에서는 spacemacs와 doom emacs가 양대강자인 것 같다.
 doom emacs를 먼저 발견해서 그냥 doom 깔았다. 둘 다 유명하고 잘 관리되고 있어서 고민하는 것보다 써보고 경험하는 편이 낫다고 판단했다.
 
+* 배우기
+
+Doom Emacs에서 evil-mode를 켠 상태로 ~SPC h d h~ 를 누르면 Doom Emacs 문서를 열 수 있다.
+
+- [[./emacs-cheatsheet.org]]
+
+* 설정
+
+~SPC f p~ 를 누르면 바로 설정 디렉토리를 열 수 있다.
+
+- [[./emacs-config.org]] 
+- [[./emacs-typescript.org]]
+
 * 편집
 
 evil-mode를 켜니 실제 편집경험은 아직까진('24. 06. 11.) vim과 큰 차이가 없다. vim에서 하던대로 하면 된다.
