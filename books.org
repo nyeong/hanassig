@@ -23,18 +23,71 @@
 18. [ ] 반응형 아키텍처와 어니언 아키텍처
 
 * TODO 만화로 배우는 리눅스 시스템 관리
-* TODO 처음 배우는 엘릭서 프로그래밍 [0/25]
+* TODO 처음 배우는 엘릭서 프로그래밍 [8/25] :elixir:
+1. [X] 빨간 약을 먹어보자 [2024-06-22]
+   - 프로그래밍은 데이터를 변형하는 과정.
+   - 유닉스의 철학은 모듈의 합성이다.[fn:1]
 
-1. [ ] 빨간 약을 먹어보자
-2. [ ] 패턴 매칭
-3. [ ] 불변성
-4. [ ] 엘릭서 기초
-5. [ ] 익명 함수
-6. [ ] 모듈과 기명 함수
-7. [ ] 리스트와 재귀
-8. [ ] 맵, 키워드 리스트, 집합, 구조체
+     [fn:1] There is no single, standardized statement of the philosophy. But if it had to be described with only a single word, that word would be modularity, which refers to a system that is composed of components (i.e., modules) that can be fitted together or arranged in a variety of ways. https://linfo.org/unix_philosophy.html
+   - 유닉스 명령어를 파이프로 합성하는 예: [[https://xtendo.org/ko/monad#44][모나드 괴담]]
+   - 엘릭서도 마찬가지로 프로그램을 함수의 합성으로 사고한다.
+   - 병렬성이 필요할 때에는 액터 모델을 활용한다.
+2. [X] 패턴 매칭 [2024-06-22]
+   - 엘릭서의 ~=~ 패턴매칭이 된다. assertion처럼 쓸 수도 있다.
+   - 변수에 바인딩이 아니라 매칭을 강제하려면 ~^~ 을 붙인다.
+   - 패턴매칭은 ~=~ 뿐 아니라 인자 전달 등 전범위에서 쓰인다.
+3. [X] 불변성 [2024-06-22]
+  #+begin_quote
+GOTO was evil because we asked, "how did I get to this point of execution?" Mutability leaves us with, "how did I get to this state?"
+-- [[https://x.com/jessitron/status/333228687208112128][Jessica Joy Kerr]]
+  #+end_quote
+   - 가변 자료구조는 코드 예측이 어렵다.
+   - 가변 자료를 변형하는 것보다 불변 자료로부터 생성하는 편이 낫다.
+   - [[https://en.wikipedia.org/wiki/Persistent_data_structure][영속적 자료구조]] 덕분에 효율적이다. (복사가 적다)
+   - 각 프로세스가 각자의 힙을 갖고 있어서 GC가 효율적이다.
+     - 🤔 진짠가?
+4. [X] 엘릭서 기초 [2024-06-22]
+   - 아톰이 있다. (루비나 리슾이랑 비슷)
+   - 컬렉션으로 튜플, 리스트, 키워드 리스트, 맵이 있다.
+   - 연속된 비트열에 대한 바이너리 타입이 있다.
+   - false, nil이 아니면 모두 참으로 간주된다. (루비와 비슷)
+   - with이라는 좋은 게 있다.
+5. [X] 익명 함수 [2024-06-22]
+   - 익명함수를 실행할 때에는 ~.~ 을 붙여야한다. [fn:2]
+     - 변수와 함수의 이름공간이 다르기 때문이다.(Lisp-2 Language)
+     - 이름공간이 다르면 이름 충돌이나 그로 인한 복잡성에서 벗어날 수 있기에 한 선택.
+     - 함수의 차수를 항상 명시해야하는 얼랭 VM의 한계 때문에 가변 인자 함수를 선언할 수 없다.
+     - 대신 같은 이름의 함수에 대해 여러 차수를 선언할 수 있다. (~h/0~, ~h/1~ 처럼)
+     [fn:2] José Valim, [[https://dashbit.co/blog/why-the-dot][Why the dot (when calling anonymous functions)?]].
+   - 일급시민으로서의 함수, 클로저 등
+   - ~[]~ 과 ~{}~ 도 연산자다. ~divrem = &{ div(&1, &2), rem(&1, &2)}~ 이런 게 된다.
+   - ~&~ 으로 익명함수를 편하게 만들거나, 기명함수를 값으로서 전달할 수 있다.
+6. [X] 모듈과 기명 함수
+   - 기명함수는 모듈 안에서만 정의할 수 있다.
+   - 기명함수에는 ~when~ 으로 가드를 달 수 있다. 가드는 패턴매칭에도 영향을 준다. 정의역 자체를 높이는 효과가 있다.
+   - 모듈 지시자
+     - ~import~ : 다른 모듈의 함수와 매크로를 현재 스코프로 가져옴
+     - ~alias~ : 모듈에 별칭 생성
+     - ~require~ : 컴파일 타임에 다른 모듈에 정의된 매크로를 가져옴
+7. [X] 리스트와 재귀 [2024-06-22]
+   - List는 연결 리스트다. 배열을 원하면 Tuple 혹은 ~:array~ 를 써야.
+   - 그 외의 특징은 다른 함수형 언어에서 연결 리스트를 다룰 때와 동일하다.
+     - ~Enum.map~ : 리스트로 리스트 만들기
+     - ~Enum.reduce~ : 리스트에서 값 구하기
+     - ...
+8. [X] 맵, 키워드 리스트, 집합, 구조체 [2024-06-22]
+   - KV 자료구조 선택 가이드
+     - 같은 키가 여러번 나와야하거나, 순서를 보장해야하면 KeywordList
+     - 데이터 구조가 일정하다면 defstruct
+     - 집합이 필요하면 MapSet
+     - 아니면 맵
+   - 중첩된 자료구조에 접근하기
+     - ~get_in~, ~put_in~, ~update_in~, ~get_and_update_in~
 9. [ ] 속닥속닥 - 타입이란 무엇일까?
 10. [ ] 컬렉션 다루기 - Enum과 Stream
+    - Enum은 즉시 평가한다.
+    - Stream은 게으르게 평가한다.
+
 11. [ ] 문자열과 바이너리
 12. [ ] 제어 구문
 13. [ ] 첫 번째 프로젝트
